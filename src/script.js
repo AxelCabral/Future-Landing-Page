@@ -51,3 +51,14 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   });
 });
+
+ // Exibe as respostas do FAQ
+ function toggleAnswer(element) {
+    const answer = element.nextElementSibling;
+
+    if (answer.style.maxHeight) {
+        answer.style.maxHeight = null;
+    } else {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+    }
+}

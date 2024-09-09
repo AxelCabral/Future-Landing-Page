@@ -443,30 +443,359 @@ nav li {
 
 /* Testimonial Section */
 
-.testimonial {
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribui o espaço adequadamente */
+  align-items: center;
+  padding: 100px;
+  padding-bottom: 70px;
   background-color: #1a1a1a;
-  padding: 40px;
-  margin-bottom: 20px;
-  border-radius: 8px;
+  background-size: auto 1000px; /* Define o tamanho do gradiente */
+  background-position: center center; /* Centraliza o gradiente */
+  background-repeat: no-repeat; /* Evita que o gradiente se repita */
   text-align: center;
-  transition: transform 0.3s;
+  width: auto;
+  margin: 0 auto; /* Centraliza o conteúdo */
 }
 
-.testimonial:hover {
-  transform: translateY(-10px);
-  background-color: #282828;
+.testimonials-title {
+  max-width: 480px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.testimonial h3 {
+.testimonial-cards {
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.5s ease;
+  max-width: 1250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonial img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 80px;
+}
+
+.testimonial {
+  background-color: #fff;
+  color: #333;
+  border-radius: 8px;
+  padding: 50px;
+  min-width: 300px;
+  max-width: 300px;
+  margin-right: 20px;
+  text-align: start;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 0 0 auto;
+}
+
+.navigation {
+  display: inline;
+}
+
+.testimonials p{
+  color: rgb(136, 136, 136);
+  line-height: 20px;
+  font-size: 14px;
+  margin: 0;
+}
+
+.testimonial h3{
+  margin-top: 40px;
+  margin-bottom: 0;
+  color: #0c55fa;
+}
+
+.company-name {
+  color: #0c55fa !important;
+  text-transform: uppercase;
+}
+
+.testimonials h2{
+  line-height: normal;
+  font-size: 32px;
+  margin: 0;
+}
+
+.testimonials button {
+  background-color: #0066FF;
+  color: white;
+  border: none;
+  padding: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.testimonials button:hover {
+  background-color: #0051cc;
+}
+
+.testimonials button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Purpose Section */
+.purpose {
+  display: flex;
+  flex-direction: row;
+  width: 100%; /* Garante que a seção ocupe 100% da largura da janela */
+}
+
+.second-purpose-section {
+  flex-basis: 50%; /* Cada seção ocupa 50% */
+  box-sizing: border-box; /* Garante que o padding não quebre o layout */
+  overflow: hidden;
+  background-image: url('assets/meeting.png');
+  background-size: cover; /* Faz a imagem cobrir toda a div */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Impede a repetição da imagem */
+  overflow: hidden; /* Impede o estouro do conteúdo */
+}
+
+.first-purpose-section {
+  flex-basis: 50%; /* Cada seção ocupa 50% */
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: start; /* Centraliza o conteúdo verticalmente */
+  padding: 50px 100px 50px 100px ; /* Pequeno padding para espaçamento interno */
+  box-sizing: border-box; /* Garante que o padding não quebre o layout */
+  flex-direction: column; /* Permite que o conteúdo fique em coluna */
+  text-align: start;
+  background-image: radial-gradient(#0c4ad6, #101010 90%);
+  background-size: auto 1000px; /* Mantém o gradiente */
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.purpose-text {
+  text-align: start;
+  line-height: 25px;
+  margin: 0;
+}
+
+.purpose button {
+  padding: 15px 30px;
+  background-color: #1a1a1a;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #f3f3f3;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.purpose button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .purpose {
+    flex-direction: column; /* Empilha as seções na vertical em telas pequenas */
+    height: auto; /* Remove o height fixo em dispositivos móveis */
+  }
+
+  .first-purpose-section,
+  .second-purpose-section {
+    flex-basis: auto; /* O tamanho agora será definido automaticamente */
+    width: 100%; /* As seções ocupam 100% da largura da tela */
+  }
+}
+
+/* FAQ section */
+.faq-section {
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 50px 150px 100px 150px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.faq-section h2{
+  line-height: normal;
+  font-size: 32px;
   margin-top: 20px;
-  font-size: 20px;
+  margin-bottom: 60px;
+  color: #101010;
+  font-weight: 900;
+}
+
+.faq-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-left, .faq-right {
+  width: 48%;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+}
+
+.faq-question {
+  width: 100%;
+  background-color: #f4f4f4;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+.faq-question:hover {
+  background-color: #e4e4e4;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 15px;
+  background-color: #f9f9f9;
+  border-left: 3px solid #007BFF;
+  margin-top: 5px;
+}
+
+.faq-answer p {
+  font-size: 14px;
+  color: #333;
+  padding: 10px 0;
 }
 
 /* Footer Section */
 footer {
   text-align: center;
-  padding: 20px;
-  background-color: #0a0a0a;
+  padding: 50px 100px 50px 100px;
+  background-color: #151515;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-columns {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  text-align: start;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.footer-columns p {
+  max-width: 252px;
+  color: rgb(136, 136, 136);
+  line-height: normal;
+  font-weight: 400;
+}
+
+.social-media-icon img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.social-media-icon {
+  background-color: #333333;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 10px 20px 0px;
+  padding: 8px;
+  flex-basis: 3% !important;
+}
+
+.social-media-icon:hover {
+  cursor: pointer;
+}
+
+.footer-menu, .support-menu{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-menu a, .support-menu a{
+  color: rgb(136, 136, 136);
+  line-height: normal;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+}
+
+.footer-columns div{
+  flex-basis: 20%;
+}
+
+.social-medias {
+  flex-basis: 35% !important;
+}
+
+.copy-text p{
+  text-align: center;
+  color: rgb(136, 136, 136);
+}
+
+.copy-text a{
+  color:#007BFF;
+}
+
+footer a{
+  text-decoration: none;
+}
+
+footer h3 {
+  line-height: normal;
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #f9f9f9;
+  font-weight: 900;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid rgb(136, 136, 136); /* Borda */
+  border-radius: 15px; /* Arredondar bordas */
+  height: 45px;
+}
+
+.contact-form img{
+  width: 30px;
+  object-fit: contain;
+}
+
+.contact-form img:hover{
+  cursor: pointer;
+}
+
+.contact-form input[type="text"]{
+  padding: 20px 10px 20px 20px; /* Espaçamento interno */
+  background-color: transparent;
+  font-size: 16px; /* Tamanho da fonte */
+  outline: none; /* Remover contorno ao focar */
+  border: 0;
+  color: #fff;
 }
 
 /* Media queries for responsive design */
