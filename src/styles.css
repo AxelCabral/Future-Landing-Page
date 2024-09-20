@@ -1,12 +1,12 @@
 /* styles.css */
 @font-face {
-  font-family: 'Roboto'; /* Name your font family */
-  src: url('./fonts/Roboto-Regular.ttf'); /* Locate the .ttf file within your directory*/
+  font-family: 'Montserrat'; /* Name your font family */
+  src: url('./fonts/static/Montserrat-Medium.ttf'); /* Locate the .ttf file within your directory*/
 }
 
 /* Regras gerais */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   color: #f3f3f3;
@@ -90,6 +90,80 @@ nav li {
   border-radius: 2px;
 }
 
+/* Estilo do botão flutuante */
+#scrollButton {
+  position: fixed;
+  bottom: 35%;
+  right: 20px;
+  z-index: 1000;
+  background-color: #f4f4f4;
+  border: solid 1px #cecece;
+  border-radius: 50%; /* Garante que o botão seja circular */
+  width: 50px; /* Define a largura */
+  height: 50px; /* Define a altura */
+  font-size: 24px; /* Aumenta o tamanho do ícone */
+  cursor: pointer;
+  display: none; /* Começa escondido */
+  transition: background-color 0.3s, transform 0.3s ease-in-out;
+  align-items: center;
+}
+
+#scrollButton img{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-top: 5px;
+  border-radius: 50px;
+}
+
+/* Estilo ao passar o mouse no botão */
+#scrollButton:hover {
+  transform: scale(1.2);
+}
+
+/* Estilo do botão flutuante */
+#whatsappButton {
+  position: fixed;
+  bottom: 43%;
+  right: 20px;
+  z-index: 1000;
+  background-color: #f4f4f4;
+  border: solid 1px #cecece;
+  border-radius: 50%; /* Garante que o botão seja circular */
+  width: 50px; /* Define a largura */
+  height: 50px; /* Define a altura */
+  font-size: 24px; /* Aumenta o tamanho do ícone */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s ease-in-out;
+  background-image: url('assets/whatsapp-logo.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Estilo ao passar o mouse no botão */
+#whatsappButton:hover {
+  transform: scale(1.2);
+}
+
+.image-button {
+  background-image: url('sua-imagem.jpg'); /* Substitua pela URL da sua imagem */
+  background-size: cover; /* Faz a imagem cobrir todo o botão */
+  background-position: center; /* Centraliza a imagem */
+  border: none; /* Remove a borda do botão */
+  border-radius: 8px; /* Arredonda os cantos do botão */
+  color: white; /* Cor do texto */
+  padding: 20px 40px; /* Tamanho do botão */
+  cursor: pointer; /* Altera o cursor ao passar o mouse */
+  font-size: 16px; /* Tamanho da fonte */
+  text-align: center; /* Centraliza o texto */
+  transition: transform 0.3s; /* Transição suave */
+}
+
+.image-button:hover {
+  transform: scale(1.05); /* Aumenta ligeiramente o botão ao passar o mouse */
+}
+
+
 /* Hero section */
 .hero {
   display: flex;
@@ -167,7 +241,7 @@ header a{
 }
 
 /* Sections */
-.services, .testimonials, .advantages-presentation {
+.services, .testimonials{
   padding: 60px 20px;
   background-color: #101010;
   text-align: center;
@@ -175,15 +249,51 @@ header a{
 
 /* Advantages Presentation Section */
 .advantages-presentation {
-  border-bottom: solid 1px #2e2e2e;
-  margin: 0;
-  padding: 20px;
+  overflow: hidden; /* Esconde o conteúdo fora da área visível */
+  background-color: #101010;
 }
 
-.advantages-presentation h3{
-  text-align: left;
-  display: inline;
-  margin-left: 70px;
+.advantages-presentation-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.advantages-presentation-list {
+  display: flex;
+  gap: 60px; /* Espaçamento entre os itens */
+  animation: scroll 30s linear infinite; /* Animação de rolagem contínua */
+  width: max-content;
+}
+
+.advantages-presentation-list h3 {
+  white-space: nowrap; /* Garante que o texto não quebre em múltiplas linhas */
+  font-size: 22px;
+  padding: 0;
+  margin: 10px;
+  font-weight: 300;
+}
+
+/* Duplicar os itens visualmente para criar efeito contínuo */
+.advantages-presentation-list::after {
+  content: attr(data-items);
+  display: flex;
+}
+
+/* Animação de rolagem horizontal contínua */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pausa a animação quando o mouse está sobre a lista */
+.advantages-presentation-list:hover {
+  animation-play-state: paused;
 }
 
 /* Services Section */
@@ -197,6 +307,11 @@ header a{
   text-align: center;
   padding: 40px 20px;
   background-color: #141414;
+}
+
+.services p{
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .service-list {
@@ -261,11 +376,6 @@ header a{
     flex: 1 1 100%; /* Um item por linha em telas muito pequenas */
     max-width: 100%;
   }
-}
-
-.service-item:hover {
-  transform: translateY(-10px);
-  background-color: #1f1f1f;
 }
 
 /* Advantages Section */
@@ -496,9 +606,6 @@ header a{
   display: flex;
   flex-direction: row;
   transition: transform 0.5s ease;
-  max-width: 1250px;
-  overflow: hidden;
-  position: relative;
 }
 
 .testimonial img {
@@ -519,6 +626,13 @@ header a{
   text-align: start;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   flex: 0 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona a transição */
+}
+
+/* Animação ao passar o mouse */
+.testimonial:hover {
+  transform: translateY(-10px); /* Move o card 10px para cima */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para dar mais profundidade */
 }
 
 .navigation {
@@ -733,10 +847,6 @@ header a{
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-weight: 500;
-}
-
-.faq-question:hover {
-  background-color: #e4e4e4;
 }
 
 .faq-answer {
