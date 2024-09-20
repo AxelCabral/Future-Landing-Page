@@ -1,5 +1,2 @@
-- Animação da caixa de contate-nos
-- Mascara no input de contato
-- Função para enviar via e-mail o contato
 - Criar light mode
 - Adicionar responsividade no site

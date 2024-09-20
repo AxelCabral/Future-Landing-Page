@@ -14,6 +14,11 @@ body {
   line-height: 1.6;
 }
 
+body.light-mode {
+  color: #333333; /* Texto mais escuro */
+  background-color: #f4f4f4; /* Fundo claro */
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -24,6 +29,19 @@ header {
   border-bottom: 3px solid #0c55fa;
 }
 
+header a{
+  text-decoration: none;
+  color: #f3f3f3;
+}
+
+body.light-mode header a{
+  color: #333333;
+}
+
+body.light-mode header{
+  background-color: #ededed;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -31,7 +49,6 @@ nav ul {
   margin-left: 150px;
   padding: 0;
 }
-
 
 nav li {
   cursor: pointer;
@@ -42,11 +59,20 @@ nav li {
   border-radius: 10px;
 }
 
+body.light-mode nav li {
+  color: #333333;
+  border: solid 1px #ededed; 
+}
+
 nav li a{
   padding: 20px 15px 20px 15px;
 }
 
 nav li:hover{
+  border: solid 1px #0c55fa;
+}
+
+body.light-mode nav li:hover{
   border: solid 1px #0c55fa;
 }
 
@@ -67,6 +93,10 @@ nav li:hover{
   transition: background-color 0.4s;
 }
 
+body.light-mode .theme-switch{
+  background-color: #101010;
+}
+
 .theme-switch input {
   opacity: 0;
   width: 0;
@@ -83,6 +113,10 @@ nav li:hover{
   cursor: pointer;
   border-radius: 50%;
   transition: transform 0.4s;
+}
+
+body.light-mode .theme-switch label {
+  background-color: #ededed;
 }
 
 .theme-switch input:checked + label {
@@ -156,25 +190,6 @@ nav li:hover{
   transform: scale(1.2);
 }
 
-.image-button {
-  background-image: url('sua-imagem.jpg'); /* Substitua pela URL da sua imagem */
-  background-size: cover; /* Faz a imagem cobrir todo o botão */
-  background-position: center; /* Centraliza a imagem */
-  border: none; /* Remove a borda do botão */
-  border-radius: 8px; /* Arredonda os cantos do botão */
-  color: white; /* Cor do texto */
-  padding: 20px 40px; /* Tamanho do botão */
-  cursor: pointer; /* Altera o cursor ao passar o mouse */
-  font-size: 16px; /* Tamanho da fonte */
-  text-align: center; /* Centraliza o texto */
-  transition: transform 0.3s; /* Transição suave */
-}
-
-.image-button:hover {
-  transform: scale(1.05); /* Aumenta ligeiramente o botão ao passar o mouse */
-}
-
-
 /* Hero section */
 .hero {
   display: flex;
@@ -190,9 +205,9 @@ nav li:hover{
   height: 500px;
 }
 
-header a{
-  text-decoration: none;
-  color: #f3f3f3;
+body.light-mode .hero{
+  background-color: #aee5ff;
+  background-image: none;
 }
 
 .hero-first-section{
@@ -212,10 +227,18 @@ header a{
   color: #f3f3f3;
 }
 
+body.light-mode .hero h1{
+  color: #333333;
+}
+
 .hero p {
   font-size: 18px;
   margin: 0 0 30px 0;
   color: #dddddd;
+}
+
+body.light-mode .hero p{
+  color: #333333;
 }
 
 .hero button {
@@ -228,6 +251,15 @@ header a{
   font-size: 18px;
   font-weight: bold;
   transition: background-color 0.3s;
+}
+
+body.light-mode .hero button{
+  background-color: #0c4ad6;
+  color: #f3f3f3;
+}
+
+body.light-mode .hero button:hover{
+  background-color: #6dd1ff;
 }
 
 .hero button:hover {
@@ -258,11 +290,20 @@ header a{
   text-align: center;
 }
 
+body.light-mode .services, body.light-mode .testimonials{
+  background-color: #f4f4f4;
+}
+
 /* Advantages Presentation Section */
 .advantages-presentation {
   overflow: hidden; /* Esconde o conteúdo fora da área visível */
   background-color: #101010;
 }
+
+body.light-mode .advantages-presentation{
+  background-color: #d2d2d2;
+}
+
 
 .advantages-presentation-wrapper {
   display: flex;
@@ -352,6 +393,11 @@ header a{
   padding: 70px 10px 10px 25px;
 }
 
+body.light-mode .service-item {
+  background-color: #d2d2d2;;
+  color: #000;
+}
+
 .service-item-icon {
   width: 30px;
   height: 30px;
@@ -373,6 +419,9 @@ header a{
 .service-item:hover {
   transform: translateY(-10px);
   background-color: #1f1f1f;
+}
+body.light-mode .service-item:hover{
+  background-color: #bcbcbc;
 }
 
 @media (max-width: 768px) {
@@ -405,6 +454,11 @@ header a{
   text-align: center;
   width: auto;
   margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+body.light-mode .advantages {
+  background-color: #aee5ff;
+  background-image: none;
 }
 
 .advantage {
@@ -441,6 +495,15 @@ header a{
   transition: background-color 0.3s;
 }
 
+body.light-mode .advantage button{
+  background-color: #0c4ad6;
+  color: #f3f3f3;
+}
+
+body.light-mode .advantage button:hover{
+  background-color: #6dd1ff;
+}
+
 .detail-item {
   padding-right: 100px;
 }
@@ -451,7 +514,7 @@ header a{
 
 .advantage-details {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Cria 3 colunas de tamanho igual */
+  grid-template-columns: repeat(2, 1fr);
   text-align: start;
   flex-basis: 65%;
   padding-top: 40px;
@@ -476,6 +539,10 @@ header a{
   background-color: #1a1a1a;
   display: flex;
   flex-direction: row;
+}
+
+body.light-mode .second-info{
+  background-color: #f3f3f3;
 }
 
 .second-info p{
@@ -510,6 +577,15 @@ header a{
   margin-top: 20px;
 }
 
+body.light-mode .second-info-first button{
+  background-color: #0c4ad6;
+  color: #f3f3f3;
+}
+
+body.light-mode .second-info-first button:hover{
+  background-color: #6dd1ff;
+}
+
 .second-info-image {
   flex-basis: 30%;
   margin-left: 100px;
@@ -540,6 +616,11 @@ header a{
   text-align: center;
   width: auto;
   margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+body.light-mode .solutions {
+  background-image: none;
+  background-color: #aee5ff;
 }
 
 .solutions h2{
@@ -587,6 +668,15 @@ header a{
 
 .solutions button:hover {
   background-color: #0056b3;
+}
+
+body.light-mode .solutions button{
+  background-color: #0c4ad6;
+  color: #f3f3f3;
+}
+
+body.light-mode .solutions button:hover{
+  background-color: #6dd1ff;
 }
 
 /* Testimonial Section */
@@ -730,6 +820,11 @@ header a{
   background-repeat: no-repeat;
 }
 
+body.light-mode .first-purpose-section {
+  background-image: none;
+  background-color: #aee5ff;
+}
+
 .purpose-text {
   text-align: start;
   line-height: 25px;
@@ -773,6 +868,10 @@ header a{
   color: #0056b3;
   margin: 0;
   padding: 0;
+}
+
+body.light-mode .purpose-affirmation .blue{
+  color: #0056b3;
 }
 
 .purpose-affirmation img{
@@ -1049,77 +1148,4 @@ footer h3 {
     flex: 1 1 calc(100% - 20px);
     margin-bottom: 20px;
   }
-
-}
-
-.roboto-thin {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.roboto-light {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.roboto-medium {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.roboto-bold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.roboto-black {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.roboto-thin-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.roboto-light-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.roboto-regular-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.roboto-medium-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.roboto-bold-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.roboto-black-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: italic;
 }

@@ -1,10 +1,28 @@
 // scripts.js
-
 document.addEventListener('DOMContentLoaded', () => {
   const langPT = document.getElementById('lang-pt');
   const langEN = document.getElementById('lang-en');
   const langES = document.getElementById('lang-es');
+
+  //Troca de tema
   const themeToggle = document.getElementById('theme-toggle');
+  const body = document.body;
+  const logo1 = document.getElementById('logo-1');
+  const logo2 = document.getElementById('logo-2');
+
+  themeToggle.addEventListener('change', function() {
+    if (themeToggle.checked) {
+      // Ativar o modo claro
+      body.classList.add('light-mode');
+      logo1.src = 'assets/logo-v2.png';
+      logo2.src = 'assets/logo-v2.png';
+    } else {
+      // Ativar o modo escuro
+      body.classList.remove('light-mode');
+      logo1.src = 'assets/logo.png';
+      logo2.src = 'assets/logo.png';
+    }
+  });
 
    // Troca de idioma
    langPT.addEventListener('click', () => {
@@ -109,6 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
         var placeholderText = document.getElementById('contact-text');
         placeholderText.placeholder = "Insira seu número";
         document.getElementById('copy-text').innerHTML = 'Copyright &copy; 2024 Future. Todos os direitos reservados à Agência <a href="https://www.instagram.com/future_digi" target="_blank"> Future Digital.</a>';
+        document.getElementById('error-message').textContent = 'Número inválido! Ingrese al menos 12 dígitos.';
     });
 
     // Troca de idioma
@@ -214,6 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
         var placeholderText = document.getElementById('contact-text');
         placeholderText.placeholder = "Enter your number";
         document.getElementById('copy-text').innerHTML = 'Copyright &copy; 2024 Future. All rights reserved to the Agency <a href="https://www.instagram.com/future_digi" target="_blank"> Future Digital.</a>';
+        document.getElementById('error-message').textContent = 'Invalid Number! Use at least 12 digits.';
     });
 
     // Troca de idioma para Espanhol
@@ -319,6 +339,7 @@ document.addEventListener('DOMContentLoaded', () => {
         var placeholderText = document.getElementById('contact-text');
         placeholderText.placeholder = "Introduce tu número";
         document.getElementById('copy-text').innerHTML = 'Derechos de autor &copy; 2024 Future. Todos los derechos reservados a la Agencia <a href="https://www.instagram.com/future_digi" target="_blank">Future Digital.</a>';
+        document.getElementById('error-message').textContent = 'Número inválido! Ingrese al menos 12 dígitos.';
     });
 
     
@@ -329,6 +350,48 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
           document.documentElement.removeAttribute('data-theme');
       }
+  });
+
+  const phoneInput = document.getElementById('contact-text');
+  const errorMessage = document.getElementById('error-message');
+
+  // Formulário de contato - Validação
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Impede o envio tradicional do formulário
+    const inputValue = phoneInput.value;
+
+    // Verifica se o número é válido (pelo menos 9 dígitos)
+    if (inputValue.length < 12) {
+      errorMessage.style.display = 'inline'; // Exibe a mensagem de erro
+    } else {
+      errorMessage.style.display = 'none'; // Esconde a mensagem de erro
+      var form = document.getElementById('contactForm');
+      window.open('', 'formTarget');
+      form.target = 'formTarget'; // Envia o formulário para a nova aba/guia
+      form.submit();
+    }
+  });
+
+  // Função que aplica a máscara
+  phoneInput.addEventListener('input', function () {
+    let inputValue = phoneInput.value;
+    const formImage = document.getElementById('confirm-image');
+    // Remove qualquer caractere que não seja número
+    inputValue = inputValue.replace(/\D/g, '');
+
+    // Adiciona o "+" no início
+    if (inputValue.length > 0) {
+      inputValue = '+' + inputValue;
+    }
+
+    if(inputValue.length > 12){
+      formImage.src = 'assets/check-icon.png';
+    }else{
+      formImage.src = 'assets/check-icon-2.png';
+    }
+
+    // Atualiza o valor do campo de texto
+    phoneInput.value = inputValue;
   });
 });
 
