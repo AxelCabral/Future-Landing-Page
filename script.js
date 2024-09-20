@@ -330,6 +330,36 @@ document.addEventListener('DOMContentLoaded', () => {
           document.documentElement.removeAttribute('data-theme');
       }
   });
+
+  const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const telefone = document.getElementById('contact-text').value;
+
+      const data = {
+        telefone: telefone
+      };
+
+      // Substitua pela URL do seu Web App
+      const scriptURL = 'AKfycbzAQcfXjkzg2q-mQgb_-TrI964Ja1qQA9XQb6sjNi3Vt4NQw9FC7s4o3uYZxy_poEpsOg';
+
+      fetch(scriptURL, {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      .then(response => response.json())
+      .then(result => {
+        alert('Contato enviado com sucesso!');
+      })
+      .catch(error => {
+        alert('Erro ao enviar o contato!');
+        console.error('Erro:', error);
+      });
+    });
 });
 
  // Exibe as respostas do FAQ
@@ -398,7 +428,3 @@ window.onscroll = function() {
       window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     }
   }
-
-
-
-  

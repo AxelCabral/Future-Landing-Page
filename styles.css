@@ -32,11 +32,22 @@ nav ul {
   padding: 0;
 }
 
+
 nav li {
   cursor: pointer;
   font-size: 20px;
   font-weight: bold;
   color: #f3f3f3;
+  border: solid 1px #101010;
+  border-radius: 10px;
+}
+
+nav li a{
+  padding: 20px 15px 20px 15px;
+}
+
+nav li:hover{
+  border: solid 1px #0c55fa;
 }
 
 .right-section {
@@ -974,6 +985,11 @@ footer h3 {
 
 .contact-form img:hover{
   cursor: pointer;
+}
+
+.contact-button-form{
+  border: 0;
+  background-color: transparent;
 }
 
 .contact-form input[type="text"]{
