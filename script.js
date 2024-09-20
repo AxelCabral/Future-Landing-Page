@@ -342,7 +342,7 @@ document.addEventListener('DOMContentLoaded', () => {
       };
 
       // Substitua pela URL do seu Web App
-      const scriptURL = 'AKfycbzAQcfXjkzg2q-mQgb_-TrI964Ja1qQA9XQb6sjNi3Vt4NQw9FC7s4o3uYZxy_poEpsOg';
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzAQcfXjkzg2q-mQgb_-TrI964Ja1qQA9XQb6sjNi3Vt4NQw9FC7s4o3uYZxy_poEpsOg/exec';
 
       fetch(scriptURL, {
         method: 'POST',
