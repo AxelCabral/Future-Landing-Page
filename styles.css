@@ -1098,6 +1098,7 @@ footer h3 {
   outline: none; /* Remover contorno ao focar */
   border: 0;
   color: #fff;
+  flex-basis: 80%;
 }
 
 /* Media queries for responsive design */

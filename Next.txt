@@ -1,2 +1,1 @@
-- Criar light mode
 - Adicionar responsividade no site
