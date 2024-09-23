@@ -443,7 +443,6 @@ body.light-mode .service-item:hover{
 .advantages {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; /* Distribui o espaço adequadamente */
   align-items: unset;
   padding: 30px;
   padding-bottom: 70px;
@@ -468,6 +467,7 @@ body.light-mode .advantages {
   flex-basis: 26%; /* Define o tamanho da div da imagem */
   text-align: start;
   padding-left: 80px;
+  margin-right: 50px;
 }
 
 .advantage img {
@@ -839,7 +839,6 @@ body.light-mode .first-purpose-section {
 .purpose-affirmations {
   position: relative; /* Permite que a caixa seja posicionada em relação ao contêiner pai */
   background-color: white;
-  width: 80%; /* Define um tamanho máximo para a caixa */
   max-height: 80px;
   display: flex;
   flex-direction: row;
@@ -1013,7 +1012,7 @@ footer {
   align-items: center;
   justify-content: center;
   margin: 10px 10px 20px 0px;
-  padding: 4px 8px 1px 8px;
+  padding: 5px 8px 1px 8px;
   flex-basis: 3% !important;
 }
 
