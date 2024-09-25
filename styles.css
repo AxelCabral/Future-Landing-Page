@@ -413,7 +413,7 @@ body.light-mode .hero p{
   }
 
   .hero button {
-      padding: 10px 20px;
+    padding: 10px 20px;
   }
 }
 
@@ -468,6 +468,7 @@ body.light-mode .hero p{
 
   .hero button {
       padding: 10px 20px;
+      font-size: 24px;
   }
 }
 
@@ -716,7 +717,7 @@ body.light-mode .advantages {
 }
 
 .advantage img {
-  max-width: 400px;
+  max-width: 100%;
   height: auto;
   border-radius: 10px; /* Aplica bordas arredondadas */
   display: grid;
@@ -776,14 +777,91 @@ body.light-mode .advantage button:hover{
   font-weight: lighter;
 }
 
+/* Responsividade para telas menores (Tablets e smartphones) */
+@media (max-width: 1024px) {
+  .advantages {
+    flex-direction: column; /* Organiza em coluna para melhor visualização */
+    align-items: center;
+    padding: 40px;
+    background-size: auto;
+  }
+
+  .advantage {
+    padding-left: 0;
+    margin-right: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .advantage img {
+    max-width: 80%; /* Reduz o tamanho da imagem em telas menores */
+    margin: 0 auto;
+  }
+
+  .advantage h3 {
+    font-size: 24px; /* Reduz o tamanho do título em telas menores */
+    padding-bottom: 40px;
+  }
+
+  .advantage button {
+    display: none;
+  }
+
+  .advantage-details {
+    grid-template-columns: 1fr; /* Coloca os itens em uma única coluna */
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .detail-item {
+    padding-right: 0;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .detail-item h4 {
+    font-size: 22px; /* Ajuste o tamanho do título */
+  }
+
+  .detail-item p {
+    font-size: 16px; /* Ajuste o tamanho do texto */
+  }
+}
+
+/* Responsividade para telas muito pequenas (Smartphones) */
+@media (max-width: 600px) {
+  .advantages {
+    padding: 20px;
+  }
+
+  .advantage h3 {
+    font-size: 20px; /* Ajuste adicional do título */
+  }
+
+  .advantage button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .detail-item h4 {
+    font-size: 20px; /* Ajuste adicional do título */
+  }
+
+  .detail-item p {
+    font-size: 14px; /* Ajuste adicional do texto */
+  }
+}
+
 /* Second Information Section */
 
 .second-info {
   text-align: center;
-  padding: 50px 150px 50px 150px;
+  padding: 50px 150px;
   background-color: #1a1a1a;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 body.light-mode .second-info{
@@ -837,12 +915,100 @@ body.light-mode .second-info-first button:hover{
 }
 
 .second-info-image img{
-  width: 500px;
+  width: 100%;
   height: auto;
+  max-width: 500px;
 }
 
 .second-info-first button:hover {
   background-color: #1a40b4;
+}
+
+.responsive-button button{
+  display: none;
+  padding: 15px 30px;
+  background-color: #0056b3;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #f3f3f3;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+/* Responsividade para telas menores (Tablets e smartphones) */
+@media (max-width: 1400px) {
+  .second-info {
+    flex-direction: column; /* Organiza o layout em coluna */
+    padding: 30px;
+    text-align: center;
+  }
+
+  .second-info-first {
+    flex-basis: 100%;
+    align-items: center; /* Centraliza o conteúdo */
+    text-align: center;
+    padding-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .second-info-first h2 {
+    font-size: 28px; /* Ajusta o tamanho do título para telas menores */
+  }
+
+  .second-info-first p {
+    font-size: 16px; /* Aumenta a fonte do texto para melhor legibilidade */
+  }
+
+  .second-info-image {
+    flex-basis: 100%;
+    margin-left: 0;
+    padding-top: 20px;
+  }
+
+  .second-info-image img {
+    width: 80%; /* Reduz a imagem em telas menores */
+    max-width: 400px; /* Limita o tamanho máximo da imagem */
+    margin: 0 auto;
+  }
+
+  .original-button button {
+    display: none;
+  }
+
+  .responsive-button button{
+    display: inherit;   
+    margin-top: 60px;
+    font-size: 24px;
+  }
+
+  .responsive-button {
+    text-decoration: none !important;
+    margin: auto !important;
+  }
+}
+
+/* Responsividade para telas muito pequenas (Smartphones) */
+@media (max-width: 600px) {
+  .second-info {
+    padding: 20px;
+  }
+
+  .second-info-first h2 {
+    font-size: 22px; /* Ajusta ainda mais o tamanho do título */
+  }
+
+  .second-info-first p {
+    font-size: 14px; /* Ajusta o tamanho do texto */
+  }
+
+  .second-info-image img {
+    width: 100%; /* Faz a imagem ocupar toda a largura disponível */
+    max-width: 350px; /* Ajusta o tamanho máximo da imagem */
+  }
 }
 
 /* Solutions Section */
@@ -879,6 +1045,8 @@ body.light-mode .solutions {
   flex-direction: row;
   padding: 50px 50px 70px 50px;
   gap: 30px;
+  flex-wrap: wrap; /* Permite que as imagens quebrem linha em telas menores */
+  justify-content: center; /* Centraliza as imagens */
 }
 
 .landings-list img{
@@ -909,6 +1077,7 @@ body.light-mode .solutions {
   font-size: 18px;
   font-weight: bold;
   transition: background-color 0.3s;
+  margin-top: 20px;
 }
 
 .solutions button:hover {
@@ -924,8 +1093,53 @@ body.light-mode .solutions button:hover{
   background-color: #6dd1ff;
 }
 
-/* Testimonial Section */
+/* Responsividade para telas menores (Tablets e smartphones) */
+@media (max-width: 1400px) {
+  .solutions {
+    padding: 50px 20px; /* Reduz o padding em telas menores */
+  }
 
+  .solutions h2 {
+    font-size: 28px; /* Reduz o tamanho do título para tablets */
+  }
+
+  .landings-list {
+    gap: 20px; /* Reduz o espaçamento entre as imagens */
+  }
+
+  .landings-list img {
+    max-width: 150px; /* Reduz o tamanho das imagens em tablets */
+  }
+
+  .solutions button {
+    font-size: 24px;
+  }
+
+  .solutions-title {
+    max-width: 100%; /* Expande a largura do título em telas menores */
+  }
+}
+
+/* Responsividade para telas muito pequenas (Smartphones) */
+@media (max-width: 600px) {
+  .solutions {
+    padding: 30px 10px; /* Reduz ainda mais o padding */
+  }
+
+  .solutions h2 {
+    font-size: 22px; /* Ajuste do título para smartphones */
+  }
+
+  .landings-list img {
+    max-width: 120px; /* Reduz o tamanho das imagens em smartphones */
+  }
+
+  .landings-list {
+    gap: 15px; /* Reduz o espaçamento entre as imagens */
+  }
+}
+
+/* Testimonial Section */
 .testimonials {
   display: flex;
   flex-direction: column;
@@ -934,9 +1148,6 @@ body.light-mode .solutions button:hover{
   padding: 100px;
   padding-bottom: 70px;
   background-color: #1a1a1a;
-  background-size: auto 1000px; /* Define o tamanho do gradiente */
-  background-position: center center; /* Centraliza o gradiente */
-  background-repeat: no-repeat; /* Evita que o gradiente se repita */
   text-align: center;
   width: auto;
   margin: 0 auto; /* Centraliza o conteúdo */
@@ -951,6 +1162,9 @@ body.light-mode .solutions button:hover{
 .testimonial-cards {
   display: flex;
   flex-direction: row;
+  justify-content: center; /* Centraliza os cards */
+  gap: 20px;
+  flex-wrap: wrap; /* Permite que os cards quebrem linha em telas menores */
   transition: transform 0.5s ease;
 }
 
@@ -968,7 +1182,6 @@ body.light-mode .solutions button:hover{
   padding: 50px;
   min-width: 300px;
   max-width: 300px;
-  margin-right: 20px;
   text-align: start;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   flex: 0 0 auto;
@@ -1026,6 +1239,71 @@ body.light-mode .solutions button:hover{
 .testimonials button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+  
+  .testimonials {
+    padding: 50px 20px;
+  }
+
+  .testimonials h2 {
+    font-size: 28px; /* Ajuste do tamanho do título */
+  }
+
+  .testimonial-cards {
+    gap: 15px; /* Reduz o espaço entre os cards */
+  }
+
+  .testimonial {
+    padding: 40px; /* Reduz o padding dos cards */
+    max-width: 280px; /* Ajusta a largura máxima */
+  }
+
+  .testimonial img {
+    width: 70px; /* Ajuste no tamanho da imagem */
+  }
+
+  .testimonials p {
+    font-size: 13px; /* Fonte menor para textos em telas menores */
+  }
+}
+
+/* Responsividade para smartphones */
+@media (max-width: 600px) {
+  .testimonials {
+    padding: 30px 40px;
+  }
+
+  .testimonials h2 {
+    font-size: 22px; /* Tamanho do título reduzido para smartphones */
+  }
+
+  .testimonial-cards {
+    flex-direction: column; /* Cards um embaixo do outro */
+    align-items: center; /* Centraliza os cards verticalmente */
+  }
+
+  .testimonial {
+    padding: 30px;
+    max-width: 100%; /* Faz o card ocupar toda a largura disponível */
+    margin-right: 0; /* Remove a margem lateral */
+    margin-bottom: 20px; /* Adiciona um espaçamento entre os cards */
+  }
+
+  .testimonial img {
+    width: 60px; /* Reduz ainda mais a imagem */
+  }
+
+  .testimonials p {
+    font-size: 12px; /* Fonte ainda menor para smartphones */
+  }
+
+  .testimonials button {
+    padding: 10px 20px; /* Ajusta o tamanho do botão */
+    font-size: 14px; /* Fonte do botão menor para smartphones */
+  }
 }
 
 /* Purpose Section */
@@ -1142,7 +1420,7 @@ body.light-mode .purpose-affirmation .blue{
 }
 
 /* Responsividade para telas menores */
-@media (max-width: 768px) {
+@media (max-width: 1170px) {
   .purpose {
     flex-direction: column; /* Empilha as seções na vertical em telas pequenas */
     height: auto; /* Remove o height fixo em dispositivos móveis */
@@ -1153,6 +1431,47 @@ body.light-mode .purpose-affirmation .blue{
     flex-basis: auto; /* O tamanho agora será definido automaticamente */
     width: 100%; /* As seções ocupam 100% da largura da tela */
   }
+
+  .second-purpose-section {
+    background-image: none;
+  }
+
+  .first-purpose-section img{
+    width: 150px !important;
+    max-width: none;
+  }
+
+  .purpose-affirmations {
+    width: 100%;
+    gap: 40px;
+    justify-content: center;
+    border-bottom: solid 1px #ebebeb;
+  }
+
+  .purpose a{
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .purpose button{
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .purpose-affirmations {
+    gap: 0px !important;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    max-height: 50%;
+    justify-content: center;
+  }
+
+  .first-purpose-section {
+    padding: 50px;
+  }
+  
 }
 
 /* FAQ section */
@@ -1219,6 +1538,57 @@ body.light-mode .purpose-affirmation .blue{
   padding: 10px 0;
 }
 
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+  .faq-section {
+    padding: 40px 80px; /* Reduz o padding nas laterais */
+  }
+
+  .faq-container {
+    flex-direction: column; /* Empilha as colunas na vertical */
+    align-items: center;
+  }
+
+  .faq-left, .faq-right {
+    width: 100%; /* Faz as colunas ocuparem toda a largura */
+  }
+
+  .faq-item {
+    margin-bottom: 20px;
+  }
+
+  .faq-section h2 {
+    font-size: 28px; /* Reduz o tamanho do título */
+    margin-bottom: 40px;
+  }
+
+  .faq-question {
+    padding: 12px; /* Ajusta o padding */
+    font-size: 15px; /* Reduz um pouco o tamanho da fonte */
+  }
+}
+
+/* Responsividade para smartphones */
+@media (max-width: 600px) {
+  .faq-section {
+    padding: 30px 20px; /* Padding menor para telas pequenas */
+  }
+
+  .faq-section h2 {
+    font-size: 24px; /* Título ainda menor */
+    margin-bottom: 30px;
+  }
+
+  .faq-question {
+    padding: 10px; /* Padding ajustado para telas menores */
+    font-size: 14px; /* Tamanho da fonte reduzido */
+  }
+
+  .faq-answer p {
+    font-size: 13px; /* Fonte um pouco menor para respostas */
+  }
+}
+
 /* Footer Section */
 footer {
   text-align: center;
@@ -1231,10 +1601,11 @@ footer {
 .footer-columns {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: start;
   text-align: start;
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .footer-columns p {
@@ -1242,6 +1613,20 @@ footer {
   color: rgb(136, 136, 136);
   line-height: normal;
   font-weight: 400;
+}
+
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  max-width: 140px;
+}
+
+.social-media-icon a{
+  display: inline-block;
+  padding: 4px;
+  margin: 0; 
+  line-height: 0;
 }
 
 .social-media-icon img{
@@ -1256,9 +1641,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px 10px 20px 0px;
-  padding: 5px 8px 1px 8px;
-  flex-basis: 3% !important;
+  margin: 10px 0;
+  padding: 4px;
 }
 
 .social-media-icon:hover {
@@ -1277,19 +1661,13 @@ footer {
   margin-bottom: 20px;
 }
 
-.social-media-icons {
-  display: flex;
-  flex-direction: row;
-  width: auto;
-  height: auto;
-}
-
 .footer-columns div{
   flex-basis: 20%;
 }
 
 .social-medias {
   flex-basis: 35% !important;
+  align-items: center;
 }
 
 .copy-text p{
@@ -1306,16 +1684,14 @@ footer a{
 }
 
 footer h3 {
-  line-height: normal;
   font-size: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #f9f9f9;
   font-weight: 900;
 }
 
 .contact-form {
   display: flex;
-  flex-direction: row;
   border: 2px solid rgb(136, 136, 136); /* Borda */
   border-radius: 15px; /* Arredondar bordas */
   height: 45px;
@@ -1336,23 +1712,116 @@ footer h3 {
 }
 
 .contact-form input[type="text"]{
-  padding: 20px 10px 20px 20px; /* Espaçamento interno */
   background-color: transparent;
   font-size: 16px; /* Tamanho da fonte */
   outline: none; /* Remover contorno ao focar */
   border: 0;
   color: #fff;
   flex-basis: 80%;
+  padding-left: 15px;
 }
 
-/* Media queries for responsive design */
-@media (min-width: 768px) {
-
-  .service-item {
-    flex: 1 1 calc(33.33% - 40px);
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+  footer {
+    padding: 40px 50px;
   }
 
-  .detail-item {
-    flex: 1 1 calc(33.33% - 40px);
+  .social-medias p{
+    text-align: center;
+    max-width: none;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-columns div {
+    width: 100%;
+    text-align: center;
+    justify-content: safe;
+    margin: auto;
+  }
+
+  .social-medias, .footer-menu, .support-menu, .contact-menu {
+    flex-basis: auto;
+  }
+
+  .footer-menu a, .support-menu a {
+    margin-bottom: 15px;
+  }
+
+  footer h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .contact-form {
+    width: 40%;
+    margin: auto;
+  }
+}
+
+/* Responsividade para smartphones */
+@media (max-width: 900px) {
+  footer {
+    padding: 30px 20px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-columns div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .social-media-icons {
+    justify-content: center;
+  }
+
+  .footer-menu a, .support-menu a {
+    font-size: 14px;
+  }
+
+  footer h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .contact-form {
+    justify-content: space-between;
+  }
+
+  .contact-form input[type="text"] {
+    font-size: 11px;
+    flex-basis: 40%;
+  }
+
+  .contact-form img {
+    width: 25px;
+  }
+
+  .copy-text p {
+    font-size: 12px;
+  }
+}
+
+/* Responsividade para smartphones */
+@media (max-width: 550px) {
+  .contact-form {
+    height: 30px;
+  }
+
+  .contact-form input[type="text"] {
+    font-size: 0px;
+  }
+
+  .contact-form img {
+    width: 20px;
   }
 }
