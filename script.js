@@ -434,6 +434,15 @@ window.onscroll = function() {
   
   function toggleScrollButton() {
     const scrollButton = document.getElementById("scrollButton");
+
+    // Verifica se a largura da tela é menor que 1310px
+    const isSmallScreen = window.matchMedia("(max-width: 1310px)").matches;
+
+    // Se a tela for menor que 1310px, esconde o botão
+    if (isSmallScreen) {
+      scrollButton.style.display = "none";
+      return; // Não executa o restante da função
+    }
   
     // Verifica se o usuário está perto do topo
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -460,4 +469,9 @@ window.onscroll = function() {
       // Rola para o final
       window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     }
+  }
+
+  function toggleMenu() {
+    const menu = document.querySelector('nav ul');
+    menu.classList.toggle('open');
   }

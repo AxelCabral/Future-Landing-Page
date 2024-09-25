@@ -14,12 +14,14 @@
   <button id="scrollButton" onclick="scrollFunction()"><img src="assets/faq-button.png" alt="Arrow"></button>
   <a href="https://wa.me/5522981812993" target="_blank"><button id="whatsappButton"></button></a>
     <header>
-        <nav>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav>          
             <ul>
-                <li><a href="#services-section" id="services">Serviços</a></li>
-                <li><a href="#purpose-section" id="about-us">Quem somos</a></li>
-                <li><a href="#advantages-section" id="advantages">Vantagens</a></li>
-                <li><a href="https://wa.me/5522981812993" target="_blank" id="plans">Planos</a></li>
+                <li id="responsive-menu"></li>
+                <li><a href="#services-section" onclick="toggleMenu()" id="services">Serviços</a></li>
+                <li><a href="#purpose-section" onclick="toggleMenu()" id="about-us">Quem somos</a></li>
+                <li><a href="#advantages-section" onclick="toggleMenu()" id="advantages">Vantagens</a></li>
+                <li><a href="https://wa.me/5522981812993" onclick="toggleMenu()" target="_blank" id="plans">Planos</a></li>
             </ul>
         </nav>
         <div class="right-section">
@@ -327,7 +329,7 @@
                  <a href="https://www.instagram.com/future_digi/" target="_blank" ><img src="assets/instagram-footer-icon.png" alt="Instragram icon"></a> 
               </div>
               <div class="social-media-icon" title="GMail">
-                <a href="mailto:" target="_blank" ><img src="assets/gmail-footer-icon.png" alt="Instragram icon"></a> 
+                <a href="mailto:agfutured@gmail.com" target="_blank" ><img src="assets/gmail-footer-icon.png" alt="Instragram icon"></a> 
              </div>
            </div>
         </div>
