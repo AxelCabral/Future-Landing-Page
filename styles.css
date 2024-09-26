@@ -1695,6 +1695,7 @@ footer h3 {
   border: 2px solid rgb(136, 136, 136); /* Borda */
   border-radius: 15px; /* Arredondar bordas */
   height: 45px;
+  width: fit-content;
 }
 
 .contact-form img{
@@ -1759,7 +1760,6 @@ footer h3 {
   }
 
   .contact-form {
-    width: 40%;
     margin: auto;
   }
 }
@@ -1815,10 +1815,6 @@ footer h3 {
 @media (max-width: 550px) {
   .contact-form {
     height: 30px;
-  }
-
-  .contact-form input[type="text"] {
-    font-size: 0px;
   }
 
   .contact-form img {

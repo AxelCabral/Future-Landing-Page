@@ -354,6 +354,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const phoneInput = document.getElementById('contact-text');
   const errorMessage = document.getElementById('error-message');
+  const formImage = document.getElementById('confirm-image');
 
   // Formulário de contato - Validação
   document.getElementById('contactForm').addEventListener('submit', function(event) {
@@ -369,13 +370,14 @@ document.addEventListener('DOMContentLoaded', () => {
       window.open('', 'formTarget');
       form.target = 'formTarget'; // Envia o formulário para a nova aba/guia
       form.submit();
+      phoneInput.value = '';
+      formImage.src = 'assets/check-icon-2.png';
     }
   });
 
   // Função que aplica a máscara
   phoneInput.addEventListener('input', function () {
     let inputValue = phoneInput.value;
-    const formImage = document.getElementById('confirm-image');
     // Remove qualquer caractere que não seja número
     inputValue = inputValue.replace(/\D/g, '');
 
