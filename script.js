@@ -63,7 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('service-4').textContent = 'Aplicativos';
         document.getElementById('service-5').textContent = 'Identidade Visual';
         document.getElementById('service-6').textContent = 'Logotipo 3D';
-        document.getElementById('service-7').textContent = 'Cartão Digital';
         document.getElementById('advantages-title').textContent = 'Um site profissional trará inúmeras vantagens para o seu negócio';
         document.getElementById('advantage-title-1').textContent = 'Faturamento';
         document.getElementById('advantage-title-2').textContent = 'Visibilidade';
@@ -127,7 +126,8 @@ document.addEventListener('DOMContentLoaded', () => {
         var placeholderText = document.getElementById('contact-text');
         placeholderText.placeholder = "Insira seu número";
         document.getElementById('copy-text').innerHTML = 'Copyright &copy; 2024 Future. Todos os direitos reservados à Agência <a href="https://www.instagram.com/future_digi" target="_blank"> Future Digital.</a>';
-        document.getElementById('error-message').textContent = 'Número inválido! Ingrese al menos 12 dígitos.';
+        document.getElementById('error-message').textContent = '¡Número inválido! Ingrese al menos 12 dígitos.';
+        document.getElementById('error-message-2').textContent = '¡Número inválido! Ingrese un número válido.';
     });
 
     // Troca de idioma
@@ -169,7 +169,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('service-4').textContent = 'Apps';
         document.getElementById('service-5').textContent = 'Visual Identity';
         document.getElementById('service-6').textContent = '3D Logo';
-        document.getElementById('service-7').textContent = 'Digital Business Card';
         document.getElementById('advantages-title').textContent = 'A professional website will bring many benefits to your business';
         document.getElementById('advantage-title-1').textContent = 'Revenue';
         document.getElementById('advantage-title-2').textContent = 'Visibility';
@@ -234,6 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
         placeholderText.placeholder = "Enter your number";
         document.getElementById('copy-text').innerHTML = 'Copyright &copy; 2024 Future. All rights reserved to the Agency <a href="https://www.instagram.com/future_digi" target="_blank"> Future Digital.</a>';
         document.getElementById('error-message').textContent = 'Invalid Number! Use at least 12 digits.';
+        document.getElementById('error-message-2').textContent = 'Invalid Number! please, type a valid number.';
     });
 
     // Troca de idioma para Espanhol
@@ -275,7 +275,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('service-4').textContent = 'Aplicaciones';
         document.getElementById('service-5').textContent = 'Identidad Visual';
         document.getElementById('service-6').textContent = 'Logotipo 3D';
-        document.getElementById('service-7').textContent = 'Tarjeta de Negocios Digital';
         document.getElementById('advantages-title').textContent = 'Un sitio web profesional traerá muchos beneficios a tu negocio';
         document.getElementById('advantage-title-1').textContent = 'Ingresos';
         document.getElementById('advantage-title-2').textContent = 'Visibilidad';
@@ -340,6 +339,7 @@ document.addEventListener('DOMContentLoaded', () => {
         placeholderText.placeholder = "Introduce tu número";
         document.getElementById('copy-text').innerHTML = 'Derechos de autor &copy; 2024 Future. Todos los derechos reservados a la Agencia <a href="https://www.instagram.com/future_digi" target="_blank">Future Digital.</a>';
         document.getElementById('error-message').textContent = 'Número inválido! Ingrese al menos 12 dígitos.';
+        document.getElementById('error-message-2').textContent = 'Número inválido! Insira um número válido.';
     });
 
     
@@ -354,6 +354,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const phoneInput = document.getElementById('contact-text');
   const errorMessage = document.getElementById('error-message');
+  const errorMessage2 = document.getElementById('error-message-2');
   const formImage = document.getElementById('confirm-image');
 
   // Formulário de contato - Validação
@@ -364,8 +365,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Verifica se o número é válido (pelo menos 9 dígitos)
     if (inputValue.length < 12) {
       errorMessage.style.display = 'inline'; // Exibe a mensagem de erro
-    } else {
+      errorMessage2.style.display = 'none';
+    } else if(inputValue.length > 14){
+      errorMessage.style.display = 'none';
+      errorMessage2.style.display = 'inline';
+    }
+    else{
       errorMessage.style.display = 'none'; // Esconde a mensagem de erro
+      errorMessage2.style.display = 'none'; // Esconde a mensagem de erro
       var form = document.getElementById('contactForm');
       window.open('', 'formTarget');
       form.target = 'formTarget'; // Envia o formulário para a nova aba/guia
@@ -375,26 +382,44 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Seleciona o formulário e o campo de input
+  const formAnimation = document.getElementById('contactForm');
+
   // Função que aplica a máscara
   phoneInput.addEventListener('input', function () {
     let inputValue = phoneInput.value;
     // Remove qualquer caractere que não seja número
     inputValue = inputValue.replace(/\D/g, '');
+    errorMessage.style.display = 'none'; // Esconde a mensagem de erro
+    errorMessage2.style.display = 'none'; // Esconde a mensagem de erro
 
     // Adiciona o "+" no início
     if (inputValue.length > 0) {
       inputValue = '+' + inputValue;
     }
 
-    if(inputValue.length > 12){
+    if(inputValue.length > 12 && inputValue.length < 15){
       formImage.src = 'assets/check-icon.png';
+      formAnimation.classList.add('ready');
     }else{
       formImage.src = 'assets/check-icon-2.png';
+      formAnimation.classList.remove('ready');
     }
 
     // Atualiza o valor do campo de texto
     phoneInput.value = inputValue;
   });
+
+  // Adiciona a classe "focused" ao formulário quando o input estiver em foco
+  phoneInput.addEventListener('focus', function() {
+    formAnimation.classList.add('focused');
+  });
+
+  // Remove a classe "focused" quando o input perde o foco
+  phoneInput.addEventListener('blur', function() {
+    formAnimation.classList.remove('focused');
+  });
+
 });
 
  // Exibe as respostas do FAQ
