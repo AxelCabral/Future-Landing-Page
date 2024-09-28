@@ -126,8 +126,8 @@ document.addEventListener('DOMContentLoaded', () => {
         var placeholderText = document.getElementById('contact-text');
         placeholderText.placeholder = "Insira seu número";
         document.getElementById('copy-text').innerHTML = 'Copyright &copy; 2024 Future. Todos os direitos reservados à Agência <a href="https://www.instagram.com/future_digi" target="_blank"> Future Digital.</a>';
-        document.getElementById('error-message').textContent = '¡Número inválido! Ingrese al menos 12 dígitos.';
-        document.getElementById('error-message-2').textContent = '¡Número inválido! Ingrese un número válido.';
+        document.getElementById('error-message').textContent = 'Número inválido, não esqueça do DDD!';
+        document.getElementById('error-message-2').textContent = 'Número inválido! Insira um número válido.';
     });
 
     // Troca de idioma
@@ -338,8 +338,8 @@ document.addEventListener('DOMContentLoaded', () => {
         var placeholderText = document.getElementById('contact-text');
         placeholderText.placeholder = "Introduce tu número";
         document.getElementById('copy-text').innerHTML = 'Derechos de autor &copy; 2024 Future. Todos los derechos reservados a la Agencia <a href="https://www.instagram.com/future_digi" target="_blank">Future Digital.</a>';
-        document.getElementById('error-message').textContent = 'Número inválido! Ingrese al menos 12 dígitos.';
-        document.getElementById('error-message-2').textContent = 'Número inválido! Insira um número válido.';
+        document.getElementById('error-message').textContent = '¡Número inválido! Ingrese al menos 12 dígitos.';
+        document.getElementById('error-message-2').textContent = '¡Número inválido! Ingrese un número válido.';
     });
 
     

@@ -1723,6 +1723,12 @@ footer h3 {
   padding-left: 15px;
 }
 
+.footer-option-menu {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
 /* Responsividade para tablets */
 @media (max-width: 1024px) {
   footer {
