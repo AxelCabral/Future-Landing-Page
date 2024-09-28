@@ -328,8 +328,7 @@ body.light-mode .theme-switch label {
 }
 
 body.light-mode .hero{
-  background-color: #aee5ff;
-  background-image: none;
+  background-image: radial-gradient(#aee5ff, #5bcaff 90%)
 }
 
 .hero-first-section{
@@ -484,7 +483,7 @@ body.light-mode .hero button{
 }
 
 body.light-mode .hero button:hover{
-  background-color: #6dd1ff;
+  background-image: radial-gradient(#aee5ff, #5bcaff 90%)
 }
 
 .hero button:hover {
@@ -704,8 +703,7 @@ body.light-mode .service-item:hover{
 }
 
 body.light-mode .advantages {
-  background-color: #aee5ff;
-  background-image: none;
+  background-image: radial-gradient(#aee5ff, #5bcaff 90%)
 }
 
 .advantage {
@@ -1017,8 +1015,7 @@ body.light-mode .second-info-first button:hover{
 }
 
 body.light-mode .solutions {
-  background-image: none;
-  background-color: #aee5ff;
+  background-image: radial-gradient(#aee5ff, #5bcaff 90%)
 }
 
 .solutions h2{
@@ -1330,8 +1327,7 @@ body.light-mode .solutions button:hover{
 }
 
 body.light-mode .first-purpose-section {
-  background-image: none;
-  background-color: #aee5ff;
+  background-image: radial-gradient(#aee5ff, #5bcaff 90%)
 }
 
 .purpose-text {
