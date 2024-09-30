@@ -1,5 +1,17 @@
 // scripts.js
 document.addEventListener('DOMContentLoaded', () => {
+  const video = document.getElementById('rocket-video');
+  
+  // Impedir que o vídeo seja pausado
+  video.addEventListener('pause', function(event) {
+    video.play(); // Força o vídeo a continuar tocando
+  });
+  
+  // Prevenir que o clique no vídeo também pause
+  video.addEventListener('click', function(event) {
+    event.preventDefault(); // Remove a ação padrão de clicar para pausar
+  });
+  
   const langPT = document.getElementById('lang-pt');
   const langEN = document.getElementById('lang-en');
   const langES = document.getElementById('lang-es');
