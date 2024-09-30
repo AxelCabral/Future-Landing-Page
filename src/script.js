@@ -33,11 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('plans').textContent = 'Planos';
         document.getElementById('hero-title').textContent = 'Aumente seus resultados com um site profissional bem posicionado';
         document.getElementById('hero-description').textContent = 'Nós criamos sites, landing pages e aplicativos que contam histórias e que refletem a personalidade única da sua marca, além de posicionarmos o seu negócio como uma referência no setor.';
-        document.getElementById('button-text').textContent = 'Pedir orçamento';
-        document.getElementById('button-text-2').textContent = 'Pedir orçamento';
-        document.getElementById('button-text-3').textContent = 'Pedir orçamento';
-        document.getElementById('button-text-4').textContent = 'Pedir orçamento';
-        document.getElementById('button-text-5').textContent = 'Pedir orçamento';
+        document.getElementById('button-text').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Pedir orçamento';
+        document.getElementById('button-text-2').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Pedir orçamento';
+        document.getElementById('button-text-3').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Pedir orçamento';
+        document.getElementById('button-text-4').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Pedir orçamento';
+        document.getElementById('button-text-5').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Pedir orçamento';
         document.getElementById('advantage-1').textContent = 'Visibilidade';
         document.getElementById('advantage-2').textContent = 'Personalidade';
         document.getElementById('advantage-3').textContent = 'Conexão';
@@ -139,11 +139,11 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('plans').textContent = 'Plans';
         document.getElementById('hero-title').textContent = 'Boost your results with a well-positioned professional website';
         document.getElementById('hero-description').textContent = 'We create websites, landing pages, and apps that tell stories and reflect your brand\'s unique personality, positioning your business as a leader in your sector.';
-        document.getElementById('button-text').textContent = 'Request a Quote';
-        document.getElementById('button-text-2').textContent = 'Request a Quote';
-        document.getElementById('button-text-3').textContent = 'Request a Quote';
-        document.getElementById('button-text-4').textContent = 'Request a Quote';
-        document.getElementById('button-text-5').textContent = 'Request a Quote';
+        document.getElementById('button-text').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Request a Quote';
+        document.getElementById('button-text-2').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Request a Quote';
+        document.getElementById('button-text-3').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Request a Quote';
+        document.getElementById('button-text-4').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Request a Quote';
+        document.getElementById('button-text-5').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Request a Quote';
         document.getElementById('advantage-1').textContent = 'Visibility';
         document.getElementById('advantage-2').textContent = 'Personality';
         document.getElementById('advantage-3').textContent = 'Connection';
@@ -245,11 +245,11 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('plans').textContent = 'Planes';
         document.getElementById('hero-title').textContent = 'Impulsa tus resultados con un sitio web profesional bien posicionado';
         document.getElementById('hero-description').textContent = 'Creamos sitios web, landing pages y aplicaciones que cuentan historias y reflejan la personalidad única de tu marca, posicionando tu negocio como líder en su sector.';
-        document.getElementById('button-text').textContent = 'Solicita una Cotización';
-        document.getElementById('button-text-2').textContent = 'Solicita una Cotización';
-        document.getElementById('button-text-3').textContent = 'Solicita una Cotización';
-        document.getElementById('button-text-4').textContent = 'Solicita una Cotización';
-        document.getElementById('button-text-5').textContent = 'Solicita una Cotización';
+        document.getElementById('button-text').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Solicita una Cotización';
+        document.getElementById('button-text-2').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Solicita una Cotización';
+        document.getElementById('button-text-3').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Solicita una Cotización';
+        document.getElementById('button-text-4').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Solicita una Cotización';
+        document.getElementById('button-text-5').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Solicita una Cotización';
         document.getElementById('advantage-1').textContent = 'Visibilidad';
         document.getElementById('advantage-2').textContent = 'Personalidad';
         document.getElementById('advantage-3').textContent = 'Conexión';
@@ -502,3 +502,25 @@ window.onscroll = function() {
     const menu = document.querySelector('nav ul');
     menu.classList.toggle('open');
   }
+
+  function toggleMedia() {
+    const rocketImage = document.getElementById('rocket-image');
+    const rocketVideo = document.getElementById('rocket-video');
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth < 1000) {
+        // Em telas menores que 1000px, mostrar a imagem e ocultar o vídeo
+        rocketImage.style.display = 'block';
+        rocketVideo.style.display = 'none';
+    } else {
+        // Em telas maiores que 1000px, mostrar o vídeo e ocultar a imagem
+        rocketImage.style.display = 'none';
+        rocketVideo.style.display = 'block';
+    }
+}
+
+// Verificar o tamanho da tela quando a página for carregada
+window.addEventListener('load', toggleMedia);
+
+// Verificar o tamanho da tela quando a janela for redimensionada
+window.addEventListener('resize', toggleMedia);

@@ -364,18 +364,25 @@ body.light-mode .hero p{
 
 .hero button {
   padding: 15px 30px;
-  background-color: #1a1a1a;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  color: #f3f3f3;
-  font-size: 18px;
-  font-weight: bold;
-  transition: background-color 0.3s;
+    background-color: #1a1a1a;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #f3f3f3;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    gap: 15px;
+    align-items: center;
 }
 
 @media (max-width: 1620px) {
   .rocket-image img {
+    width: 130% !important;
+  }
+
+  .rocket-image video {
     width: 130% !important;
   }
 }
@@ -401,6 +408,11 @@ body.light-mode .hero p{
   }
 
   .rocket-image img {
+    width: 110% !important;
+    margin-top: 60px;
+  }
+
+  .rocket-image video {
     width: 110% !important;
     margin-top: 60px;
   }
@@ -460,6 +472,13 @@ body.light-mode .hero p{
       margin-left: 50px;
   }
 
+  .rocket-image video {
+    width: 80% !important;
+    margin: 0 auto;
+    margin-top: 0 !important;
+    margin-left: 50px;
+}
+
   .rocket-image {
     margin: -10px;
     padding: 0;
@@ -475,6 +494,10 @@ body.light-mode .hero p{
   .rocket-image img {
     width: 70% !important;
   }
+
+  .rocket-image video {
+    width: 70% !important;
+  }
 }
 
 body.light-mode .hero button{
@@ -483,7 +506,7 @@ body.light-mode .hero button{
 }
 
 body.light-mode .hero button:hover{
-  background-image: radial-gradient(#aee5ff, #5bcaff 90%)
+  background-color: #2f93ff;
 }
 
 .hero button:hover {
@@ -501,10 +524,19 @@ body.light-mode .hero button:hover{
   margin-top: 60px;
 }
 
+.rocket-image video {
+  width: 100%;
+  margin-top: 100px;
+}
+
+#rocket-video {
+  display: none;
+}
+
 .rocket-image {
   flex-basis: 45%;
   overflow: hidden;
-  height: 657px;
+  height: 660px;
 }
 
 /* Sections */
@@ -739,6 +771,9 @@ body.light-mode .advantages {
   font-size: 18px;
   font-weight: bold;
   transition: background-color 0.3s;
+  display: inline-flex;
+  gap: 15px;
+  align-items: center;
 }
 
 body.light-mode .advantage button{
@@ -747,7 +782,7 @@ body.light-mode .advantage button{
 }
 
 body.light-mode .advantage button:hover{
-  background-color: #6dd1ff;
+  background-color: #2f93ff;
 }
 
 .detail-item {
@@ -755,7 +790,7 @@ body.light-mode .advantage button:hover{
 }
 
 .advantage button:hover {
-  background-color: #0056b3;
+  background-color: #0c4ad6;
 }
 
 .advantage-details {
@@ -883,6 +918,9 @@ body.light-mode .second-info{
   font-weight: bold;
   transition: background-color 0.3s;
   margin-top: 20px;
+  display: inline-flex;
+  gap: 15px;
+  align-items: center;
 }
 
 body.light-mode .second-info-first button{
@@ -891,7 +929,7 @@ body.light-mode .second-info-first button{
 }
 
 body.light-mode .second-info-first button:hover{
-  background-color: #6dd1ff;
+  background-color: #2f93ff;
 }
 
 .second-info-image {
@@ -906,7 +944,7 @@ body.light-mode .second-info-first button:hover{
 }
 
 .second-info-first button:hover {
-  background-color: #1a40b4;
+  background-color: #00367c;
 }
 
 .responsive-button button{
@@ -921,6 +959,8 @@ body.light-mode .second-info-first button:hover{
   font-weight: bold;
   transition: background-color 0.3s;
   margin-top: 20px;
+  gap: 15px;
+  align-items: center;
 }
 
 /* Responsividade para telas menores (Tablets e smartphones) */
@@ -965,7 +1005,7 @@ body.light-mode .second-info-first button:hover{
   }
 
   .responsive-button button{
-    display: inherit;   
+    display: inline-flex;   
     margin-top: 60px;
     font-size: 24px;
   }
@@ -1062,10 +1102,13 @@ body.light-mode .solutions {
   font-weight: bold;
   transition: background-color 0.3s;
   margin-top: 20px;
+  display: inline-flex;
+  gap: 15px;
+  align-items: center;
 }
 
 .solutions button:hover {
-  background-color: #0056b3;
+  background-color: #0c4ad6;
 }
 
 body.light-mode .solutions button{
@@ -1074,7 +1117,7 @@ body.light-mode .solutions button{
 }
 
 body.light-mode .solutions button:hover{
-  background-color: #6dd1ff;
+  background-color: #2f93ff;
 }
 
 /* Responsividade para telas menores (Tablets e smartphones) */
@@ -1202,25 +1245,6 @@ body.light-mode .solutions button:hover{
   line-height: normal;
   font-size: 32px;
   margin: 0;
-}
-
-.testimonials button {
-  background-color: #0066FF;
-  color: white;
-  border: none;
-  padding: 15px;
-  margin-top: 15px;
-  cursor: pointer;
-  border-radius: 50px;
-}
-
-.testimonials button:hover {
-  background-color: #0051cc;
-}
-
-.testimonials button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
 }
 
 /* Responsividade para tablets */
@@ -1396,10 +1420,22 @@ body.light-mode .purpose-affirmation .blue{
   font-size: 18px;
   font-weight: bold;
   transition: background-color 0.3s;
+  display: inline-flex;
+  gap: 15px;
+  align-items: center;
+}
+
+body.light-mode .purpose button{
+  background-color: #0c4ad6;
+  color: #f3f3f3;
+}
+
+body.light-mode .purpose button:hover{
+  background-color: #2f93ff;
 }
 
 .purpose button:hover {
-  background-color: #0056b3;
+  background-color: #0c4ad6;
 }
 
 /* Responsividade para telas menores */
@@ -1819,4 +1855,12 @@ footer h3 {
   .contact-form img {
     width: 20px;
   }
+}
+
+.button-whatsapp-icon {
+  width: auto !important;
+  max-width: 25px !important;
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+  border-radius: 0px !important;
 }
