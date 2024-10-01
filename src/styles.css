@@ -1402,7 +1402,7 @@ body.light-mode .solutions button:hover{
 
 .second-purpose-section img {
   width: 100%;  /* A imagem ocupará 100% da largura do contêiner */
-  height: 100%; /* A imagem ocupará 100% da altura do contêiner */
+  height: 101%; /* A imagem ocupará 100% da altura do contêiner */
   object-fit: cover; /* Evita bordas e faz com que a imagem cubra todo o contêiner */
 }
 
