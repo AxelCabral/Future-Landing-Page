@@ -440,7 +440,7 @@ document.addEventListener('DOMContentLoaded', () => {
       inputValue = '+' + inputValue;
     }
 
-    if(inputValue.length > 12 && inputValue.length < 15){
+    if(inputValue.length > 11 && inputValue.length < 15){
       formImage.src = 'assets/check-icon.png';
       formAnimation.classList.add('ready');
     }else{
