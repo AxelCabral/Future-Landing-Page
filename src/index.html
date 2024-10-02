@@ -200,22 +200,6 @@
                 <!-- Face Frontal -->
                 <div class="service-item-front">
                   <div class="service-item-icon">
-                    <img src="assets/logotipo-3d-icon.png" alt="Landing Page Icon">
-                  </div>
-                  <p id="service-8">Logotipo 3D</p>
-                </div>
-                <!-- Face Traseira -->
-                <div class="service-item-back">
-                  <p id="service-8-description">Destaque-se com um logotipo 3D inovador e impactante. Criamos logotipos tridimensionais que chamam a atenção e deixam sua marca memorável, trazendo um visual moderno e diferenciado.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="service-item">
-              <div class="service-item-inner">
-                <!-- Face Frontal -->
-                <div class="service-item-front">
-                  <div class="service-item-icon">
                     <img src="assets/cartao-virtual-icon.png" alt="Landing Page Icon">
                   </div>
                   <p id="service-9">Cartão Digital</p>
@@ -294,32 +278,37 @@
           <img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">
           Pedir orçamento</button></a>
   </section>
-   <section class="testimonials">
+    <section class="testimonials-carousel">
       <div class="testimonials-title">
         <h2 id="testimonials-title">O que nossos clientes dizem sobre nós</h2>
       </div>
-      <div class="testimonial-cards">
-        <div class="testimonial">
-          <img src="assets/h_01.png" alt="Juliana Souza">
-          <p id="testimonial-1">A Future Solutions foi fundamental para reestruturarmos nossa estratégia de marketing digital. Com a consultoria deles, identificamos falhas no nosso funil de vendas e otimizações necessárias nas campanhas pagas. Em pouco tempo, eles ajustaram nossos anúncios, resultando em um aumento de 50% no retorno sobre investimento. Além disso, criaram campanhas direcionadas que ampliaram nossa presença nas redes sociais e posicionaram a TecnoMax como uma referência em tecnologia no nosso nicho.<br/><br/></p>
-          <h3>Rodrigo Almeida</h3>
-          <p class="company-name" id="testimonial-company-1">CEO da TecnoMax Solutions</p>
-        </div>
-        <div class="testimonial">
-          <img src="assets/m_02.png" alt="Juliana Souza">
-          <p id="testimonial-2">O time da Future nos ajudou a redefinir nossa estratégia de branding e marketing digital. Com a expertise deles, desenvolvemos campanhas mais focadas em resultados e otimizamos nossa comunicação nas plataformas digitais. As consultorias frequentes e o acompanhamento próximo garantiram que nossas campanhas fossem eficientes e totalmente alinhadas ao nosso público-alvo. Em três meses, nossa visibilidade online triplicou e as campanhas geraram um aumento de 35% nas interações. Fica minha recomendação!
-          </p>
-          <h3>Mariana Costa</h3>
-          <p class="company-name" id="testimonial-company-2">Diretora de Marketing da BellaVita</p>
-        </div>
-        <div class="testimonial">
-          <img src="assets/h_02.png" alt="Juliana Souza">
-          <p id="testimonial-3">Precisávamos de uma estratégia digital mais robusta para alavancar nossos lançamentos, e a Future entregou exatamente o que buscávamos. Com as consultorias regulares, eles nos ajudaram a otimizar campanhas no Google e redes sociais, além de desenvolverem landing pages altamente eficazes para captação de leads. O resultado foi um aumento significativo na taxa de conversão e um crescimento expressivo no número de leads qualificados, impulsionando nosso lançamento com grande sucesso.<br/><br/></p>
-          <h3>Lucas Fernandes</h3>
-          <p class="company-name"id="testimonial-company-3">CMO da StartUp Pro</p>
+      <div class="carousel-container">
+        <input type="radio" name="testimonial-slider" id="testimonial-1" checked>
+        <input type="radio" name="testimonial-slider" id="testimonial-2">
+        <input type="radio" name="testimonial-slider" id="testimonial-3">
+        
+        <div class="testimonial-cards">
+          <label class="testimonial" for="testimonial-1">
+            <img src="assets/h_01.png" alt="Rodrigo Almeida">
+            <p id="testimonial-text-1">A Future Solutions foi fundamental para reestruturarmos nossa estratégia de marketing digital. Com a consultoria deles, identificamos falhas no nosso funil de vendas e otimizações necessárias nas campanhas pagas. Em pouco tempo, eles ajustaram nossos anúncios, resultando em um aumento de 50% no retorno sobre investimento. Além disso, criaram campanhas direcionadas que ampliaram nossa presença nas redes sociais e posicionaram a TecnoMax como uma referência em tecnologia no nosso nicho.<br/><br/></p>
+            <h3>Rodrigo Almeida</h3>
+            <p class="company-name" id="testimonial-company-1">CEO da TecnoMax Solutions</p>
+          </label>
+          <label class="testimonial" for="testimonial-2">
+            <img src="assets/m_02.png" alt="Mariana Costa">
+            <p id="testimonial-text-2">O time da Future nos ajudou a redefinir nossa estratégia de branding e marketing digital. Com a expertise deles, desenvolvemos campanhas mais focadas em resultados e otimizamos nossa comunicação nas plataformas digitais. As consultorias frequentes e o acompanhamento próximo garantiram que nossas campanhas fossem eficientes e totalmente alinhadas ao nosso público-alvo. Em três meses, nossa visibilidade online triplicou e as campanhas geraram um aumento de 35% nas interações. Fica minha recomendação!
+            </p>
+            <h3>Mariana Costa</h3>
+            <p class="company-name" id="testimonial-company-2">Diretora de Marketing da BellaVita</p>
+          </label>
+          <label class="testimonial" for="testimonial-3">
+            <img src="assets/h_02.png" alt="Lucas Fernandes">
+            <p id="testimonial-text-3">Precisávamos de uma estratégia digital mais robusta para alavancar nossos lançamentos, e a Future entregou exatamente o que buscávamos. Com as consultorias regulares, eles nos ajudaram a otimizar campanhas no Google e redes sociais, além de desenvolverem landing pages altamente eficazes para captação de leads. O resultado foi um aumento significativo na taxa de conversão e um crescimento expressivo no número de leads qualificados, impulsionando nosso lançamento com grande sucesso.<br/><br/></p>
+            <h3>Lucas Fernandes</h3>
+            <p class="company-name" id="testimonial-company-3">CMO da StartUp Pro</p>
+          </label>
         </div>
       </div>
-    </div>
     </section>
     <section id="purpose-section" class="purpose">
       <div class="first-purpose-section">
