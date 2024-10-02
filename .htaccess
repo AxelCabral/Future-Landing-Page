@@ -1,0 +1,12 @@
+# Ativa a reescrita de URL
+RewriteEngine On
+
+# Redireciona qualquer acesso a /src/index.html para a raiz /
+RewriteCond %{REQUEST_URI} ^/src/index\.html$ [NC]
+RewriteRule ^(.*)$ / [R=301,L]
+
+# Trata acessos diretos ao diretório /src sem o arquivo index.html explícito
+RewriteCond %{REQUEST_URI} !^/src/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /src/index.html [L]
