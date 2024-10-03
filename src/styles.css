@@ -433,6 +433,7 @@ body.light-mode .hero p{
   .rocket-image img {
     width: 110% !important;
     margin-top: 60px;
+    display: none;
   }
 
   .rocket-image video {
@@ -509,7 +510,7 @@ body.light-mode .hero p{
 
   .hero button {
       padding: 10px 20px;
-      font-size: 24px;
+      font-size: 22px;
   }
 }
 
@@ -1109,7 +1110,7 @@ body.light-mode .second-info-first button:hover{
   .responsive-button button{
     display: inline-flex;   
     margin-top: 60px;
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .responsive-button {
@@ -1241,7 +1242,7 @@ body.light-mode .solutions button:hover{
   }
 
   .solutions button {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .solutions-title {
@@ -1618,7 +1619,7 @@ body.light-mode .purpose button:hover{
   }
 
   .purpose button{
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 

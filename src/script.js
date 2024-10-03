@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('button-text-3').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Pedir orçamento';
         document.getElementById('button-text-4').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Pedir orçamento';
         document.getElementById('button-text-5').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Pedir orçamento';
+        document.getElementById('button-text-6').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Pedir orçamento';
         document.getElementById('advantage-1').textContent = 'Visibilidade';
         document.getElementById('advantage-2').textContent = 'Personalidade';
         document.getElementById('advantage-3').textContent = 'Conexão';
@@ -166,6 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('button-text-3').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Request a Quote';
         document.getElementById('button-text-4').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Request a Quote';
         document.getElementById('button-text-5').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Request a Quote';
+        document.getElementById('button-text-6').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Request a Quote';
         document.getElementById('advantage-1').textContent = 'Visibility';
         document.getElementById('advantage-2').textContent = 'Personality';
         document.getElementById('advantage-3').textContent = 'Connection';
@@ -282,6 +284,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('button-text-3').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Solicita una Cotización';
         document.getElementById('button-text-4').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Solicita una Cotización';
         document.getElementById('button-text-5').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Solicita una Cotización';
+        document.getElementById('button-text-6').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Solicita una Cotización';
         document.getElementById('advantage-1').textContent = 'Visibilidad';
         document.getElementById('advantage-2').textContent = 'Personalidad';
         document.getElementById('advantage-3').textContent = 'Conexión';
