@@ -27,7 +27,11 @@
         <div class="right-section">
           <div class="theme-switch">
               <input type="checkbox" id="theme-toggle">
-              <label for="theme-toggle"></label>
+              <label for="theme-toggle" id="color-mode-toggle">
+                <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                  <path d="M6 0a6 6 0 1 0 8.486 9.957A7.001 7.001 0 0 1 7.018.018 5.973 5.973 0 0 0 6 0z"/>
+                </svg>     
+              </label>
           </div>
           <div class="language-switch">
               <img id="lang-pt" src="assets/brazil-flag.png" alt="Português">
@@ -50,7 +54,7 @@
           </div>
           <div class="rocket-image">
             <img id="rocket-image" src="assets/foguete.png" alt="Rocket">
-            <video id="rocket-video" autoplay loop muted playsinline controls disablepictureinpicture>
+            <video id="rocket-video" loading="lazy" autoplay loop muted playsinline controls disablepictureinpicture>
               <source src="assets/foguete.webm" type="video/webm">
             </video>
           </div>
@@ -323,31 +327,32 @@
       </div>
       <div class="second-purpose-section">
         <img src="assets/meeting.png" alt="Future Meeting">
+        <section class="purpose-affirmations">
+          <div class="purpose-affirmation">
+            <img src="assets/icon_01.png" alt="microfone">
+            <div class="purpose-affirmation-text">
+              <h3 class="blue" id="purpose-affirmation-1-b">Comunicar</h3>
+              <h3 id="purpose-affirmation-1-a">ideias.</h3>
+            </div>
+          </div>
+          <div class="purpose-affirmation">
+            <img src="assets/icon_02.png" alt="connection">
+            <div class="purpose-affirmation-text">
+              <h3 class="blue" id="purpose-affirmation-2-b">Conectar</h3>
+              <h3 id="purpose-affirmation-2-a">marcas.</h3>
+            </div>
+          </div>
+          <div class="purpose-affirmation">
+            <img src="assets/icon_03.png" alt="changes">
+            <div class="purpose-affirmation-text">
+              <h3 class="blue" id="purpose-affirmation-3-b">Transformar</h3>
+              <h3 id="purpose-affirmation-3-a">ideias.</h3>
+            </div>
+          </div>
+      </section>
       </div>
     </section>
-    <section class="purpose-affirmations">
-        <div class="purpose-affirmation">
-          <img src="assets/icon_01.png" alt="microfone">
-          <div class="purpose-affirmation-text">
-            <h3 class="blue" id="purpose-affirmation-1-b">Comunicar</h3>
-            <h3 id="purpose-affirmation-1-a">ideias.</h3>
-          </div>
-        </div>
-        <div class="purpose-affirmation">
-          <img src="assets/icon_02.png" alt="connection">
-          <div class="purpose-affirmation-text">
-            <h3 class="blue" id="purpose-affirmation-2-b">Conectar</h3>
-            <h3 id="purpose-affirmation-2-a">marcas.</h3>
-          </div>
-        </div>
-        <div class="purpose-affirmation">
-          <img src="assets/icon_03.png" alt="changes">
-          <div class="purpose-affirmation-text">
-            <h3 class="blue" id="purpose-affirmation-3-b">Transformar</h3>
-            <h3 id="purpose-affirmation-3-a">ideias.</h3>
-          </div>
-        </div>
-    </section>
+    
     <section class="faq-section">
       <h2 id="faq-title">Perguntas frequentes</h2>
       <div class="faq-container">

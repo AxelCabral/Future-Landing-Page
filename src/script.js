@@ -384,15 +384,37 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('error-message-2').textContent = '¡Número inválido! Ingrese un número válido.';
     });
 
+  
+    var sun = `<svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 64 64">
+  <!-- Círculo central -->
+  <circle cx="32" cy="25" r="16" fill="#000"/>
+
+  <!-- Raios de sol -->
+  <g fill="#000">
+    <path d="M32 2 L36 14 L32 10 L28 14 Z" transform="rotate(0 32 25)"/>
+    <path d="M32 2 L36 14 L32 10 L28 14 Z" transform="rotate(45 32 25)"/>
+    <path d="M32 2 L36 14 L32 10 L28 14 Z" transform="rotate(90 32 25)"/>
+    <path d="M32 2 L36 14 L32 10 L28 14 Z" transform="rotate(135 32 25)"/>
+    <path d="M32 2 L36 14 L32 10 L28 14 Z" transform="rotate(180 32 25)"/>
+    <path d="M32 2 L36 14 L32 10 L28 14 Z" transform="rotate(225 32 25)"/>
+    <path d="M32 2 L36 14 L32 10 L28 14 Z" transform="rotate(270 32 25)"/>
+    <path d="M32 2 L36 14 L32 10 L28 14 Z" transform="rotate(315 32 25)"/>
+  </g>
+</svg>`;
+    var moon = `<svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16"><path d="M6 0a6 6 0 1 0 8.486 9.957A7.001 7.001 0 0 1 7.018.018 5.973 5.973 0 0 0 6 0z"/></svg>`;
+    var toggleColor = document.getElementById('color-mode-toggle');
     
-  // Troca de tema
-  themeToggle.addEventListener('change', () => {
-      if (themeToggle.checked) {
+    // Troca de tema
+    themeToggle.addEventListener('change', () => {
+        if (themeToggle.checked) {
+          toggleColor.innerHTML = sun; 
           document.documentElement.setAttribute('data-theme', 'light');
-      } else {
+        } else {
+          toggleColor.innerHTML = moon; 
           document.documentElement.removeAttribute('data-theme');
-      }
-  });
+        }
+    });
+    
 
   const phoneInput = document.getElementById('contact-text');
   const errorMessage = document.getElementById('error-message');
