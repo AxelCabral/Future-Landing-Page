@@ -26,13 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (themeToggle.checked) {
       // Ativar o modo claro
       body.classList.add('light-mode');
-      logo1.src = 'assets/logo-v2.png';
-      logo2.src = 'assets/logo-v2.png';
+      logo1.src = 'assets/logo-v2.webp';
+      logo2.src = 'assets/logo-v2.webp';
     } else {
       // Ativar o modo escuro
       body.classList.remove('light-mode');
-      logo1.src = 'assets/logo.png';
-      logo2.src = 'assets/logo.png';
+      logo1.src = 'assets/logo.webp';
+      logo2.src = 'assets/logo.webp';
     }
   });
 
@@ -45,18 +45,18 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('plans').textContent = 'Planos';
         document.getElementById('hero-title').textContent = 'Aumente seus resultados com um site profissional bem posicionado';
         document.getElementById('hero-description').textContent = 'Nós criamos sites, landing pages e aplicativos que contam histórias e que refletem a personalidade única da sua marca, além de posicionarmos o seu negócio como uma referência no setor.';
-        document.getElementById('button-text').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Pedir orçamento';
-        document.getElementById('button-text-2').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Pedir orçamento';
-        document.getElementById('button-text-3').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Pedir orçamento';
-        document.getElementById('button-text-4').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Pedir orçamento';
-        document.getElementById('button-text-5').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Pedir orçamento';
-        document.getElementById('button-text-6').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Pedir orçamento';
+        document.getElementById('button-text').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Pedir orçamento';
+        document.getElementById('button-text-2').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Pedir orçamento';
+        document.getElementById('button-text-3').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Pedir orçamento';
+        document.getElementById('button-text-4').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Pedir orçamento';
+        document.getElementById('button-text-5').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Pedir orçamento';
+        document.getElementById('button-text-6').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Pedir orçamento';
         document.getElementById('advantage-1').textContent = 'Visibilidade';
         document.getElementById('advantage-2').textContent = 'Personalidade';
         document.getElementById('advantage-3').textContent = 'Conexão';
         document.getElementById('advantage-4').textContent = 'Engajamento';
         document.getElementById('advantage-5').textContent = 'Performance';
-        document.getElementById('advantage-6').textContent = 'Resposividade';
+        document.getElementById('advantage-6').textContent = 'Responsividade';
         document.getElementById('advantage-7').textContent = 'Conversão';
         document.getElementById('advantage-8').textContent = 'Resultados';
         document.getElementById('advantage-9').textContent = 'Confiança';
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('advantage-12').textContent = 'Conexão';
         document.getElementById('advantage-13').textContent = 'Engajamento';
         document.getElementById('advantage-14').textContent = 'Performance';
-        document.getElementById('advantage-15').textContent = 'Resposividade';
+        document.getElementById('advantage-15').textContent = 'Responsividade';
         document.getElementById('advantage-16').textContent = 'Conversão';
         document.getElementById('advantage-17').textContent = 'Resultados';
         document.getElementById('advantage-18').textContent = 'Confiança';
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('service-5').textContent = 'Lojas Virtuais';
         document.getElementById('service-6').textContent = 'Aplicativos';
         document.getElementById('service-7').textContent = 'Branding';
-        document.getElementById('service-9').textContent = 'Cartão Digital';
+        document.getElementById('service-8').textContent = 'Cartão Digital';
         document.getElementById('service-1-description').textContent = 'Uma Landing Page bem projetada é essencial para captar a atenção do seu público-alvo e convertê-lo em clientes. Oferecemos páginas focadas em resultados, com design otimizado e chamadas para ação que aumentam suas chances de sucesso em campanhas de marketing.';
         document.getElementById('service-2-description').textContent = 'Mostre o melhor do seu trabalho com um site portfólio profissional. Criamos layouts modernos e funcionais que destacam seus projetos de maneira atraente e organizada, valorizando sua expertise e ajudando você a fechar novos negócios.';
         document.getElementById('service-3-description').textContent = 'Fortaleça a presença digital da sua empresa com um site institucional que transmita credibilidade e confiança. Desenvolvemos sites que reforçam sua marca, destacam sua história e serviços, e conectam você ao público de forma clara e objetiva.';
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('service-5-description').textContent = 'Maximize suas vendas online com uma loja virtual robusta, fácil de navegar e segura. Nós desenvolvemos e customizamos e-commerces que oferecem uma experiência de compra agradável para seus clientes, aumentando a taxa de conversão.';
         document.getElementById('service-6-description').textContent = 'Tenha uma solução sob medida na palma da mão dos seus clientes. Criamos aplicativos funcionais e intuitivos que ampliam a presença da sua marca e facilitam a interação com seu público, seja para vendas, serviços ou engajamento.';
         document.getElementById('service-7-description').textContent = 'Sua marca começa com um branding marcante. Desenvolvemos logotipos, cores e elementos visuais que representam sua empresa de forma única, atraindo atenção e criando uma conexão emocional com seus clientes.';
-        document.getElementById('service-9-description').textContent = 'Modernize sua rede de contatos com um cartão digital personalizado. Ele pode ser compartilhado digitalmente, facilitando a apresentação do seu negócio e de seus serviços em qualquer lugar, a qualquer momento.';
+        document.getElementById('service-8-description').textContent = 'Modernize sua rede de contatos com um cartão digital personalizado. Ele pode ser compartilhado digitalmente, facilitando a apresentação do seu negócio e de seus serviços em qualquer lugar, a qualquer momento.';
         document.getElementById('advantages-title').textContent = 'Um site profissional trará inúmeras vantagens para o seu negócio';
         document.getElementById('advantage-title-1').textContent = 'Faturamento';
         document.getElementById('advantage-title-2').textContent = 'Visibilidade';
@@ -161,13 +161,13 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('advantages').textContent = 'Advantages';
         document.getElementById('plans').textContent = 'Plans';
         document.getElementById('hero-title').textContent = 'Boost your results with a well-positioned professional website';
-        document.getElementById('hero-description').textContent = 'We create websites, landing pages, and apps that tell stories and reflect your brand\'s unique personality, positioning your business as a leader in your sector.';
-        document.getElementById('button-text').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Request a Quote';
-        document.getElementById('button-text-2').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Request a Quote';
-        document.getElementById('button-text-3').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Request a Quote';
-        document.getElementById('button-text-4').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Request a Quote';
-        document.getElementById('button-text-5').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Request a Quote';
-        document.getElementById('button-text-6').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Request a Quote';
+        document.getElementById('hero-description').textContent = 'We create websites, landing pages, and apps that tell stories and reflect your brand\'s unique personality, positioning your business as a leader in your industry.';
+        document.getElementById('button-text').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Request a Quote';
+        document.getElementById('button-text-2').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Request a Quote';
+        document.getElementById('button-text-3').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Request a Quote';
+        document.getElementById('button-text-4').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Request a Quote';
+        document.getElementById('button-text-5').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Request a Quote';
+        document.getElementById('button-text-6').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Request a Quote';
         document.getElementById('advantage-1').textContent = 'Visibility';
         document.getElementById('advantage-2').textContent = 'Personality';
         document.getElementById('advantage-3').textContent = 'Connection';
@@ -192,18 +192,18 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('service-3').textContent = 'Corporate Website';
         document.getElementById('service-4').textContent = 'Lead Capture Website';
         document.getElementById('service-5').textContent = 'E-commerce';
-        document.getElementById('service-6').textContent = 'Applications';
+        document.getElementById('service-6').textContent = 'Apps';
         document.getElementById('service-7').textContent = 'Branding';
-        document.getElementById('service-9').textContent = 'Digital Business Card';
+        document.getElementById('service-8').textContent = 'Digital Business Card';
         document.getElementById('service-1-description').textContent = 'A well-designed landing page is essential to capture your target audience\'s attention and convert them into customers. We offer result-focused pages with optimized design and calls to action that increase your chances of success in digital marketing campaigns.';
         document.getElementById('service-2-description').textContent = 'Showcase the best of your work with a professional portfolio website. We create modern and functional layouts that highlight your projects in an attractive and organized manner, showcasing your expertise and helping you close new deals.';
         document.getElementById('service-3-description').textContent = 'Strengthen your company\'s digital presence with a corporate website that conveys credibility and trust. We develop sites that reinforce your brand, highlight your history and services, and connect you to your audience clearly and objectively.';
         document.getElementById('service-4-description').textContent = 'Grow your customer base with specialized lead capture websites. We create strategic pages with forms and engaging content that encourage your visitors to leave their information, generating new business opportunities.';
-        document.getElementById('service-5-description').textContent = 'Maximize your online sales with a robust, easy-to-navigate, and secure virtual store. We develop and customize e-commerce platforms that provide a pleasant shopping experience for your customers, increasing the conversion rate.';
+        document.getElementById('service-5-description').textContent = 'Maximize your online sales with a robustness, easy-to-navigate, and secure virtual store. We develop and customize e-commerce platforms that provide a pleasant shopping experience for your customers, increasing the conversion rate.';
         document.getElementById('service-6-description').textContent = 'Have a tailored solution at your customers\' fingertips. We create functional and intuitive apps that expand your brand\'s presence and facilitate interaction with your audience, whether for sales, services, or engagement.';
         document.getElementById('service-7-description').textContent = 'Your brand starts with a striking visual identity. We develop logos, colors, and visual elements that uniquely represent your company, attracting attention and creating an emotional connection with your customers.';
-        document.getElementById('service-9-description').textContent = 'Modernize your contact network with a personalized digital business card. It can be shared digitally, making it easy to present your business and services anywhere, anytime.';
-        document.getElementById('advantages-title').textContent = 'A professional website will bring many benefits to your business';
+        document.getElementById('service-8-description').textContent = 'Modernize your contact network with a personalized digital business card. It can be shared digitally, making it easy to present your business and services anywhere, anytime.';
+        document.getElementById('advantages-title').textContent = 'A professional website will bring many benefits for your business';
         document.getElementById('advantage-title-1').textContent = 'Revenue';
         document.getElementById('advantage-title-2').textContent = 'Visibility';
         document.getElementById('advantage-title-3').textContent = 'Credibility';
@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('testimonials-title').textContent = 'What our clients say about us';
         document.getElementById('testimonial-text-1').innerHTML = 'Future Solutions was crucial in restructuring our digital marketing strategy. Their consulting services identified flaws in our sales funnel and necessary optimizations in our paid campaigns. Soon, they adjusted our ads, resulting in a 50% increase in return on investment. They also created targeted campaigns that expanded our social media presence and positioned TecnoMax as a tech leader in our niche.<br/><br/>';
         document.getElementById('testimonial-text-2').innerHTML = 'Future\'s team helped us redefine our branding and digital marketing strategy. Their expertise enabled us to develop result-oriented campaigns and optimize our communication on digital platforms. Their ongoing consultancy and close monitoring ensured our campaigns were efficient and fully aligned with our target audience. Within three months, our online visibility tripled, and the campaigns generated a 35% increase in engagement. Highly recommended!';
-        document.getElementById('testimonial-text-3').innerHTML = 'We needed a more robust digital strategy for our product launches, and Future delivered exactly what we were looking for. With regular consulting, they helped us optimize campaigns on Google and social media, and developed highly effective landing pages for lead generation. The result was a significant increase in conversion rates and a notable rise in qualified leads, propelling our launch to great success.<br/><br/>';
+        document.getElementById('testimonial-text-3').innerHTML = 'We needed a robustness digital strategy for our product launches, and Future delivered exactly what we were looking for. With regular consulting, they helped us optimize campaigns on Google and social media, and developed highly effective landing pages for lead generation. The result was a significant increase in conversion rates and a notable rise in qualified leads, propelling our launch to great success.<br/><br/>';
         document.getElementById('testimonial-company-1').textContent = 'CEO of TecnoMax Solutions';
         document.getElementById('testimonial-company-2').textContent = 'Marketing Director at BellaVita';
         document.getElementById('testimonial-company-3').textContent = 'CMO of StartUp Pro';
@@ -279,12 +279,12 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('plans').textContent = 'Planes';
         document.getElementById('hero-title').textContent = 'Impulsa tus resultados con un sitio web profesional bien posicionado';
         document.getElementById('hero-description').textContent = 'Creamos sitios web, landing pages y aplicaciones que cuentan historias y reflejan la personalidad única de tu marca, posicionando tu negocio como líder en su sector.';
-        document.getElementById('button-text').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Solicitar Cotización';
-        document.getElementById('button-text-2').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Solicitar Cotización';
-        document.getElementById('button-text-3').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Solicitar Cotización';
-        document.getElementById('button-text-4').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Solicitar Cotización';
-        document.getElementById('button-text-5').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Solicitar Cotización';
-        document.getElementById('button-text-6').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.png" alt="WhatsApp icon">Solicitar Cotización';
+        document.getElementById('button-text').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Solicitar Cotización';
+        document.getElementById('button-text-2').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Solicitar Cotización';
+        document.getElementById('button-text-3').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Solicitar Cotización';
+        document.getElementById('button-text-4').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Solicitar Cotización';
+        document.getElementById('button-text-5').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Solicitar Cotización';
+        document.getElementById('button-text-6').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Solicitar Cotización';
         document.getElementById('advantage-1').textContent = 'Visibilidad';
         document.getElementById('advantage-2').textContent = 'Personalidad';
         document.getElementById('advantage-3').textContent = 'Conexión';
@@ -311,7 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('service-5').textContent = 'Tiendas Virtuales';
         document.getElementById('service-6').textContent = 'Aplicaciones';
         document.getElementById('service-7').textContent = 'Branding';
-        document.getElementById('service-9').textContent = 'Tarjeta de Presentación Virtual';
+        document.getElementById('service-8').textContent = 'Tarjeta de Presentación Virtual';
         document.getElementById('service-1-description').textContent = 'Una página de aterrizaje bien diseñada es esencial para captar la atención de tu público objetivo y convertirlo en clientes. Ofrecemos páginas centradas en resultados, con un diseño optimizado y llamados a la acción que aumentan tus posibilidades de éxito en campañas de marketing digital.';
         document.getElementById('service-2-description').textContent = 'Muestra lo mejor de tu trabajo con un sitio web portafolio profesional. Creamos diseños modernos y funcionales que destacan tus proyectos de manera atractiva y organizada, valorando tu experiencia y ayudándote a cerrar nuevos negocios.';
         document.getElementById('service-3-description').textContent = 'Fortalece la presencia digital de tu empresa con un sitio web institucional que transmita credibilidad y confianza. Desarrollamos sitios que refuerzan tu marca, destacan tu historia y servicios, y te conectan con el público de forma clara y objetiva.';
@@ -319,7 +319,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('service-5-description').textContent = 'Maximiza tus ventas en línea con una tienda virtual robusta, fácil de navegar y segura. Desarrollamos y personalizamos e-commerce que ofrecen una experiencia de compra agradable para tus clientes, aumentando la tasa de conversión.';
         document.getElementById('service-6-description').textContent = 'Ten una solución a medida en la palma de la mano de tus clientes. Creamos aplicaciones funcionales e intuitivas que amplían la presencia de tu marca y facilitan la interacción con tu público, ya sea para ventas, servicios o compromiso.';
         document.getElementById('service-7-description').textContent = 'Tu marca comienza con un branding impactante. Desarrollamos logotipos, colores y elementos visuales que representan tu empresa de manera única, atrayendo atención y creando una conexión emocional con tus clientes.';
-        document.getElementById('service-9-description').textContent = 'Moderniza tu red de contactos con una tarjeta de presentación virtual personalizada. Se puede compartir digitalmente, facilitando la presentación de tu negocio y de tus servicios en cualquier lugar y en cualquier momento.';
+        document.getElementById('service-8-description').textContent = 'Moderniza tu red de contactos con una tarjeta de presentación virtual personalizada. Se puede compartir digitalmente, facilitando la presentación de tu negocio y de tus servicios en cualquier lugar y en cualquier momento.';
         document.getElementById('advantages-title').textContent = 'Un sitio web profesional traerá muchos beneficios a tu negocio';
         document.getElementById('advantage-title-1').textContent = 'Ingresos';
         document.getElementById('advantage-title-2').textContent = 'Visibilidad';
@@ -445,7 +445,7 @@ document.addEventListener('DOMContentLoaded', () => {
       form.target = 'formTarget'; // Envia o formulário para a nova aba/guia
       form.submit();
       phoneInput.value = '';
-      formImage.src = 'assets/check-icon-2.png';
+      formImage.src = 'assets/check-icon-2.webp';
     }
   });
 
@@ -466,10 +466,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if(inputValue.length > 11 && inputValue.length < 15){
-      formImage.src = 'assets/check-icon.png';
+      formImage.src = 'assets/check-icon.webp';
       formAnimation.classList.add('ready');
     }else{
-      formImage.src = 'assets/check-icon-2.png';
+      formImage.src = 'assets/check-icon-2.webp';
       formAnimation.classList.remove('ready');
     }
 
@@ -496,10 +496,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (answer.style.maxHeight) {
         answer.style.maxHeight = null;
-        icon.src = 'assets/faq-button.png';
+        icon.src = 'assets/faq-button.webp';
     } else {
         answer.style.maxHeight = answer.scrollHeight + "px";
-        icon.src = 'assets/faq-button-2.png';
+        icon.src = 'assets/faq-button-2.webp';
     }
 }
 
@@ -508,7 +508,7 @@ function hoverIn(element) {
     const icon = element.querySelector('.faq-icon');
     if (!element.nextElementSibling.style.maxHeight) {
         // Só troca a imagem se o FAQ não estiver aberto
-        icon.src = 'assets/faq-button-2.png'; // Coloca uma imagem diferente ao passar o mouse
+        icon.src = 'assets/faq-button-2.webp'; // Coloca uma imagem diferente ao passar o mouse
     }
 }
 
@@ -517,7 +517,7 @@ function hoverOut(element) {
     const icon = element.querySelector('.faq-icon');
     if (!element.nextElementSibling.style.maxHeight) {
         // Só troca a imagem de volta se o FAQ não estiver aberto
-        icon.src = 'assets/faq-button.png'; // Volta para a seta para baixo
+        icon.src = 'assets/faq-button.webp'; // Volta para a seta para baixo
     }
 }
 
@@ -541,16 +541,16 @@ window.onscroll = function() {
     // Verifica se o usuário está perto do topo
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       scrollButton.style.display = "block"; // Mostra o botão
-      scrollButton.innerHTML = '<img src="assets/faq-button-2.png" alt="Arrow">'; // Muda o ícone para seta para cima
+      scrollButton.innerHTML = '<img src="assets/faq-button-2.webp" alt="Arrow">'; // Muda o ícone para seta para cima
     } else {
-      scrollButton.innerHTML = '<img src="assets/faq-button.png" alt="Arrow">'; // Ícone para seta para baixo
+      scrollButton.innerHTML = '<img src="assets/faq-button.webp" alt="Arrow">'; // Ícone para seta para baixo
     }
   
     // Verifica se o usuário está na parte inferior da página
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 2) {
-      scrollButton.innerHTML = '<img src="assets/faq-button-2.png" alt="Arrow">'; // Muda para cima quando estiver no final da página
+      scrollButton.innerHTML = '<img src="assets/faq-button-2.webp" alt="Arrow">'; // Muda para cima quando estiver no final da página
     } else {
-      scrollButton.innerHTML = '<img src="assets/faq-button.png" alt="Arrow">'; // Muda para baixo quando não estiver no final
+      scrollButton.innerHTML = '<img src="assets/faq-button.webp" alt="Arrow">'; // Muda para baixo quando não estiver no final
     }
   }
   

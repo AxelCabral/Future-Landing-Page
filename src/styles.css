@@ -299,7 +299,7 @@ body.light-mode .theme-switch label {
   font-size: 24px; /* Aumenta o tamanho do ícone */
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s ease-in-out;
-  background-image: url('assets/whatsapp-logo.png');
+  background-image: url('assets/whatsapp-logo.webp');
   background-size: cover;
   background-position: center;
 }
