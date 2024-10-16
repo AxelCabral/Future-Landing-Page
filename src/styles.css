@@ -2019,6 +2019,10 @@ footer h3 {
   .contact-form img {
     width: 20px;
   }
+
+  .copy-text a{
+    color:#0c82ff !important;
+  }
 }
 
 .button-whatsapp-icon {
