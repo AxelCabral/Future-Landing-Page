@@ -6,15 +6,14 @@
 
     <title>Future Digital</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link nonce="selfstyle" rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
     <link rel="icon" sizes="48x48" href="assets/logo-minimal.webp" type="image/webp">
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 
     <meta http-equiv="Content-Security-Policy" 
     content="default-src 'self'; 
              script-src 'self' 'unsafe-inline'; 
-             style-src 'self' 'unsafe-inline'; 
+             style-src 'self' 'nonce-selfstyle'; 
              img-src 'self' data:; 
              font-src 'self'; 
              object-src 'none';">
@@ -499,8 +498,8 @@
               <input id="contact-text" type="text" name="telefone" placeholder="Insira seu número">
               <button type="submit" class="contact-button-form" id="contact-form"><img src="assets/check-icon-2.webp" id="confirm-image" alt="send number button"></button>
             </form>
-            <small id="error-message" style="color: red; display: none;">Número inválido! Insira pelo menos 12 dígitos.</small>
-            <small id="error-message-2" style="color: red; display: none;">Número inválido! Insira um número válido.</small>
+            <small id="error-message" class="oculto" style="color: red;">Número inválido! Insira pelo menos 12 dígitos.</small>
+            <small id="error-message-2" class="oculto" style="color: red;">Número inválido! Insira um número válido.</small>
           </div>
         </div>
       </div>
