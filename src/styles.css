@@ -603,12 +603,12 @@ body.light-mode .advantages-presentation{
   width: max-content;
 }
 
-.advantages-presentation-list h3 {
+.advantages-presentation-list p {
   white-space: nowrap; /* Garante que o texto não quebre em múltiplas linhas */
   font-size: 22px;
   padding: 0;
   margin: 10px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 /* Duplicar os itens visualmente para criar efeito contínuo */
