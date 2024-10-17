@@ -853,6 +853,7 @@ body.light-mode .advantages {
 }
 
 .advantage img {
+  width: 100%;
   max-width: 100%;
   height: auto;
   border-radius: 10px; /* Aplica bordas arredondadas */
@@ -937,6 +938,7 @@ body.light-mode .advantage button:hover{
 
   .advantage img {
     max-width: 80%; /* Reduz o tamanho da imagem em telas menores */
+    width: 80%;
     margin: 0 auto;
   }
 
@@ -1244,6 +1246,7 @@ body.light-mode .solutions button:hover{
 
   .landings-list img {
     max-width: 150px; /* Reduz o tamanho das imagens em tablets */
+    width: 150px;
   }
 
   .solutions button {
@@ -1267,6 +1270,7 @@ body.light-mode .solutions button:hover{
 
   .landings-list img {
     max-width: 120px; /* Reduz o tamanho das imagens em smartphones */
+    width: 120px;
   }
 
   .landings-list {
