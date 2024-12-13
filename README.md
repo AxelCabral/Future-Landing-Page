@@ -1,2 +1,2 @@
 # Future-Landing-Page
- Lading Page for Future Solutions
+ Lading Page for Future Digital

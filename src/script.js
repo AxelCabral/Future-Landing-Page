@@ -50,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('button-text-3').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Pedir orçamento';
         document.getElementById('button-text-4').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Pedir orçamento';
         document.getElementById('button-text-5').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Pedir orçamento';
-        document.getElementById('button-text-6').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Pedir orçamento';
         document.getElementById('advantage-1').textContent = 'Visibilidade';
         document.getElementById('advantage-2').textContent = 'Personalidade';
         document.getElementById('advantage-3').textContent = 'Conexão';
@@ -70,22 +69,18 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('advantage-17').textContent = 'Resultados';
         document.getElementById('advantage-18').textContent = 'Confiança';
         document.getElementById('services-title').textContent = 'Soluções inovadoras e personalizadas para o seu negócio!';
-        document.getElementById('service-1').textContent = 'Landing Pages';
-        document.getElementById('service-2').textContent = 'Site Portfólio';
-        document.getElementById('service-3').textContent = 'Site Institucional';
-        document.getElementById('service-4').textContent = 'Site de Captura de Lead';
-        document.getElementById('service-5').textContent = 'Lojas Virtuais';
-        document.getElementById('service-6').textContent = 'Aplicativos';
-        document.getElementById('service-7').textContent = 'Branding';
-        document.getElementById('service-8').textContent = 'Cartão Digital';
-        document.getElementById('service-1-description').textContent = 'Uma Landing Page bem projetada é essencial para captar a atenção do seu público-alvo e convertê-lo em clientes. Oferecemos páginas focadas em resultados, com design otimizado e chamadas para ação que aumentam suas chances de sucesso em campanhas de marketing.';
-        document.getElementById('service-2-description').textContent = 'Mostre o melhor do seu trabalho com um site portfólio profissional. Criamos layouts modernos e funcionais que destacam seus projetos de maneira atraente e organizada, valorizando sua expertise e ajudando você a fechar novos negócios.';
-        document.getElementById('service-3-description').textContent = 'Fortaleça a presença digital da sua empresa com um site institucional que transmita credibilidade e confiança. Desenvolvemos sites que reforçam sua marca, destacam sua história e serviços, e conectam você ao público de forma clara e objetiva.';
-        document.getElementById('service-4-description').textContent = 'Aumente sua base de clientes com sites especializados em captura de leads. Criamos páginas estratégicas com formulários e conteúdos atraentes que estimulam seus visitantes a deixarem seus dados, gerando novas oportunidades de negócios.';
-        document.getElementById('service-5-description').textContent = 'Maximize suas vendas online com uma loja virtual robusta, fácil de navegar e segura. Nós desenvolvemos e customizamos e-commerces que oferecem uma experiência de compra agradável para seus clientes, aumentando a taxa de conversão.';
-        document.getElementById('service-6-description').textContent = 'Tenha uma solução sob medida na palma da mão dos seus clientes. Criamos aplicativos funcionais e intuitivos que ampliam a presença da sua marca e facilitam a interação com seu público, seja para vendas, serviços ou engajamento.';
-        document.getElementById('service-7-description').textContent = 'Sua marca começa com um branding marcante. Desenvolvemos logotipos, cores e elementos visuais que representam sua empresa de forma única, atraindo atenção e criando uma conexão emocional com seus clientes.';
-        document.getElementById('service-8-description').textContent = 'Modernize sua rede de contatos com um cartão digital personalizado. Ele pode ser compartilhado digitalmente, facilitando a apresentação do seu negócio e de seus serviços em qualquer lugar, a qualquer momento.';
+        document.getElementById('service-1').textContent = 'Landing Page';
+        document.getElementById('service-2').textContent = 'E-commerce';
+        document.getElementById('service-3').textContent = 'App';
+        document.getElementById('service-4').textContent = 'Sistema ERP';
+        document.getElementById('service-5').textContent = 'Tráfego pago';
+        document.getElementById('service-6').textContent = 'Branding';
+        document.getElementById('service-1-description').textContent = 'Uma Página web bem projetada é essencial para captar a atenção do seu público-alvo e convertê-los em clientes. Oferecemos páginas focadas em resultados, com design otimizado e chamadas para ação que aumentam suas chances de sucesso, tenha uma presença digital forte com um website novinho produzido por nós!';
+        document.getElementById('service-2-description').textContent = 'Transforme sua ideia em uma loja virtual de sucesso! Criamos e-commerces completos, intuitivos e otimizados para proporcionar uma experiência de compra incrível para seus clientes. Com design responsivo, integrações seguras e foco em resultados, aumentamos suas vendas e potencializamos sua presença no mercado digital.';
+        document.getElementById('service-3-description').textContent = 'Leve sua marca para o bolso do seu público! Desenvolvemos aplicativos personalizados que unem design moderno, desempenho impecável e funcionalidades sob medida para engajar seus usuários e facilitar o alcance de seus objetivos. Seja em Android ou iOS, entregamos soluções que encantam e fidelizam.';
+        document.getElementById('service-4-description').textContent = ' Otimize seus processos e tome decisões mais inteligentes com um ERP feito para você. Oferecemos sistemas de gestão empresarial que simplificam o controle de estoque, vendas, finanças e muito mais, tudo em um só lugar. Ganhe eficiência e controle total sobre o seu negócio, e o melhor, de forma totalmente personalizada.';
+        document.getElementById('service-5-description').textContent = ' Acelere seus resultados com campanhas de tráfego pago estrategicamente planejadas! Gerenciamos anúncios no Google, Facebook, Instagram e outras plataformas, conectando sua marca ao público certo. Aumente sua visibilidade, alcance e conversões de forma mensurável e consistente.';
+        document.getElementById('service-6-description').textContent = 'Destaque-se no mercado com uma identidade visual única e marcante! Criamos logos, paletas de cores e materiais visuais que traduzem a essência da sua marca e comunicam seus valores de forma profissional e criativa. Conquiste a confiança do público com uma imagem que impressiona e conecta.';
         document.getElementById('advantages-title').textContent = 'Um site profissional trará inúmeras vantagens para o seu negócio';
         document.getElementById('advantage-title-1').textContent = 'Faturamento';
         document.getElementById('advantage-title-2').textContent = 'Visibilidade';
@@ -109,13 +104,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('testimonial-company-1').textContent = 'CEO da TecnoMax Solutions';
         document.getElementById('testimonial-company-2').textContent = 'Diretora de Marketing da BellaVita';
         document.getElementById('testimonial-company-3').textContent = 'CMO da StartUp Pro';
-        document.getElementById('purpose-text').innerHTML = 'A future não é apenas uma agência; é um laboratório de inovação, onde cada projeto é uma aposta na criação de um mundo melhor. Com uma equipe talentosa e apaixonada, a Future trabalha para transformar ideias em avanços tangíveis, seja na tecnologia, na sustentabilidade ou nas artes.<br/><br/>Na Future, o futuro é agora. É um convite para todos aqueles que acreditam que podemos criar algo extraordinário juntos. Cada cliente, parceiro e colaborador é um co-criador desse futuro, construindo um legado de impacto positivo que transcende gerações.';
-        document.getElementById('purpose-affirmation-1-b').textContent = 'Comunicar';
-        document.getElementById('purpose-affirmation-2-b').textContent = 'Conectar';
-        document.getElementById('purpose-affirmation-3-b').textContent = 'Transformar';
-        document.getElementById('purpose-affirmation-1-a').textContent = 'ideias.';
-        document.getElementById('purpose-affirmation-2-a').textContent = 'marcas.';
-        document.getElementById('purpose-affirmation-3-a').textContent = 'ideias.';
         document.getElementById('faq-title').textContent = 'Perguntas frequentes';
         document.getElementById('faq-question-1').textContent = 'Qual é o prazo de entrega do site?';
         document.getElementById('faq-question-2').textContent = 'Quais são as formas de pagamento?';
@@ -167,7 +155,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('button-text-3').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Request a Quote';
         document.getElementById('button-text-4').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Request a Quote';
         document.getElementById('button-text-5').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Request a Quote';
-        document.getElementById('button-text-6').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Request a Quote';
         document.getElementById('advantage-1').textContent = 'Visibility';
         document.getElementById('advantage-2').textContent = 'Personality';
         document.getElementById('advantage-3').textContent = 'Connection';
@@ -187,22 +174,18 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('advantage-17').textContent = 'Results';
         document.getElementById('advantage-18').textContent = 'Trustworthiness';
         document.getElementById('services-title').textContent = 'Innovative and customized solutions for your business!';
-        document.getElementById('service-1').textContent = 'Landing Pages';
-        document.getElementById('service-2').textContent = 'Portfolio Website';
-        document.getElementById('service-3').textContent = 'Corporate Website';
-        document.getElementById('service-4').textContent = 'Lead Capture Website';
-        document.getElementById('service-5').textContent = 'E-commerce';
-        document.getElementById('service-6').textContent = 'Apps';
-        document.getElementById('service-7').textContent = 'Branding';
-        document.getElementById('service-8').textContent = 'Digital Business Card';
-        document.getElementById('service-1-description').textContent = 'A well-designed landing page is essential to capture your target audience\'s attention and convert them into customers. We offer result-focused pages with optimized design and calls to action that increase your chances of success in digital marketing campaigns.';
-        document.getElementById('service-2-description').textContent = 'Showcase the best of your work with a professional portfolio website. We create modern and functional layouts that highlight your projects in an attractive and organized manner, showcasing your expertise and helping you close new deals.';
-        document.getElementById('service-3-description').textContent = 'Strengthen your company\'s digital presence with a corporate website that conveys credibility and trust. We develop sites that reinforce your brand, highlight your history and services, and connect you to your audience clearly and objectively.';
-        document.getElementById('service-4-description').textContent = 'Grow your customer base with specialized lead capture websites. We create strategic pages with forms and engaging content that encourage your visitors to leave their information, generating new business opportunities.';
-        document.getElementById('service-5-description').textContent = 'Maximize your online sales with a robustness, easy-to-navigate, and secure virtual store. We develop and customize e-commerce platforms that provide a pleasant shopping experience for your customers, increasing the conversion rate.';
-        document.getElementById('service-6-description').textContent = 'Have a tailored solution at your customers\' fingertips. We create functional and intuitive apps that expand your brand\'s presence and facilitate interaction with your audience, whether for sales, services, or engagement.';
-        document.getElementById('service-7-description').textContent = 'Your brand starts with a striking visual identity. We develop logos, colors, and visual elements that uniquely represent your company, attracting attention and creating an emotional connection with your customers.';
-        document.getElementById('service-8-description').textContent = 'Modernize your contact network with a personalized digital business card. It can be shared digitally, making it easy to present your business and services anywhere, anytime.';
+        document.getElementById('service-1').textContent = 'Landing Page';
+        document.getElementById('service-2').textContent = 'E-commerce';
+        document.getElementById('service-3').textContent = 'App';
+        document.getElementById('service-4').textContent = 'ERP System';
+        document.getElementById('service-5').textContent = 'Paid Traffic';
+        document.getElementById('service-6').textContent = 'Branding';
+        document.getElementById('service-1-description').textContent = 'A well-designed webpage is essential to capture the attention of your target audience and convert them into customers. We offer result-driven pages with optimized design and calls-to-action that boost your chances of success. Build a strong digital presence with a brand-new website developed by us!';
+        document.getElementById('service-2-description').textContent = 'Turn your idea into a successful online store! We create complete, intuitive, and optimized e-commerce platforms to provide an amazing shopping experience for your customers. With responsive design, secure integrations, and a focus on results, we enhance your sales and strengthen your digital presence.';
+        document.getElementById('service-3-description').textContent = 'Bring your brand closer to your audience! We develop custom applications that combine modern design, flawless performance, and tailored features to engage users and help you achieve your goals. Whether for Android or iOS, we deliver solutions that impress and retain customers.';
+        document.getElementById('service-4-description').textContent = 'Optimize your processes and make smarter decisions with an ERP designed just for you. We offer business management systems that simplify inventory, sales, finance control, and much more, all in one place. Gain efficiency and complete control over your business with a fully customized system.';
+        document.getElementById('service-5-description').textContent = 'Boost your results with strategically planned paid traffic campaigns! We manage ads on Google, Facebook, Instagram, and other platforms, connecting your brand with the right audience. Increase your visibility, reach, and conversions consistently and measurably.';
+        document.getElementById('service-6-description').textContent = 'Stand out in the market with a unique and impactful visual identity! We create logos, color palettes, and visual materials that reflect your brand’s essence and professionally and creatively communicate its values. Earn your audience’s trust with an image that impresses and connects.';        
         document.getElementById('advantages-title').textContent = 'A professional website will bring many benefits for your business';
         document.getElementById('advantage-title-1').textContent = 'Revenue';
         document.getElementById('advantage-title-2').textContent = 'Visibility';
@@ -226,13 +209,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('testimonial-company-1').textContent = 'CEO of TecnoMax Solutions';
         document.getElementById('testimonial-company-2').textContent = 'Marketing Director at BellaVita';
         document.getElementById('testimonial-company-3').textContent = 'CMO of StartUp Pro';
-        document.getElementById('purpose-text').innerHTML = 'Future is not just an agency; it\'s an innovation lab where each project is a bet on creating a better world. With a talented and passionate team, Future works to turn ideas into tangible advancements, whether in technology, sustainability, or the arts.<br/><br/>At Future, the future is now. It\'s an invitation for everyone who believes we can create something extraordinary together. Every client, partner, and collaborator is a co-creator of this future, building a legacy of positive impact that transcends generations.';
-        document.getElementById('purpose-affirmation-1-b').textContent = 'Communicate';
-        document.getElementById('purpose-affirmation-2-b').textContent = 'Connect';
-        document.getElementById('purpose-affirmation-3-b').textContent = 'Transform';
-        document.getElementById('purpose-affirmation-1-a').textContent = 'ideas.';
-        document.getElementById('purpose-affirmation-2-a').textContent = 'brands.';
-        document.getElementById('purpose-affirmation-3-a').textContent = 'ideas.';
         document.getElementById('faq-title').textContent = 'Frequently asked questions';
         document.getElementById('faq-question-1').textContent = 'What is the website delivery time?';
         document.getElementById('faq-question-2').textContent = 'What are the payment methods?';
@@ -284,7 +260,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('button-text-3').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Solicitar Cotización';
         document.getElementById('button-text-4').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Solicitar Cotización';
         document.getElementById('button-text-5').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Solicitar Cotización';
-        document.getElementById('button-text-6').innerHTML = '<img class="button-whatsapp-icon" src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon">Solicitar Cotización';
         document.getElementById('advantage-1').textContent = 'Visibilidad';
         document.getElementById('advantage-2').textContent = 'Personalidad';
         document.getElementById('advantage-3').textContent = 'Conexión';
@@ -304,22 +279,18 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('advantage-17').textContent = 'Resultados';
         document.getElementById('advantage-18').textContent = 'Confianza';
         document.getElementById('services-title').textContent = '¡Soluciones innovadoras y personalizadas para tu negocio!';
-        document.getElementById('service-1').textContent = 'Landing Pages';
-        document.getElementById('service-2').textContent = 'Sitio Web de Portafolio';
-        document.getElementById('service-3').textContent = 'Sitio Web Institucional';
-        document.getElementById('service-4').textContent = 'Sitio Web de Captura de Leads';
-        document.getElementById('service-5').textContent = 'Tiendas Virtuales';
-        document.getElementById('service-6').textContent = 'Aplicaciones';
-        document.getElementById('service-7').textContent = 'Branding';
-        document.getElementById('service-8').textContent = 'Tarjeta de Presentación Virtual';
-        document.getElementById('service-1-description').textContent = 'Una página de aterrizaje bien diseñada es esencial para captar la atención de tu público objetivo y convertirlo en clientes. Ofrecemos páginas centradas en resultados, con un diseño optimizado y llamados a la acción que aumentan tus posibilidades de éxito en campañas de marketing digital.';
-        document.getElementById('service-2-description').textContent = 'Muestra lo mejor de tu trabajo con un sitio web portafolio profesional. Creamos diseños modernos y funcionales que destacan tus proyectos de manera atractiva y organizada, valorando tu experiencia y ayudándote a cerrar nuevos negocios.';
-        document.getElementById('service-3-description').textContent = 'Fortalece la presencia digital de tu empresa con un sitio web institucional que transmita credibilidad y confianza. Desarrollamos sitios que refuerzan tu marca, destacan tu historia y servicios, y te conectan con el público de forma clara y objetiva.';
-        document.getElementById('service-4-description').textContent = 'Aumenta tu base de clientes con sitios especializados en captura de leads. Creamos páginas estratégicas con formularios y contenido atractivo que estimula a tus visitantes a dejar sus datos, generando nuevas oportunidades de negocio.';
-        document.getElementById('service-5-description').textContent = 'Maximiza tus ventas en línea con una tienda virtual robusta, fácil de navegar y segura. Desarrollamos y personalizamos e-commerce que ofrecen una experiencia de compra agradable para tus clientes, aumentando la tasa de conversión.';
-        document.getElementById('service-6-description').textContent = 'Ten una solución a medida en la palma de la mano de tus clientes. Creamos aplicaciones funcionales e intuitivas que amplían la presencia de tu marca y facilitan la interacción con tu público, ya sea para ventas, servicios o compromiso.';
-        document.getElementById('service-7-description').textContent = 'Tu marca comienza con un branding impactante. Desarrollamos logotipos, colores y elementos visuales que representan tu empresa de manera única, atrayendo atención y creando una conexión emocional con tus clientes.';
-        document.getElementById('service-8-description').textContent = 'Moderniza tu red de contactos con una tarjeta de presentación virtual personalizada. Se puede compartir digitalmente, facilitando la presentación de tu negocio y de tus servicios en cualquier lugar y en cualquier momento.';
+        document.getElementById('service-1').textContent = 'Página de destino';
+        document.getElementById('service-2').textContent = 'Comercio electrónico';
+        document.getElementById('service-3').textContent = 'Aplicación';
+        document.getElementById('service-4').textContent = 'Sistema ERP';
+        document.getElementById('service-5').textContent = 'Tráfico Pagado';
+        document.getElementById('service-6').textContent = 'Identidad de marca';
+        document.getElementById('service-1-description').textContent = 'Una página web bien diseñada es esencial para captar la atención de tu público objetivo y convertirlos en clientes. Ofrecemos páginas enfocadas en resultados, con diseño optimizado y llamados a la acción que aumentan tus posibilidades de éxito. ¡Construye una sólida presencia digital con un sitio web completamente nuevo desarrollado por nosotros!';
+        document.getElementById('service-2-description').textContent = '¡Convierte tu idea en una tienda online exitosa! Creamos plataformas de comercio electrónico completas, intuitivas y optimizadas para brindar una experiencia de compra increíble a tus clientes. Con diseño responsivo, integraciones seguras y enfoque en resultados, aumentamos tus ventas y fortalecemos tu presencia digital.';
+        document.getElementById('service-3-description').textContent = '¡Lleva tu marca más cerca de tu público! Desarrollamos aplicaciones personalizadas que combinan diseño moderno, rendimiento impecable y características hechas a medida para involucrar a los usuarios y ayudarte a alcanzar tus objetivos. Ya sea para Android o iOS, ofrecemos soluciones que impresionan y fidelizan a los clientes.';
+        document.getElementById('service-4-description').textContent = 'Optimiza tus procesos y toma decisiones más inteligentes con un sistema ERP diseñado especialmente para ti. Ofrecemos sistemas de gestión empresarial que simplifican el control de inventario, ventas, finanzas y mucho más, todo en un solo lugar. Gana eficiencia y control total sobre tu negocio con un sistema completamente personalizado.';
+        document.getElementById('service-5-description').textContent = '¡Acelera tus resultados con campañas de tráfico pagado estratégicamente planificadas! Administramos anuncios en Google, Facebook, Instagram y otras plataformas, conectando tu marca con el público adecuado. Incrementa tu visibilidad, alcance y conversiones de manera consistente y medible.';
+        document.getElementById('service-6-description').textContent = '¡Destaca en el mercado con una identidad visual única e impactante! Creamos logotipos, paletas de colores y materiales visuales que reflejan la esencia de tu marca y comunican sus valores de forma profesional y creativa. Gana la confianza del público con una imagen que impresiona y conecta.';        
         document.getElementById('advantages-title').textContent = 'Un sitio web profesional traerá muchos beneficios a tu negocio';
         document.getElementById('advantage-title-1').textContent = 'Ingresos';
         document.getElementById('advantage-title-2').textContent = 'Visibilidad';
@@ -343,13 +314,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('testimonial-company-1').textContent = 'CEO de TecnoMax Solutions';
         document.getElementById('testimonial-company-2').textContent = 'Director de Marketing en BellaVita';
         document.getElementById('testimonial-company-3').textContent = 'CMO de StartUp Pro';
-        document.getElementById('purpose-text').innerHTML = 'Future no es solo una agencia; es un laboratorio de innovación donde cada proyecto es una apuesta por crear un mundo mejor. Con un equipo talentoso y apasionado, Future trabaja para convertir ideas en avances tangibles, ya sea en tecnología, sostenibilidad o las artes.<br/><br/>En Future, el futuro es ahora. Es una invitación para todos los que creen que podemos crear algo extraordinario juntos. Cada cliente, socio y colaborador es un co-creador de este futuro, construyendo un legado de impacto positivo que trasciende generaciones.';
-        document.getElementById('purpose-affirmation-1-b').textContent = 'Comunicar';
-        document.getElementById('purpose-affirmation-2-b').textContent = 'Conectar';
-        document.getElementById('purpose-affirmation-3-b').textContent = 'Transformar';
-        document.getElementById('purpose-affirmation-1-a').textContent = 'ideas.';
-        document.getElementById('purpose-affirmation-2-a').textContent = 'marcas.';
-        document.getElementById('purpose-affirmation-3-a').textContent = 'negocios.';
         document.getElementById('faq-title').textContent = 'Preguntas frecuentes';
         document.getElementById('faq-question-1').textContent = '¿Cuál es el tiempo de entrega del sitio web?';
         document.getElementById('faq-question-2').textContent = '¿Cuáles son los métodos de pago?';
@@ -585,6 +549,65 @@ window.onscroll = function() {
         rocketVideo.style.display = 'block';
     }
 }
+
+let currentIndex = 2;
+
+function moveCarousel(direction) {
+  let newNumber = 0;
+  let auxiliarNumber = 0;
+
+  if(direction > 0){
+    if(currentIndex+direction > 5){
+      currentIndex = 0;
+    }else{
+      currentIndex = currentIndex+direction;
+    }
+
+    if(currentIndex<3){
+      newNumber = currentIndex+3;
+    }else{
+      newNumber = currentIndex-3;
+    }
+
+    alert(newNumber+"-"+currentIndex);
+  
+    const lastElement = document.getElementById('card-'+newNumber);
+    const newElement = document.getElementById('card-'+currentIndex);
+    newElement.style.display = 'inherit';
+    lastElement.style.display = 'none';
+  }else{
+    newNumber = currentIndex;
+
+    if(currentIndex-1 < 0){
+      currentIndex = 5;
+    }else{
+      currentIndex = currentIndex-1;
+    }
+
+    if(currentIndex<3 || newNumber == 0){
+      if(newNumber == 3){
+        auxiliarNumber = 0;
+      }else{
+        auxiliarNumber = newNumber+3;
+      }
+    }else{
+      auxiliarNumber = newNumber-3;
+    }
+
+    alert(newNumber+"-"+currentIndex+"-"+auxiliarNumber);
+
+    const lastElement = document.getElementById('card-'+newNumber);
+    const newElement = document.getElementById('card-'+auxiliarNumber);
+    newElement.style.display = 'inherit';
+    lastElement.style.display = 'none';
+  }
+
+  
+
+  //const lastElement = document.getElementById('card-'+currentIndex-2);
+  //const newElement = document.getElementById('card-'+currentIndex+2);
+}
+
 
 // Verificar o tamanho da tela quando a página for carregada
 window.addEventListener('load', toggleMedia);

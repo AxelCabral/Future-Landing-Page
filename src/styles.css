@@ -353,7 +353,7 @@ body.light-mode .theme-switch label {
 }
 
 body.light-mode .hero{
-  background-image: radial-gradient(#aee5ff, #5bcaff 90%)
+  background-image: radial-gradient(#bdd3ff, #d9dbff 90%);
 }
 
 .hero-first-section{
@@ -539,7 +539,7 @@ body.light-mode .hero button:hover{
 }
 
 .hero button:hover {
-  background-color: #0c4ad6;
+  background-color: #2f93ff;
 }
 
 .hero-first-section img {
@@ -588,7 +588,6 @@ body.light-mode .services, body.light-mode .testimonials{
 body.light-mode .advantages-presentation{
   background-color: #d2d2d2;
 }
-
 
 .advantages-presentation-wrapper {
   display: flex;
@@ -652,16 +651,6 @@ body.light-mode .advantages-presentation{
   background-color: #141414;
 }
 
-.services p{
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-size: 18px;
-}
-
-.service-item-back p {
-  font-size: 13px !important;
-}
-
 .service-list {
   display: flex;
   flex-wrap: wrap;
@@ -669,61 +658,133 @@ body.light-mode .advantages-presentation{
   gap: 10px;
   max-width: 100%;
   margin-bottom: 40px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 10%; /* Ajustado para ficar responsivo */
+  margin-right: 10%; /* Ajustado para ficar responsivo */
 }
 
 .service-item {
-  flex-basis: calc(33.333% - 20px);
-  max-width: 350px;  /* Largura fixa para os cards */
-  height: 200px; /* Altura fixa para os cards */
-  perspective: 1000px; /* Necessário para criar o efeito 3D */
-}
-
-.service-item-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.service-item:hover .service-item-inner {
-  transform: rotateY(180deg);
-}
-
-.service-item-back {
-  background-color: #0c4ad6 !important;
-}
-
-/* Face Frontal */
-.service-item-front, .service-item-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 8px;
-  padding: 20px;
-  box-sizing: border-box;
+  flex-basis: calc(33.333% - 30px);
+  max-width: 300px;
+  height: 400px;
+  perspective: 1000px;
+  background-color: #1c1c1c;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-.service-item-front {
-  background-color: #2c2c2c;
-  color: #fff;
-}
-
-.service-item-front p{
-  font-family: 'Montserrat', sans-serif !important;
-  font-weight: 400;
+  padding: 40px 20px;
+  border-bottom: 4px solid #0b55f9;
+  transition: transform 0.3s ease; /* Suavidade da animação */
 }
 
-.service-item-back {
-  background-color: #1f1f1f;
-  color: #fff;
-  transform: rotateY(180deg);
+/* Estilos para as setas */
+.carousel-btn {
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 10;
+  height: 50px;
+  border-radius: 25px;
+  margin-top: 20%;
+}
+
+#card-3, #card-4, #card-5 {
+  display: none;
+}
+
+/* Setas à esquerda */
+.prev-btn {
+  left: 10px; /* Posiciona à esquerda do carrossel */
+}
+
+/* Setas à direita */
+.next-btn {
+  right: 10px; /* Posiciona à direita do carrossel */
+}
+
+body.light-mode .service-item {
+  background-color: #bdd3ff;
+}
+
+.service-item:hover {
+  transform: translateY(-3px) scale(1.01);
+  cursor: pointer;
+}
+
+.service-item-title {
+  font-weight: bold;
+  font-size: 22px;
+  margin: 0s;
+}
+
+.service-item p {
+  margin: 5px 0px 15px 0px;
+}
+
+body.light-mode .service-item-title {
+  color: #0b55f9;
+}
+
+@media (max-width: 1450px) {
+  .service-item {
+    flex-basis: calc(33.333% - 30px);
+    max-width: 250px;
+  }
+  .service-list {
+    margin-left: 0px; /* Ajustado para ficar responsivo */
+    margin-right: 0px; /* Ajustado para ficar responsivo */
+  }
+}
+
+@media (max-width: 1024px) {
+  .service-item {
+    flex-basis: calc(50% - 20px); /* Ajusta para dois itens por linha */
+    max-width: 100%;
+  }
+
+  #card-0, #card-1, #card-2, #card-3, #card-4, #card-5 {
+    display: inherit;
+  }
+
+  .carousel-btn{
+    display: none;
+  }
+}
+
+/* Para dispositivos móveis */
+@media (max-width: 800px) {
+  .service-item {
+    flex-basis: 70%; /* Um item por linha */
+    max-width: 100%;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .service-list {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .service-list {
+    gap: 10px;
+  }
+
+  .service-item {
+    flex-basis: 100%;
+    padding: 20px 10px; /* Reduz o padding em telas muito pequenas */
+    height: auto; /* Permite que o tamanho do card seja ajustado ao conteúdo */
+  }
+
+  .service-item-title {
+    font-size: 18px; /* Reduz o tamanho do título */
+  }
 }
 
 .service-item-icon {
@@ -744,111 +805,29 @@ body.light-mode .advantages-presentation{
   border-radius: 5px;
 }
 
-body.light-mode .service-item-front {
-  background-color: #d2d2d2;
-  color: #000;
-}
-
-/* Face Traseira (mostra a descrição) */
-.service-item-back {
-  background-color: #1f1f1f;
-  color: #fff;
-  transform: rotateY(180deg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  text-align: center;
-}
-
-.service-item-back p {
-  font-size: 16px;
-}
-
-/* Efeito de hover para mudar a cor ao passar o mouse */
-.service-item:hover .service-item-front {
-  background-color: #1f1f1f;
-}
-
-body.light-mode .service-item:hover .service-item-front {
-  background-color: #b8b8b8;
-}
-
-
-
-@media (max-width: 1310px) {
-  .services h2{
-    font-size: 20px;
-  }
-
-  .service-list {
-    margin: auto;
-  }
-
-  .service-item-back p{
-    font-size: 12px !important;
-  }
-}
-
-@media (max-width: 800px) {
-  .service-item {
-    flex: 1 1 calc(50% - 20px); /* Dois itens por linha em telas menores */
-    max-width: calc(50% - 20px);
-    align-items: center;
-    margin: auto;
-    padding: 10px 10px 10px 10px;
-  }
-
-  .service-item-back p{
-    font-size: 11px !important;
-  }
-
-  .service-list {
-    gap: 0px;
-  }
-}
-
-@media (max-width: 480px) {
-  .service-item {
-    flex: 1 1 100%; /* Um item por linha em telas muito pequenas */
-    max-width: 100%;
-    align-items: center;
-    margin: auto;
-    padding: 10px 10px 10px 10px;
-  }
-
-  .service-item-back p{
-    font-size: 12px !important;
-  }
-}
-
 /* Advantages Section */
 
 .advantages {
   display: flex;
   flex-direction: row;
-  align-items: unset;
   padding: 30px;
   padding-bottom: 70px;
-  background-image: radial-gradient(#0c4ad6, #101010 90%);
-  background-size: auto 1000px; /* Define o tamanho do gradiente */
-  background-position: center center; /* Centraliza o gradiente */
-  background-repeat: no-repeat; /* Evita que o gradiente se repita */
+  background-color: #0c4ad6;
   text-align: center;
   width: auto;
   margin: 0 auto; /* Centraliza o conteúdo */
 }
 
 body.light-mode .advantages {
-  background-image: radial-gradient(#aee5ff, #5bcaff 90%)
+  background-color: #bdd3ff;
 }
 
 .advantage {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  flex-basis: 26%; /* Define o tamanho da div da imagem */
-  text-align: start;
+  align-items: center;
+  flex-basis: 26%;
+  /* text-align: start; */
   padding-left: 110px;
   margin-right: 110px;
 }
@@ -867,6 +846,7 @@ body.light-mode .advantages {
   line-height: normal;
   margin-top: 5px;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .advantage button {
@@ -898,15 +878,15 @@ body.light-mode .advantage button:hover{
 }
 
 .advantage button:hover {
-  background-color: #0c4ad6;
+  background-color: #2f93ff;
 }
 
 .advantage-details {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   text-align: start;
-  flex-basis: 65%;
-  padding-top: 90px;
+  flex-basis: 85%;
+  padding-top: 40px;
 }
 
 .detail-item h4 {
@@ -1014,7 +994,7 @@ body.light-mode .second-info{
   align-items: start;
   flex-basis: 50%; /* Define o tamanho da div da imagem */
   text-align: start;
-  padding-top: 100px
+  margin: 30px 0px;
 }
 
 .second-info-first button {
@@ -1054,7 +1034,7 @@ body.light-mode .second-info-first button:hover{
 }
 
 .second-info-first button:hover {
-  background-color: #00367c;
+  background-color: #2f93ff;;
 }
 
 .responsive-button button{
@@ -1154,8 +1134,7 @@ body.light-mode .second-info-first button:hover{
   justify-content: space-between; /* Distribui o espaço adequadamente */
   align-items: center;
   padding: 100px;
-  padding-bottom: 70px;
-  background-image: radial-gradient(#0c4ad6, #101010 90%);
+  background-color: #0c4ad6;
   background-size: auto 1000px; /* Define o tamanho do gradiente */
   background-position: center center; /* Centraliza o gradiente */
   background-repeat: no-repeat; /* Evita que o gradiente se repita */
@@ -1165,7 +1144,7 @@ body.light-mode .second-info-first button:hover{
 }
 
 body.light-mode .solutions {
-  background-image: radial-gradient(#aee5ff, #5bcaff 90%)
+  background-color: #bdd3ff;
 }
 
 .solutions h2{
@@ -1219,7 +1198,7 @@ body.light-mode .solutions {
 }
 
 .solutions button:hover {
-  background-color: #0c4ad6;
+  background-color: #2f93ff;
 }
 
 body.light-mode .solutions button{
@@ -1472,187 +1451,11 @@ input[type="radio"] {
   
 }
 
-/* Purpose Section */
-.purpose {
-  display: flex;
-  flex-direction: row;
-  width: 100%; /* Garante que a seção ocupe 100% da largura da janela */
-}
-
-.second-purpose-section {
-  flex-basis: 50%;
-  box-sizing: border-box;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  flex-direction: column;
-}
-
-.second-purpose-section img {
-  width: 100%;  /* A imagem ocupará 100% da largura do contêiner */
-  height: 101%; /* A imagem ocupará 100% da altura do contêiner */
-  object-fit: cover; /* Evita bordas e faz com que a imagem cubra todo o contêiner */
-}
-
-.first-purpose-section {
-  flex-basis: 50%; /* Cada seção ocupa 50% */
-  display: flex;
-  justify-content: center; /* Centraliza o conteúdo horizontalmente */
-  align-items: start; /* Centraliza o conteúdo verticalmente */
-  padding: 50px 100px 50px 100px ; /* Pequeno padding para espaçamento interno */
-  box-sizing: border-box; /* Garante que o padding não quebre o layout */
-  flex-direction: column; /* Permite que o conteúdo fique em coluna */
-  text-align: start;
-  background-image: radial-gradient(#0c4ad6, #101010 90%);
-  background-size: auto 1000px; /* Mantém o gradiente */
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-body.light-mode .first-purpose-section {
-  background-image: radial-gradient(#aee5ff, #5bcaff 90%)
-}
-
-.purpose-text {
-  text-align: start;
-  line-height: 25px;
-  margin: 0;
-  font-size: 17px;
-}
-
-.first-purpose-section img {
-  width: 20%;
-}
-
-.purpose-affirmations {
-  position: relative; /* Permite que a caixa seja posicionada em relação ao contêiner pai */
-  background-color: white;
-  max-height: 80px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 100px;
-  width: 100%;
-}
-
-.purpose-affirmation{
-  padding: 20px 15px;
-  display: flex;
-  flex-direction: row;
-}
-
-.purpose-affirmation-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.purpose-affirmation h3{
-  color: #000;
-  margin: 0;
-  padding: 0;
-  line-height: normal;
-  font-weight: 600;
-}
-
-.purpose-affirmation .blue{
-  color: #0056b3;
-  margin: 0;
-  padding: 0;
-}
-
-body.light-mode .purpose-affirmation .blue{
-  color: #0056b3;
-}
-
-.purpose-affirmation img{
-  width: 40px; /* Define a largura dos ícones */
-  height: 40px; /* Define a altura dos ícones */
-  object-fit: contain; /* Garante que a imagem se ajuste ao tamanho definido */
-  padding-right: 15px;
-}
-
-.purpose button {
-  padding: 15px 30px;
-  background-color: #1a1a1a;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  color: #f3f3f3;
-  font-size: 18px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-  display: inline-flex;
-  gap: 15px;
-  align-items: center;
-}
-
-body.light-mode .purpose button{
-  background-color: #0c4ad6;
-  color: #f3f3f3;
-}
-
-body.light-mode .purpose button:hover{
-  background-color: #2f93ff;
-}
-
-.purpose button:hover {
-  background-color: #0c4ad6;
-}
-
-/* Responsividade para telas menores */
-@media (max-width: 1500px) {
-  .purpose {
-    flex-direction: column; /* Empilha as seções na vertical em telas pequenas */
-    height: auto; /* Remove o height fixo em dispositivos móveis */
-  }
-
-  .first-purpose-section,
-  .second-purpose-section {
-    flex-basis: auto; /* O tamanho agora será definido automaticamente */
-    width: 100%; /* As seções ocupam 100% da largura da tela */
-  }
-
-  .first-purpose-section img{
-    width: 150px !important;
-    max-width: none;
-  }
-
-  .purpose-affirmations {
-    width: 100%;
-    gap: 40px;
-    justify-content: center;
-    border-bottom: solid 1px #ebebeb;
-    padding: 20px 0px;
-  }
-
-  .purpose a{
-    margin: auto;
-    margin-top: 20px;
-  }
-
-  .purpose button{
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 640px) {
-  .purpose-affirmations {
-    display: none;
-  }
-
-  .first-purpose-section {
-    padding: 50px;
-  }
-  
-}
-
 /* FAQ section */
 .faq-section {
   margin: 0 auto;
   background-color: #fff;
-  padding: 50px 150px 100px 150px;
+  padding: 50px 150px 50px 150px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
