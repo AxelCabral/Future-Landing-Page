@@ -1,6 +1,43 @@
 // scripts.js
+const btn_left = "<div class='service-btn-space'><button class='carousel-btn prev-btn' onclick='moveCarousel(-1)'>&#9664;</button></div>";
+const btn_right = "<div class='service-btn-space'><button class='carousel-btn next-btn' onclick='moveCarousel(1)'>&#9654;</button></div>";
+
+const card_0 = "<div class='service-item carousel-card' id='card-0'><div class='service-item-icon'><img src='assets/landing-pages-icon.webp' alt='Landing page icon'></div><div class='service-item-title'><p id='service-1'>Landing Page</p></div><div class='service-item-description' id='service-1-description'>Uma Página web bem projetada é essencial para captar a atenção do seu público-alvo e convertê-los em clientes. Oferecemos páginas focadas em resultados, com design otimizado e chamadas para ação que aumentam suas chances de sucesso, tenha uma presença digital forte com um website novinho produzido por nós!</div></div>";
+const card_0_es = "<div class='service-item carousel-card' id='card-0'><div class='service-item-icon'><img src='assets/landing-pages-icon.webp' alt='Landing page icon'></div><div class='service-item-title'><p id='service-1'>Landing Page</p></div><div class='service-item-description' id='service-1-description'>Una página web bien diseñada es esencial para captar la atención de tu público objetivo y convertirlos en clientes. Ofrecemos páginas enfocadas en resultados, con diseño optimizado y llamados a la acción que aumentan tus posibilidades de éxito. ¡Construye una sólida presencia digital con un sitio web desarrollado por nosotros!</div></div>";
+const card_0_en = "<div class='service-item carousel-card' id='card-0'><div class='service-item-icon'><img src='assets/landing-pages-icon.webp' alt='Landing page icon'></div><div class='service-item-title'><p id='service-1'>Landing Page</p></div><div class='service-item-description' id='service-1-description'>A well-designed webpage is essential to capture the attention of your target audience and convert them into customers. We offer result-driven pages with optimized design and calls-to-action that boost your chances of success. Build a strong digital presence with a brand-new website developed by us!</div></div>"; 
+
+const card_1 = "<div class='service-item carousel-card' id='card-1'><div class='service-item-icon'><img src='assets/lojas-virtuais-icon.webp' alt='E-commerce icon'></div><div class='service-item-title'><p id='service-2'>E-commerce</p></div><div class='service-item-description' id='service-2-description'>Transforme sua ideia em uma loja virtual de sucesso! Criamos e-commerces completos, intuitivos e otimizados para proporcionar uma experiência de compra incrível para seus clientes. Com design responsivo, integrações seguras e foco em resultados, aumentamos suas vendas e potencializamos sua presença no mercado digital.</div></div>";
+const card_1_es = "<div class='service-item carousel-card' id='card-1'><div class='service-item-icon'><img src='assets/lojas-virtuais-icon.webp' alt='E-commerce icon'></div><div class='service-item-title'><p id='service-2'>E-commerce</p></div><div class='service-item-description' id='service-2-description'>¡Convierte tu idea en una tienda online exitosa! Creamos plataformas de comercio electrónico, intuitivas y optimizadas para brindar una experiencia de compra increíble a tus clientes. Con diseño responsivo, seguras y enfocada en resultados, aumentamos tus ventas y fortalecemos tu presencia digital.</div></div>";
+const card_1_en = "<div class='service-item carousel-card' id='card-1'><div class='service-item-icon'><img src='assets/lojas-virtuais-icon.webp' alt='E-commerce icon'></div><div class='service-item-title'><p id='service-2'>E-commerce</p></div><div class='service-item-description' id='service-2-description'>Turn your idea into a successful online store! We create complete, intuitive, and optimized e-commerce platforms to provide an amazing shopping experience for your customers. With responsive design, secure integrations, and a focus on results, we enhance your sales and strengthen your digital presence.</div></div>"; 
+
+const card_2 = "<div class='service-item carousel-card' id='card-2'><div class='service-item-icon'><img src='assets/aplicativos-icon.webp' alt='App icon'></div><div class='service-item-title'><p id='service-3'>App</p></div><div class='service-item-description' id='service-3-description'>Leve sua marca para o bolso do seu público! Desenvolvemos aplicativos personalizados que unem design moderno, desempenho impecável e funcionalidades sob medida para engajar seus usuários e facilitar o alcance de seus objetivos. Seja em Android ou iOS, entregamos soluções que encantam e fidelizam.</div></div>";
+const card_2_es = "<div class='service-item carousel-card' id='card-2'><div class='service-item-icon'><img src='assets/aplicativos-icon.webp' alt='App icon'></div><div class='service-item-title'><p id='service-3'>App</p></div><div class='service-item-description' id='service-3-description'>¡Lleva tu marca más cerca de tu público! Desarrollamos aplicaciones que combinan diseño moderno, rendimiento impecable y características hechas a medida para involucrar a los usuarios y ayudarte a alcanzar tus objetivos. En Android o iOS, ofrecemos soluciones que impresionan y fidelizan a los clientes.</div></div>";
+const card_2_en = "<div class='service-item carousel-card' id='card-2'><div class='service-item-icon'><img src='assets/aplicativos-icon.webp' alt='App icon'></div><div class='service-item-title'><p id='service-3'>App</p></div><div class='service-item-description' id='service-3-description'>Bring your brand closer to your audience! We develop custom applications that combine modern design, flawless performance, and tailored features to engage users and help you achieve your goals. Whether for Android or iOS, we deliver solutions that impress and retain customers.</div></div>"; 
+
+const card_3 = "<div class='service-item carousel-card' id='card-3'><div class='service-item-icon'><img src='assets/sites-icon.webp' alt='ERP System icon'></div><div class='service-item-title'><p id='service-4'>Sistema ERP</p></div><div class='service-item-description' id='service-4-description'>Otimize seus processos e tome decisões mais inteligentes com um ERP feito para você. Oferecemos sistemas de gestão empresarial que simplificam o controle de estoque, vendas, finanças e muito mais, tudo em um só lugar. Ganhe eficiência e controle total sobre o seu negócio, e o melhor, de forma totalmente personalizada.</div></div>";
+const card_3_es = "<div class='service-item carousel-card' id='card-3'><div class='service-item-icon'><img src='assets/sites-icon.webp' alt='ERP System icon'></div><div class='service-item-title'><p id='service-4'>Sistema ERP</p></div><div class='service-item-description' id='service-4-description'>Optimiza tus procesos y toma decisiones más inteligentes con un sistema ERP diseñado especialmente para ti. Ofrecemos sistemas de gestión empresarial que simplifican el control de inventario, ventas, finanzas y mucho más, todo en un solo lugar. Gana eficiencia y control total sobre tu negocio con un sistema proprio.</div></div>";
+const card_3_en = "<div class='service-item carousel-card' id='card-3'><div class='service-item-icon'><img src='assets/sites-icon.webp' alt='ERP System icon'></div><div class='service-item-title'><p id='service-4'>ERP System</p></div><div class='service-item-description' id='service-4-description'>Optimize your processes and make smarter decisions with an ERP designed just for you. We offer business management systems that simplify inventory, sales, finance control, and much more, all in one place. Gain efficiency and complete control over your business with a fully customized system.</div></div>"; 
+
+const card_4 = "<div class='service-item carousel-card' id='card-4'><div class='service-item-icon'><img src='assets/site-captura-leads-icon.webp' alt='Paid Traffic icon'></div><div class='service-item-title'><p id='service-5'>Tráfego pago</p></div><div class='service-item-description' id='service-5-description'>Acelere seus resultados com campanhas de tráfego pago estrategicamente planejadas! Gerenciamos anúncios no Google, Facebook, Instagram e outras plataformas, conectando sua marca ao público certo. Aumente sua visibilidade, alcance e conversões de forma mensurável e consistente.</div></div>";
+const card_4_es = "<div class='service-item carousel-card' id='card-4'><div class='service-item-icon'><img src='assets/site-captura-leads-icon.webp' alt='Paid Traffic icon'></div><div class='service-item-title'><p id='service-5'>Tráfico Pagado</p></div><div class='service-item-description' id='service-5-description'>¡Acelera tus resultados con campañas de tráfico pagado estratégicamente planificadas! Administramos anuncios en Google, Facebook, Instagram y otras plataformas, conectando tu marca con el público adecuado. Incrementa tu visibilidad, alcance y conversiones de manera consistente y medible.</div></div>";
+const card_4_en = "<div class='service-item carousel-card' id='card-4'><div class='service-item-icon'><img src='assets/site-captura-leads-icon.webp' alt='Paid Traffic icon'></div><div class='service-item-title'><p id='service-5'>Paid Traffic</p></div><div class='service-item-description' id='service-5-description'>Boost your results with strategically planned paid traffic campaigns! We manage ads on Google, Facebook, Instagram, and other platforms, connecting your brand with the right audience. Increase your visibility, reach, and conversions consistently and measurably.</div></div>"; 
+
+const card_5 = "<div class='service-item carousel-card' id='card-5'><div class='service-item-icon'><img src='assets/identidade-visual-icon.webp' alt='Branding icon'></div><div class='service-item-title'><p id='service-6'>Branding</p></div><div class='service-item-description' id='service-6-description'>Destaque-se no mercado com uma identidade visual única e marcante! Criamos logos, paletas de cores e materiais visuais que traduzem a essência da sua marca e comunicam seus valores de forma profissional e criativa. Conquiste a confiança do público com uma imagem que impressiona e conecta.</div></div>";
+const card_5_es = "<div class='service-item carousel-card' id='card-5'><div class='service-item-icon'><img src='assets/identidade-visual-icon.webp' alt='Branding icon'></div><div class='service-item-title'><p id='service-6'>Identidad de marca</p></div><div class='service-item-description' id='service-6-description'>¡Destaca en el mercado con una identidad visual única e impactante! Creamos logotipos, paletas de colores y materiales visuales que reflejan la esencia de tu marca y comunican sus valores de forma profesional y creativa. Gana la confianza del público con una imagen que impresiona y conecta.</div></div>";
+const card_5_en = "<div class='service-item carousel-card' id='card-5'><div class='service-item-icon'><img src='assets/identidade-visual-icon.webp' alt='Branding icon'></div><div class='service-item-title'><p id='service-6'>Branding</p></div><div class='service-item-description' id='service-6-description'>Stand out in the market with a unique and impactful visual identity! We create logos, color palettes, and visual materials that reflect your brand’s essence and professionally and creatively communicate its values. Earn your audience’s trust with an image that impresses and connects.</div></div>"; 
+
+let cards = [card_0, card_1, card_2, card_3, card_4, card_5];
+const pt_cards = [card_0, card_1, card_2, card_3, card_4, card_5];
+const es_cards = [card_0_es, card_1_es, card_2_es, card_3_es, card_4_es, card_5_es];
+const en_cards = [card_0_en, card_1_en, card_2_en, card_3_en, card_4_en, card_5_en];
+let usingCards = [card_0, card_1, card_2];
+let cardsSize = null;
+
 document.addEventListener('DOMContentLoaded', () => {
   const video = document.getElementById('rocket-video');
+
+  const carousel = document.getElementById('interative-carousel');
+  carousel.innerHTML = btn_left+card_0+card_1+card_2+btn_right;
   
   // Impedir que o vídeo seja pausado
   video.addEventListener('pause', function(event) {
@@ -39,6 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
    // Troca de idioma
    langPT.addEventListener('click', () => {
         document.documentElement.lang = 'pt';
+        cards = pt_cards;
         document.getElementById('services').textContent = 'Serviços';
         document.getElementById('about-us').textContent = 'Quem somos';
         document.getElementById('advantages').textContent = 'Vantagens';
@@ -68,19 +106,34 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('advantage-16').textContent = 'Conversão';
         document.getElementById('advantage-17').textContent = 'Resultados';
         document.getElementById('advantage-18').textContent = 'Confiança';
-        document.getElementById('services-title').textContent = 'Soluções inovadoras e personalizadas para o seu negócio!';
-        document.getElementById('service-1').textContent = 'Landing Page';
-        document.getElementById('service-2').textContent = 'E-commerce';
-        document.getElementById('service-3').textContent = 'App';
-        document.getElementById('service-4').textContent = 'Sistema ERP';
-        document.getElementById('service-5').textContent = 'Tráfego pago';
-        document.getElementById('service-6').textContent = 'Branding';
-        document.getElementById('service-1-description').textContent = 'Uma Página web bem projetada é essencial para captar a atenção do seu público-alvo e convertê-los em clientes. Oferecemos páginas focadas em resultados, com design otimizado e chamadas para ação que aumentam suas chances de sucesso, tenha uma presença digital forte com um website novinho produzido por nós!';
-        document.getElementById('service-2-description').textContent = 'Transforme sua ideia em uma loja virtual de sucesso! Criamos e-commerces completos, intuitivos e otimizados para proporcionar uma experiência de compra incrível para seus clientes. Com design responsivo, integrações seguras e foco em resultados, aumentamos suas vendas e potencializamos sua presença no mercado digital.';
-        document.getElementById('service-3-description').textContent = 'Leve sua marca para o bolso do seu público! Desenvolvemos aplicativos personalizados que unem design moderno, desempenho impecável e funcionalidades sob medida para engajar seus usuários e facilitar o alcance de seus objetivos. Seja em Android ou iOS, entregamos soluções que encantam e fidelizam.';
-        document.getElementById('service-4-description').textContent = ' Otimize seus processos e tome decisões mais inteligentes com um ERP feito para você. Oferecemos sistemas de gestão empresarial que simplificam o controle de estoque, vendas, finanças e muito mais, tudo em um só lugar. Ganhe eficiência e controle total sobre o seu negócio, e o melhor, de forma totalmente personalizada.';
-        document.getElementById('service-5-description').textContent = ' Acelere seus resultados com campanhas de tráfego pago estrategicamente planejadas! Gerenciamos anúncios no Google, Facebook, Instagram e outras plataformas, conectando sua marca ao público certo. Aumente sua visibilidade, alcance e conversões de forma mensurável e consistente.';
-        document.getElementById('service-6-description').textContent = 'Destaque-se no mercado com uma identidade visual única e marcante! Criamos logos, paletas de cores e materiais visuais que traduzem a essência da sua marca e comunicam seus valores de forma profissional e criativa. Conquiste a confiança do público com uma imagem que impressiona e conecta.';
+        document.getElementById('services-title').textContent = 'Soluções inovadoras e personalizadas para o seu negócio!'; 
+        if(document.getElementById('service-4')) {
+          document.getElementById('service-4').textContent = 'Sistema ERP';
+        }
+        if(document.getElementById('service-5')) {
+          document.getElementById('service-5').textContent = 'Tráfego pago';
+        }
+        if(document.getElementById('service-6')) {
+          document.getElementById('service-6').textContent = 'Branding';
+        }
+        if(document.getElementById('service-1-description')) {
+          document.getElementById('service-1-description').textContent = 'Uma Página web bem projetada é essencial para captar a atenção do seu público-alvo e convertê-los em clientes. Oferecemos páginas focadas em resultados, com design otimizado e chamadas para ação que aumentam suas chances de sucesso, tenha uma presença digital forte com um website novinho produzido por nós!';
+        }
+        if(document.getElementById('service-2-description')) {
+          document.getElementById('service-2-description').textContent = 'Transforme sua ideia em uma loja virtual de sucesso! Criamos e-commerces completos, intuitivos e otimizados para proporcionar uma experiência de compra incrível para seus clientes. Com design responsivo, integrações seguras e foco em resultados, aumentamos suas vendas e potencializamos sua presença no mercado digital.';
+        }
+        if(document.getElementById('service-3-description')) {
+          document.getElementById('service-3-description').textContent = 'Leve sua marca para o bolso do seu público! Desenvolvemos aplicativos personalizados que unem design moderno, desempenho impecável e funcionalidades sob medida para engajar seus usuários e facilitar o alcance de seus objetivos. Seja em Android ou iOS, entregamos soluções que encantam e fidelizam.';
+        }
+        if(document.getElementById('service-4-description')) {
+          document.getElementById('service-4-description').textContent = ' Otimize seus processos e tome decisões mais inteligentes com um ERP feito para você. Oferecemos sistemas de gestão empresarial que simplificam o controle de estoque, vendas, finanças e muito mais, tudo em um só lugar. Ganhe eficiência e controle total sobre o seu negócio, e o melhor, de forma totalmente personalizada.';
+        }
+        if(document.getElementById('service-5-description')) {
+          document.getElementById('service-5-description').textContent = ' Acelere seus resultados com campanhas de tráfego pago estrategicamente planejadas! Gerenciamos anúncios no Google, Facebook, Instagram e outras plataformas, conectando sua marca ao público certo. Aumente sua visibilidade, alcance e conversões de forma mensurável e consistente.';
+        }
+        if(document.getElementById('service-6-description')) {
+          document.getElementById('service-6-description').textContent = 'Destaque-se no mercado com uma identidade visual única e marcante! Criamos logos, paletas de cores e materiais visuais que traduzem a essência da sua marca e comunicam seus valores de forma profissional e criativa. Conquiste a confiança do público com uma imagem que impressiona e conecta.';
+        }
         document.getElementById('advantages-title').textContent = 'Um site profissional trará inúmeras vantagens para o seu negócio';
         document.getElementById('advantage-title-1').textContent = 'Faturamento';
         document.getElementById('advantage-title-2').textContent = 'Visibilidade';
@@ -136,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('contact-title').textContent = 'Contate-nos';
         var placeholderText = document.getElementById('contact-text');
         placeholderText.placeholder = "Insira seu número";
-        document.getElementById('copy-text').innerHTML = 'Copyright &copy; 2024 Future. Todos os direitos reservados à Agência <a href="https://www.instagram.com/future_digi" target="_blank"> Future Digital.</a>';
+        document.getElementById('copy-text').innerHTML = 'Copyright &copy; 2024 Future. Todos os direitos reservados à Agência <a href="https://www.instagram.com/futuredigital.ag" target="_blank"> Future Digital.</a>';
         document.getElementById('error-message').textContent = 'Número inválido, não esqueça do DDD!';
         document.getElementById('error-message-2').textContent = 'Número inválido! Insira um número válido.';
     });
@@ -144,6 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Troca de idioma
     langEN.addEventListener('click', () => {
         document.documentElement.lang = 'en';
+        cards = en_cards;
         document.getElementById('services').textContent = 'Services';
         document.getElementById('about-us').textContent = 'About Us';
         document.getElementById('advantages').textContent = 'Advantages';
@@ -174,18 +228,35 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('advantage-17').textContent = 'Results';
         document.getElementById('advantage-18').textContent = 'Trustworthiness';
         document.getElementById('services-title').textContent = 'Innovative and customized solutions for your business!';
-        document.getElementById('service-1').textContent = 'Landing Page';
-        document.getElementById('service-2').textContent = 'E-commerce';
-        document.getElementById('service-3').textContent = 'App';
-        document.getElementById('service-4').textContent = 'ERP System';
-        document.getElementById('service-5').textContent = 'Paid Traffic';
-        document.getElementById('service-6').textContent = 'Branding';
-        document.getElementById('service-1-description').textContent = 'A well-designed webpage is essential to capture the attention of your target audience and convert them into customers. We offer result-driven pages with optimized design and calls-to-action that boost your chances of success. Build a strong digital presence with a brand-new website developed by us!';
-        document.getElementById('service-2-description').textContent = 'Turn your idea into a successful online store! We create complete, intuitive, and optimized e-commerce platforms to provide an amazing shopping experience for your customers. With responsive design, secure integrations, and a focus on results, we enhance your sales and strengthen your digital presence.';
-        document.getElementById('service-3-description').textContent = 'Bring your brand closer to your audience! We develop custom applications that combine modern design, flawless performance, and tailored features to engage users and help you achieve your goals. Whether for Android or iOS, we deliver solutions that impress and retain customers.';
-        document.getElementById('service-4-description').textContent = 'Optimize your processes and make smarter decisions with an ERP designed just for you. We offer business management systems that simplify inventory, sales, finance control, and much more, all in one place. Gain efficiency and complete control over your business with a fully customized system.';
-        document.getElementById('service-5-description').textContent = 'Boost your results with strategically planned paid traffic campaigns! We manage ads on Google, Facebook, Instagram, and other platforms, connecting your brand with the right audience. Increase your visibility, reach, and conversions consistently and measurably.';
-        document.getElementById('service-6-description').textContent = 'Stand out in the market with a unique and impactful visual identity! We create logos, color palettes, and visual materials that reflect your brand’s essence and professionally and creatively communicate its values. Earn your audience’s trust with an image that impresses and connects.';        
+        if(document.getElementById('service-4')) {
+          document.getElementById('service-4').textContent = 'ERP System';
+        }
+        
+        if(document.getElementById('service-5')) {
+          document.getElementById('service-5').textContent = 'Paid Traffic';
+        }
+        
+        if(document.getElementById('service-6')) {
+          document.getElementById('service-6').textContent = 'Branding';
+        }
+        if(document.getElementById('service-1-description')) {
+          document.getElementById('service-1-description').textContent = 'A well-designed webpage is essential to capture the attention of your target audience and convert them into customers. We offer result-driven pages with optimized design and calls-to-action that boost your chances of success. Build a strong digital presence with a brand-new website developed by us!';
+        }
+        if(document.getElementById('service-2-description')) {
+          document.getElementById('service-2-description').textContent = 'Turn your idea into a successful online store! We create complete, intuitive, and optimized e-commerce platforms to provide an amazing shopping experience for your customers. With responsive design, secure integrations, and a focus on results, we enhance your sales and strengthen your digital presence.';
+        }
+        if(document.getElementById('service-3-description')) {
+          document.getElementById('service-3-description').textContent = 'Bring your brand closer to your audience! We develop custom applications that combine modern design, flawless performance, and tailored features to engage users and help you achieve your goals. Whether for Android or iOS, we deliver solutions that impress and retain customers.';
+        }
+        if(document.getElementById('service-4-description')) {
+          document.getElementById('service-4-description').textContent = 'Optimize your processes and make smarter decisions with an ERP designed just for you. We offer business management systems that simplify inventory, sales, finance control, and much more, all in one place. Gain efficiency and complete control over your business with a fully customized system.';
+        }
+        if(document.getElementById('service-5-description')) {
+          document.getElementById('service-5-description').textContent = 'Boost your results with strategically planned paid traffic campaigns! We manage ads on Google, Facebook, Instagram, and other platforms, connecting your brand with the right audience. Increase your visibility, reach, and conversions consistently and measurably.';
+        }
+        if(document.getElementById('service-6-description')) {
+          document.getElementById('service-6-description').textContent = 'Stand out in the market with a unique and impactful visual identity! We create logos, color palettes, and visual materials that reflect your brand’s essence and professionally and creatively communicate its values. Earn your audience’s trust with an image that impresses and connects.';      
+        }  
         document.getElementById('advantages-title').textContent = 'A professional website will bring many benefits for your business';
         document.getElementById('advantage-title-1').textContent = 'Revenue';
         document.getElementById('advantage-title-2').textContent = 'Visibility';
@@ -241,7 +312,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('contact-title').textContent = 'Contact Us';
         var placeholderText = document.getElementById('contact-text');
         placeholderText.placeholder = "Enter your number";
-        document.getElementById('copy-text').innerHTML = 'Copyright &copy; 2024 Future. All rights reserved to the Agency <a href="https://www.instagram.com/future_digi" target="_blank"> Future Digital.</a>';
+        document.getElementById('copy-text').innerHTML = 'Copyright &copy; 2024 Future. All rights reserved to the Agency <a href="https://www.instagram.com/futuredigital.ag" target="_blank"> Future Digital.</a>';
         document.getElementById('error-message').textContent = 'Invalid Number! Use at least 12 digits.';
         document.getElementById('error-message-2').textContent = 'Invalid Number! please, type a valid number.';
     });
@@ -249,6 +320,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Troca de idioma para Espanhol
     langES.addEventListener('click', () => {
         document.documentElement.lang = 'es';
+        cards = es_cards;
         document.getElementById('services').textContent = 'Servicios';
         document.getElementById('about-us').textContent = 'Sobre nosotros';
         document.getElementById('advantages').textContent = 'Ventajas';
@@ -279,18 +351,33 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('advantage-17').textContent = 'Resultados';
         document.getElementById('advantage-18').textContent = 'Confianza';
         document.getElementById('services-title').textContent = '¡Soluciones innovadoras y personalizadas para tu negocio!';
-        document.getElementById('service-1').textContent = 'Página de destino';
-        document.getElementById('service-2').textContent = 'Comercio electrónico';
-        document.getElementById('service-3').textContent = 'Aplicación';
-        document.getElementById('service-4').textContent = 'Sistema ERP';
-        document.getElementById('service-5').textContent = 'Tráfico Pagado';
-        document.getElementById('service-6').textContent = 'Identidad de marca';
-        document.getElementById('service-1-description').textContent = 'Una página web bien diseñada es esencial para captar la atención de tu público objetivo y convertirlos en clientes. Ofrecemos páginas enfocadas en resultados, con diseño optimizado y llamados a la acción que aumentan tus posibilidades de éxito. ¡Construye una sólida presencia digital con un sitio web completamente nuevo desarrollado por nosotros!';
-        document.getElementById('service-2-description').textContent = '¡Convierte tu idea en una tienda online exitosa! Creamos plataformas de comercio electrónico completas, intuitivas y optimizadas para brindar una experiencia de compra increíble a tus clientes. Con diseño responsivo, integraciones seguras y enfoque en resultados, aumentamos tus ventas y fortalecemos tu presencia digital.';
-        document.getElementById('service-3-description').textContent = '¡Lleva tu marca más cerca de tu público! Desarrollamos aplicaciones personalizadas que combinan diseño moderno, rendimiento impecable y características hechas a medida para involucrar a los usuarios y ayudarte a alcanzar tus objetivos. Ya sea para Android o iOS, ofrecemos soluciones que impresionan y fidelizan a los clientes.';
-        document.getElementById('service-4-description').textContent = 'Optimiza tus procesos y toma decisiones más inteligentes con un sistema ERP diseñado especialmente para ti. Ofrecemos sistemas de gestión empresarial que simplifican el control de inventario, ventas, finanzas y mucho más, todo en un solo lugar. Gana eficiencia y control total sobre tu negocio con un sistema completamente personalizado.';
-        document.getElementById('service-5-description').textContent = '¡Acelera tus resultados con campañas de tráfico pagado estratégicamente planificadas! Administramos anuncios en Google, Facebook, Instagram y otras plataformas, conectando tu marca con el público adecuado. Incrementa tu visibilidad, alcance y conversiones de manera consistente y medible.';
-        document.getElementById('service-6-description').textContent = '¡Destaca en el mercado con una identidad visual única e impactante! Creamos logotipos, paletas de colores y materiales visuales que reflejan la esencia de tu marca y comunican sus valores de forma profesional y creativa. Gana la confianza del público con una imagen que impresiona y conecta.';        
+        if(document.getElementById('service-4')) {
+          document.getElementById('service-4').textContent = 'Sistema ERP';
+        }
+        if(document.getElementById('service-5')) {
+          document.getElementById('service-5').textContent = 'Tráfico Pagado';
+        }
+        if(document.getElementById('service-6')) {
+          document.getElementById('service-6').textContent = 'Identidad de marca';
+        }
+        if(document.getElementById('service-1-description')) {
+          document.getElementById('service-1-description').textContent = 'Una página web bien diseñada es esencial para captar la atención de tu público objetivo y convertirlos en clientes. Ofrecemos páginas enfocadas en resultados, con diseño optimizado y llamados a la acción que aumentan tus posibilidades de éxito. ¡Construye una sólida presencia digital con un sitio web desarrollado por nosotros!';
+        }
+        if(document.getElementById('service-2-description')) {
+          document.getElementById('service-2-description').textContent = '¡Convierte tu idea en una tienda online exitosa! Creamos plataformas de comercio electrónico, intuitivas y optimizadas para brindar una experiencia de compra increíble a tus clientes. Con diseño responsivo, seguras y enfocada en resultados, aumentamos tus ventas y fortalecemos tu presencia digital.';
+        }
+        if(document.getElementById('service-3-description')) {
+          document.getElementById('service-3-description').textContent = '¡Lleva tu marca más cerca de tu público! Desarrollamos aplicaciones que combinan diseño moderno, rendimiento impecable y características hechas a medida para involucrar a los usuarios y ayudarte a alcanzar tus objetivos. En Android o iOS, ofrecemos soluciones que impresionan y fidelizan a los clientes.';
+        }
+        if(document.getElementById('service-4-description')) {
+          document.getElementById('service-4-description').textContent = 'Optimiza tus procesos y toma decisiones más inteligentes con un sistema ERP diseñado especialmente para ti. Ofrecemos sistemas de gestión empresarial que simplifican el control de inventario, ventas, finanzas y mucho más, todo en un solo lugar. Gana eficiencia y control total sobre tu negocio con un sistema proprio.';
+        }
+        if(document.getElementById('service-5-description')) {
+          document.getElementById('service-5-description').textContent = '¡Acelera tus resultados con campañas de tráfico pagado estratégicamente planificadas! Administramos anuncios en Google, Facebook, Instagram y otras plataformas, conectando tu marca con el público adecuado. Incrementa tu visibilidad, alcance y conversiones de manera consistente y medible.';
+        }
+        if(document.getElementById('service-6-description')) {
+          document.getElementById('service-6-description').textContent = '¡Destaca en el mercado con una identidad visual única e impactante! Creamos logotipos, paletas de colores y materiales visuales que reflejan la esencia de tu marca y comunican sus valores de forma profesional y creativa. Gana la confianza del público con una imagen que impresiona y conecta.';         
+        }
         document.getElementById('advantages-title').textContent = 'Un sitio web profesional traerá muchos beneficios a tu negocio';
         document.getElementById('advantage-title-1').textContent = 'Ingresos';
         document.getElementById('advantage-title-2').textContent = 'Visibilidad';
@@ -346,7 +433,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('contact-title').textContent = 'Contáctanos';
         var placeholderText = document.getElementById('contact-text');
         placeholderText.placeholder = "Introduce tu número";
-        document.getElementById('copy-text').innerHTML = 'Derechos de autor &copy; 2024 Future. Todos los derechos reservados a la Agencia <a href="https://www.instagram.com/future_digi" target="_blank">Future Digital.</a>';
+        document.getElementById('copy-text').innerHTML = 'Derechos de autor &copy; 2024 Future. Todos los derechos reservados a la Agencia <a href="https://www.instagram.com/futuredigital.ag" target="_blank">Future Digital.</a>';
         document.getElementById('error-message').textContent = '¡Número inválido! Ingrese al menos 12 dígitos.';
         document.getElementById('error-message-2').textContent = '¡Número inválido! Ingrese un número válido.';
     });
@@ -494,7 +581,7 @@ window.onscroll = function() {
     const scrollButton = document.getElementById("scrollButton");
 
     // Verifica se a largura da tela é menor que 1310px
-    const isSmallScreen = window.matchMedia("(max-width: 1310px)").matches;
+    const isSmallScreen = window.matchMedia("(max-width: 1035px)").matches;
 
     // Se a tela for menor que 1310px, esconde o botão
     if (isSmallScreen) {
@@ -548,6 +635,27 @@ window.onscroll = function() {
         rocketImage.style.display = 'none';
         rocketVideo.style.display = 'block';
     }
+    
+    if (screenWidth < 1020) {
+      if (cardsSize !== 1) {
+        checkCarousel(1);
+      }
+    } else {
+      if (cardsSize !== 0) {
+        checkCarousel(0);
+      }
+    }
+}
+
+function checkCarousel(size){
+  const carousel = document.getElementById('interative-carousel');
+  if (size === 1) {
+    carousel.innerHTML = btn_left + cards.join('') + btn_right;
+    cardsSize = 1;
+  } else if (size === 0) {
+    carousel.innerHTML = btn_left + usingCards.join('') + btn_right;
+    cardsSize = 0;
+  }
 }
 
 let currentIndex = 2;
@@ -555,8 +663,10 @@ let currentIndex = 2;
 function moveCarousel(direction) {
   let newNumber = 0;
   let auxiliarNumber = 0;
+  const carousel = document.getElementById('interative-carousel');
 
   if(direction > 0){
+
     if(currentIndex+direction > 5){
       currentIndex = 0;
     }else{
@@ -569,12 +679,10 @@ function moveCarousel(direction) {
       newNumber = currentIndex-3;
     }
 
-    alert(newNumber+"-"+currentIndex);
-  
-    const lastElement = document.getElementById('card-'+newNumber);
-    const newElement = document.getElementById('card-'+currentIndex);
-    newElement.style.display = 'inherit';
-    lastElement.style.display = 'none';
+    usingCards.shift();
+    usingCards.push(cards[currentIndex]);
+
+    carousel.innerHTML = btn_left + usingCards.join('') + btn_right;
   }else{
     newNumber = currentIndex;
 
@@ -594,20 +702,12 @@ function moveCarousel(direction) {
       auxiliarNumber = newNumber-3;
     }
 
-    alert(newNumber+"-"+currentIndex+"-"+auxiliarNumber);
+    usingCards.pop();
+    usingCards.unshift(cards[auxiliarNumber])
 
-    const lastElement = document.getElementById('card-'+newNumber);
-    const newElement = document.getElementById('card-'+auxiliarNumber);
-    newElement.style.display = 'inherit';
-    lastElement.style.display = 'none';
+    carousel.innerHTML = btn_left + usingCards.join('') + btn_right;
   }
-
-  
-
-  //const lastElement = document.getElementById('card-'+currentIndex-2);
-  //const newElement = document.getElementById('card-'+currentIndex+2);
 }
-
 
 // Verificar o tamanho da tela quando a página for carregada
 window.addEventListener('load', toggleMedia);

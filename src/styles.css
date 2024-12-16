@@ -677,9 +677,42 @@ body.light-mode .advantages-presentation{
   transition: transform 0.3s ease; /* Suavidade da animação */
 }
 
+
+.service-btn-space{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Contêiner do carrossel */
+#interative-carousel {
+  display: flex;
+  overflow: hidden; /* Esconde os cards que saem da área visível */
+  position: relative;
+}
+
+/* Transição suave */
+.carousel-card {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.carousel-card.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.carousel-card.exit-left {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.carousel-card.exit-right {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
 /* Estilos para as setas */
 .carousel-btn {
-  transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
@@ -687,13 +720,7 @@ body.light-mode .advantages-presentation{
   cursor: pointer;
   font-size: 24px;
   z-index: 10;
-  height: 50px;
   border-radius: 25px;
-  margin-top: 20%;
-}
-
-#card-3, #card-4, #card-5 {
-  display: none;
 }
 
 /* Setas à esquerda */
@@ -744,10 +771,6 @@ body.light-mode .service-item-title {
   .service-item {
     flex-basis: calc(50% - 20px); /* Ajusta para dois itens por linha */
     max-width: 100%;
-  }
-
-  #card-0, #card-1, #card-2, #card-3, #card-4, #card-5 {
-    display: inherit;
   }
 
   .carousel-btn{
