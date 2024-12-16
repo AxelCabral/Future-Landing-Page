@@ -77,6 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
    langPT.addEventListener('click', () => {
         document.documentElement.lang = 'pt';
         cards = pt_cards;
+        updateUsingCards(pt_cards);
         document.getElementById('services').textContent = 'Serviços';
         document.getElementById('about-us').textContent = 'Quem somos';
         document.getElementById('advantages').textContent = 'Vantagens';
@@ -198,6 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
     langEN.addEventListener('click', () => {
         document.documentElement.lang = 'en';
         cards = en_cards;
+        updateUsingCards(en_cards);
         document.getElementById('services').textContent = 'Services';
         document.getElementById('about-us').textContent = 'About Us';
         document.getElementById('advantages').textContent = 'Advantages';
@@ -321,6 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
     langES.addEventListener('click', () => {
         document.documentElement.lang = 'es';
         cards = es_cards;
+        updateUsingCards(es_cards);
         document.getElementById('services').textContent = 'Servicios';
         document.getElementById('about-us').textContent = 'Sobre nosotros';
         document.getElementById('advantages').textContent = 'Ventajas';
@@ -658,6 +661,23 @@ function checkCarousel(size){
   }
 }
 
+function updateUsingCards(newCards){
+  const newIndexes = [];
+  let currentIndexMapper = currentIndex;
+
+  for(var i = 0; i < 3; i++){
+    newIndexes.push(newCards[currentIndexMapper]);
+
+    currentIndexMapper--;
+    
+    if(currentIndexMapper < 0){
+      currentIndexMapper = 5;
+    }
+  }
+
+  usingCards = newIndexes.reverse();
+}
+
 let currentIndex = 2;
 let isCarouselAnimating = false;
 
@@ -732,15 +752,9 @@ function moveCarousel(direction) {
     const newCards = carousel.querySelectorAll('.service-item');
 
     if (direction > 0) {
-        newCards[2].style.opacity = '0';
-        newCards[2].style.transform = 'translateX(100%) !important';
-        newCards[2].classList.add('enter-right');
-        newCards[2].style.opacity = '1';
+        newCards[2].classList.add('enter-right', 'animating');
     } else {
-        newCards[0].style.opacity = '0';
-        newCards[0].style.transform = 'translateX(-100%) !important';
-        newCards[0].classList.add('enter-left');
-        newCards[0].style.opacity = '1';
+        newCards[0].classList.add('enter-left', 'animating');
     }
 
     // Remove classes de animação após a transição

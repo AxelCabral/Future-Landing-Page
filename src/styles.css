@@ -674,18 +674,13 @@ body.light-mode .advantages-presentation{
   align-items: center;
   padding: 40px 20px;
   border-bottom: 4px solid #0b55f9;
-  transition: transform 0.5s ease, opacity 0.5s ease;
+  transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
 .service-btn-space{
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-/* Card visível no centro */
-.service-item.visible {
-  transform: translateX(0);
 }
 
 /* Animações de saída */
@@ -696,12 +691,16 @@ body.light-mode .advantages-presentation{
   transform: translateX(100%);
 }
 
-/* Animações de entrada */
-.service-item.enter-left {
-  transform: translateX(-100%);
-}
+
+/* Animações de entrada (aparecendo do fundo) */
+.service-item.enter-left, 
 .service-item.enter-right {
-  transform: translateX(100%);
+  opacity: 0; /* Invisível inicialmente */
+  transform: scale(0.8) translateZ(-50px);
+}
+
+.animating {
+  pointer-events: none; /* Desabilita interações durante a animação */
 }
 
 /* Estilos para as setas */
@@ -729,7 +728,7 @@ body.light-mode .service-item {
   background-color: #bdd3ff;
 }
 
-.service-item:hover {
+.service-item:hover:not(.animating) {
   transition: transform 0.2s ease;
   transform: translateY(-3px) scale(1.01);
   cursor: pointer;
