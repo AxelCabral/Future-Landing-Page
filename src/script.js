@@ -2,29 +2,29 @@
 const btn_left = "<div class='service-btn-space'><button class='carousel-btn prev-btn' onclick='moveCarousel(-1)'>&#9664;</button></div>";
 const btn_right = "<div class='service-btn-space'><button class='carousel-btn next-btn' onclick='moveCarousel(1)'>&#9654;</button></div>";
 
-const card_0 = "<div class='service-item carousel-card' id='card-0'><div class='service-item-icon'><img src='assets/landing-pages-icon.webp' alt='Landing page icon'></div><div class='service-item-title'><p id='service-1'>Landing Page</p></div><div class='service-item-description' id='service-1-description'>Uma Página web bem projetada é essencial para captar a atenção do seu público-alvo e convertê-los em clientes. Oferecemos páginas focadas em resultados, com design otimizado e chamadas para ação que aumentam suas chances de sucesso, tenha uma presença digital forte com um website novinho produzido por nós!</div></div>";
-const card_0_es = "<div class='service-item carousel-card' id='card-0'><div class='service-item-icon'><img src='assets/landing-pages-icon.webp' alt='Landing page icon'></div><div class='service-item-title'><p id='service-1'>Landing Page</p></div><div class='service-item-description' id='service-1-description'>Una página web bien diseñada es esencial para captar la atención de tu público objetivo y convertirlos en clientes. Ofrecemos páginas enfocadas en resultados, con diseño optimizado y llamados a la acción que aumentan tus posibilidades de éxito. ¡Construye una sólida presencia digital con un sitio web desarrollado por nosotros!</div></div>";
-const card_0_en = "<div class='service-item carousel-card' id='card-0'><div class='service-item-icon'><img src='assets/landing-pages-icon.webp' alt='Landing page icon'></div><div class='service-item-title'><p id='service-1'>Landing Page</p></div><div class='service-item-description' id='service-1-description'>A well-designed webpage is essential to capture the attention of your target audience and convert them into customers. We offer result-driven pages with optimized design and calls-to-action that boost your chances of success. Build a strong digital presence with a brand-new website developed by us!</div></div>"; 
+const card_0 = "<div class='service-item' id='card-0'><div class='service-item-icon'><img src='assets/landing-pages-icon.webp' alt='Landing page icon'></div><div class='service-item-title'><p id='service-1'>Landing Page</p></div><div class='service-item-description' id='service-1-description'>Uma Página web bem projetada é essencial para captar a atenção do seu público-alvo e convertê-los em clientes. Oferecemos páginas focadas em resultados, com design otimizado e chamadas para ação que aumentam suas chances de sucesso, tenha uma presença digital forte com um website novinho produzido por nós!</div></div>";
+const card_0_es = "<div class='service-item' id='card-0'><div class='service-item-icon'><img src='assets/landing-pages-icon.webp' alt='Landing page icon'></div><div class='service-item-title'><p id='service-1'>Landing Page</p></div><div class='service-item-description' id='service-1-description'>Una página web bien diseñada es esencial para captar la atención de tu público objetivo y convertirlos en clientes. Ofrecemos páginas enfocadas en resultados, con diseño optimizado y llamados a la acción que aumentan tus posibilidades de éxito. ¡Construye una sólida presencia digital con un sitio web desarrollado por nosotros!</div></div>";
+const card_0_en = "<div class='service-item' id='card-0'><div class='service-item-icon'><img src='assets/landing-pages-icon.webp' alt='Landing page icon'></div><div class='service-item-title'><p id='service-1'>Landing Page</p></div><div class='service-item-description' id='service-1-description'>A well-designed webpage is essential to capture the attention of your target audience and convert them into customers. We offer result-driven pages with optimized design and calls-to-action that boost your chances of success. Build a strong digital presence with a brand-new website developed by us!</div></div>"; 
 
-const card_1 = "<div class='service-item carousel-card' id='card-1'><div class='service-item-icon'><img src='assets/lojas-virtuais-icon.webp' alt='E-commerce icon'></div><div class='service-item-title'><p id='service-2'>E-commerce</p></div><div class='service-item-description' id='service-2-description'>Transforme sua ideia em uma loja virtual de sucesso! Criamos e-commerces completos, intuitivos e otimizados para proporcionar uma experiência de compra incrível para seus clientes. Com design responsivo, integrações seguras e foco em resultados, aumentamos suas vendas e potencializamos sua presença no mercado digital.</div></div>";
-const card_1_es = "<div class='service-item carousel-card' id='card-1'><div class='service-item-icon'><img src='assets/lojas-virtuais-icon.webp' alt='E-commerce icon'></div><div class='service-item-title'><p id='service-2'>E-commerce</p></div><div class='service-item-description' id='service-2-description'>¡Convierte tu idea en una tienda online exitosa! Creamos plataformas de comercio electrónico, intuitivas y optimizadas para brindar una experiencia de compra increíble a tus clientes. Con diseño responsivo, seguras y enfocada en resultados, aumentamos tus ventas y fortalecemos tu presencia digital.</div></div>";
-const card_1_en = "<div class='service-item carousel-card' id='card-1'><div class='service-item-icon'><img src='assets/lojas-virtuais-icon.webp' alt='E-commerce icon'></div><div class='service-item-title'><p id='service-2'>E-commerce</p></div><div class='service-item-description' id='service-2-description'>Turn your idea into a successful online store! We create complete, intuitive, and optimized e-commerce platforms to provide an amazing shopping experience for your customers. With responsive design, secure integrations, and a focus on results, we enhance your sales and strengthen your digital presence.</div></div>"; 
+const card_1 = "<div class='service-item' id='card-1'><div class='service-item-icon'><img src='assets/lojas-virtuais-icon.webp' alt='E-commerce icon'></div><div class='service-item-title'><p id='service-2'>E-commerce</p></div><div class='service-item-description' id='service-2-description'>Transforme sua ideia em uma loja virtual de sucesso! Criamos e-commerces completos, intuitivos e otimizados para proporcionar uma experiência de compra incrível para seus clientes. Com design responsivo, integrações seguras e foco em resultados, aumentamos suas vendas e potencializamos sua presença no mercado digital.</div></div>";
+const card_1_es = "<div class='service-item' id='card-1'><div class='service-item-icon'><img src='assets/lojas-virtuais-icon.webp' alt='E-commerce icon'></div><div class='service-item-title'><p id='service-2'>E-commerce</p></div><div class='service-item-description' id='service-2-description'>¡Convierte tu idea en una tienda online exitosa! Creamos plataformas de comercio electrónico, intuitivas y optimizadas para brindar una experiencia de compra increíble a tus clientes. Con diseño responsivo, seguras y enfocada en resultados, aumentamos tus ventas y fortalecemos tu presencia digital.</div></div>";
+const card_1_en = "<div class='service-item' id='card-1'><div class='service-item-icon'><img src='assets/lojas-virtuais-icon.webp' alt='E-commerce icon'></div><div class='service-item-title'><p id='service-2'>E-commerce</p></div><div class='service-item-description' id='service-2-description'>Turn your idea into a successful online store! We create complete, intuitive, and optimized e-commerce platforms to provide an amazing shopping experience for your customers. With responsive design, secure integrations, and a focus on results, we enhance your sales and strengthen your digital presence.</div></div>"; 
 
-const card_2 = "<div class='service-item carousel-card' id='card-2'><div class='service-item-icon'><img src='assets/aplicativos-icon.webp' alt='App icon'></div><div class='service-item-title'><p id='service-3'>App</p></div><div class='service-item-description' id='service-3-description'>Leve sua marca para o bolso do seu público! Desenvolvemos aplicativos personalizados que unem design moderno, desempenho impecável e funcionalidades sob medida para engajar seus usuários e facilitar o alcance de seus objetivos. Seja em Android ou iOS, entregamos soluções que encantam e fidelizam.</div></div>";
-const card_2_es = "<div class='service-item carousel-card' id='card-2'><div class='service-item-icon'><img src='assets/aplicativos-icon.webp' alt='App icon'></div><div class='service-item-title'><p id='service-3'>App</p></div><div class='service-item-description' id='service-3-description'>¡Lleva tu marca más cerca de tu público! Desarrollamos aplicaciones que combinan diseño moderno, rendimiento impecable y características hechas a medida para involucrar a los usuarios y ayudarte a alcanzar tus objetivos. En Android o iOS, ofrecemos soluciones que impresionan y fidelizan a los clientes.</div></div>";
-const card_2_en = "<div class='service-item carousel-card' id='card-2'><div class='service-item-icon'><img src='assets/aplicativos-icon.webp' alt='App icon'></div><div class='service-item-title'><p id='service-3'>App</p></div><div class='service-item-description' id='service-3-description'>Bring your brand closer to your audience! We develop custom applications that combine modern design, flawless performance, and tailored features to engage users and help you achieve your goals. Whether for Android or iOS, we deliver solutions that impress and retain customers.</div></div>"; 
+const card_2 = "<div class='service-item' id='card-2'><div class='service-item-icon'><img src='assets/aplicativos-icon.webp' alt='App icon'></div><div class='service-item-title'><p id='service-3'>App</p></div><div class='service-item-description' id='service-3-description'>Leve sua marca para o bolso do seu público! Desenvolvemos aplicativos personalizados que unem design moderno, desempenho impecável e funcionalidades sob medida para engajar seus usuários e facilitar o alcance de seus objetivos. Seja em Android ou iOS, entregamos soluções que encantam e fidelizam.</div></div>";
+const card_2_es = "<div class='service-item' id='card-2'><div class='service-item-icon'><img src='assets/aplicativos-icon.webp' alt='App icon'></div><div class='service-item-title'><p id='service-3'>App</p></div><div class='service-item-description' id='service-3-description'>¡Lleva tu marca más cerca de tu público! Desarrollamos aplicaciones que combinan diseño moderno, rendimiento impecable y características hechas a medida para involucrar a los usuarios y ayudarte a alcanzar tus objetivos. En Android o iOS, ofrecemos soluciones que impresionan y fidelizan a los clientes.</div></div>";
+const card_2_en = "<div class='service-item' id='card-2'><div class='service-item-icon'><img src='assets/aplicativos-icon.webp' alt='App icon'></div><div class='service-item-title'><p id='service-3'>App</p></div><div class='service-item-description' id='service-3-description'>Bring your brand closer to your audience! We develop custom applications that combine modern design, flawless performance, and tailored features to engage users and help you achieve your goals. Whether for Android or iOS, we deliver solutions that impress and retain customers.</div></div>"; 
 
-const card_3 = "<div class='service-item carousel-card' id='card-3'><div class='service-item-icon'><img src='assets/sites-icon.webp' alt='ERP System icon'></div><div class='service-item-title'><p id='service-4'>Sistema ERP</p></div><div class='service-item-description' id='service-4-description'>Otimize seus processos e tome decisões mais inteligentes com um ERP feito para você. Oferecemos sistemas de gestão empresarial que simplificam o controle de estoque, vendas, finanças e muito mais, tudo em um só lugar. Ganhe eficiência e controle total sobre o seu negócio, e o melhor, de forma totalmente personalizada.</div></div>";
-const card_3_es = "<div class='service-item carousel-card' id='card-3'><div class='service-item-icon'><img src='assets/sites-icon.webp' alt='ERP System icon'></div><div class='service-item-title'><p id='service-4'>Sistema ERP</p></div><div class='service-item-description' id='service-4-description'>Optimiza tus procesos y toma decisiones más inteligentes con un sistema ERP diseñado especialmente para ti. Ofrecemos sistemas de gestión empresarial que simplifican el control de inventario, ventas, finanzas y mucho más, todo en un solo lugar. Gana eficiencia y control total sobre tu negocio con un sistema proprio.</div></div>";
-const card_3_en = "<div class='service-item carousel-card' id='card-3'><div class='service-item-icon'><img src='assets/sites-icon.webp' alt='ERP System icon'></div><div class='service-item-title'><p id='service-4'>ERP System</p></div><div class='service-item-description' id='service-4-description'>Optimize your processes and make smarter decisions with an ERP designed just for you. We offer business management systems that simplify inventory, sales, finance control, and much more, all in one place. Gain efficiency and complete control over your business with a fully customized system.</div></div>"; 
+const card_3 = "<div class='service-item' id='card-3'><div class='service-item-icon'><img src='assets/sites-icon.webp' alt='ERP System icon'></div><div class='service-item-title'><p id='service-4'>Sistema ERP</p></div><div class='service-item-description' id='service-4-description'>Otimize seus processos e tome decisões mais inteligentes com um ERP feito para você. Oferecemos sistemas de gestão empresarial que simplificam o controle de estoque, vendas, finanças e muito mais, tudo em um só lugar. Ganhe eficiência e controle total sobre o seu negócio, e o melhor, de forma totalmente personalizada.</div></div>";
+const card_3_es = "<div class='service-item' id='card-3'><div class='service-item-icon'><img src='assets/sites-icon.webp' alt='ERP System icon'></div><div class='service-item-title'><p id='service-4'>Sistema ERP</p></div><div class='service-item-description' id='service-4-description'>Optimiza tus procesos y toma decisiones más inteligentes con un sistema ERP diseñado especialmente para ti. Ofrecemos sistemas de gestión empresarial que simplifican el control de inventario, ventas, finanzas y mucho más, todo en un solo lugar. Gana eficiencia y control total sobre tu negocio con un sistema proprio.</div></div>";
+const card_3_en = "<div class='service-item' id='card-3'><div class='service-item-icon'><img src='assets/sites-icon.webp' alt='ERP System icon'></div><div class='service-item-title'><p id='service-4'>ERP System</p></div><div class='service-item-description' id='service-4-description'>Optimize your processes and make smarter decisions with an ERP designed just for you. We offer business management systems that simplify inventory, sales, finance control, and much more, all in one place. Gain efficiency and complete control over your business with a fully customized system.</div></div>"; 
 
-const card_4 = "<div class='service-item carousel-card' id='card-4'><div class='service-item-icon'><img src='assets/site-captura-leads-icon.webp' alt='Paid Traffic icon'></div><div class='service-item-title'><p id='service-5'>Tráfego pago</p></div><div class='service-item-description' id='service-5-description'>Acelere seus resultados com campanhas de tráfego pago estrategicamente planejadas! Gerenciamos anúncios no Google, Facebook, Instagram e outras plataformas, conectando sua marca ao público certo. Aumente sua visibilidade, alcance e conversões de forma mensurável e consistente.</div></div>";
-const card_4_es = "<div class='service-item carousel-card' id='card-4'><div class='service-item-icon'><img src='assets/site-captura-leads-icon.webp' alt='Paid Traffic icon'></div><div class='service-item-title'><p id='service-5'>Tráfico Pagado</p></div><div class='service-item-description' id='service-5-description'>¡Acelera tus resultados con campañas de tráfico pagado estratégicamente planificadas! Administramos anuncios en Google, Facebook, Instagram y otras plataformas, conectando tu marca con el público adecuado. Incrementa tu visibilidad, alcance y conversiones de manera consistente y medible.</div></div>";
-const card_4_en = "<div class='service-item carousel-card' id='card-4'><div class='service-item-icon'><img src='assets/site-captura-leads-icon.webp' alt='Paid Traffic icon'></div><div class='service-item-title'><p id='service-5'>Paid Traffic</p></div><div class='service-item-description' id='service-5-description'>Boost your results with strategically planned paid traffic campaigns! We manage ads on Google, Facebook, Instagram, and other platforms, connecting your brand with the right audience. Increase your visibility, reach, and conversions consistently and measurably.</div></div>"; 
+const card_4 = "<div class='service-item' id='card-4'><div class='service-item-icon'><img src='assets/site-captura-leads-icon.webp' alt='Paid Traffic icon'></div><div class='service-item-title'><p id='service-5'>Tráfego pago</p></div><div class='service-item-description' id='service-5-description'>Acelere seus resultados com campanhas de tráfego pago estrategicamente planejadas! Gerenciamos anúncios no Google, Facebook, Instagram e outras plataformas, conectando sua marca ao público certo. Aumente sua visibilidade, alcance e conversões de forma mensurável e consistente.</div></div>";
+const card_4_es = "<div class='service-item' id='card-4'><div class='service-item-icon'><img src='assets/site-captura-leads-icon.webp' alt='Paid Traffic icon'></div><div class='service-item-title'><p id='service-5'>Tráfico Pagado</p></div><div class='service-item-description' id='service-5-description'>¡Acelera tus resultados con campañas de tráfico pagado estratégicamente planificadas! Administramos anuncios en Google, Facebook, Instagram y otras plataformas, conectando tu marca con el público adecuado. Incrementa tu visibilidad, alcance y conversiones de manera consistente y medible.</div></div>";
+const card_4_en = "<div class='service-item' id='card-4'><div class='service-item-icon'><img src='assets/site-captura-leads-icon.webp' alt='Paid Traffic icon'></div><div class='service-item-title'><p id='service-5'>Paid Traffic</p></div><div class='service-item-description' id='service-5-description'>Boost your results with strategically planned paid traffic campaigns! We manage ads on Google, Facebook, Instagram, and other platforms, connecting your brand with the right audience. Increase your visibility, reach, and conversions consistently and measurably.</div></div>"; 
 
-const card_5 = "<div class='service-item carousel-card' id='card-5'><div class='service-item-icon'><img src='assets/identidade-visual-icon.webp' alt='Branding icon'></div><div class='service-item-title'><p id='service-6'>Branding</p></div><div class='service-item-description' id='service-6-description'>Destaque-se no mercado com uma identidade visual única e marcante! Criamos logos, paletas de cores e materiais visuais que traduzem a essência da sua marca e comunicam seus valores de forma profissional e criativa. Conquiste a confiança do público com uma imagem que impressiona e conecta.</div></div>";
-const card_5_es = "<div class='service-item carousel-card' id='card-5'><div class='service-item-icon'><img src='assets/identidade-visual-icon.webp' alt='Branding icon'></div><div class='service-item-title'><p id='service-6'>Identidad de marca</p></div><div class='service-item-description' id='service-6-description'>¡Destaca en el mercado con una identidad visual única e impactante! Creamos logotipos, paletas de colores y materiales visuales que reflejan la esencia de tu marca y comunican sus valores de forma profesional y creativa. Gana la confianza del público con una imagen que impresiona y conecta.</div></div>";
-const card_5_en = "<div class='service-item carousel-card' id='card-5'><div class='service-item-icon'><img src='assets/identidade-visual-icon.webp' alt='Branding icon'></div><div class='service-item-title'><p id='service-6'>Branding</p></div><div class='service-item-description' id='service-6-description'>Stand out in the market with a unique and impactful visual identity! We create logos, color palettes, and visual materials that reflect your brand’s essence and professionally and creatively communicate its values. Earn your audience’s trust with an image that impresses and connects.</div></div>"; 
+const card_5 = "<div class='service-item' id='card-5'><div class='service-item-icon'><img src='assets/identidade-visual-icon.webp' alt='Branding icon'></div><div class='service-item-title'><p id='service-6'>Branding</p></div><div class='service-item-description' id='service-6-description'>Destaque-se no mercado com uma identidade visual única e marcante! Criamos logos, paletas de cores e materiais visuais que traduzem a essência da sua marca e comunicam seus valores de forma profissional e criativa. Conquiste a confiança do público com uma imagem que impressiona e conecta.</div></div>";
+const card_5_es = "<div class='service-item' id='card-5'><div class='service-item-icon'><img src='assets/identidade-visual-icon.webp' alt='Branding icon'></div><div class='service-item-title'><p id='service-6'>Identidad de marca</p></div><div class='service-item-description' id='service-6-description'>¡Destaca en el mercado con una identidad visual única e impactante! Creamos logotipos, paletas de colores y materiales visuales que reflejan la esencia de tu marca y comunican sus valores de forma profesional y creativa. Gana la confianza del público con una imagen que impresiona y conecta.</div></div>";
+const card_5_en = "<div class='service-item' id='card-5'><div class='service-item-icon'><img src='assets/identidade-visual-icon.webp' alt='Branding icon'></div><div class='service-item-title'><p id='service-6'>Branding</p></div><div class='service-item-description' id='service-6-description'>Stand out in the market with a unique and impactful visual identity! We create logos, color palettes, and visual materials that reflect your brand’s essence and professionally and creatively communicate its values. Earn your audience’s trust with an image that impresses and connects.</div></div>"; 
 
 let cards = [card_0, card_1, card_2, card_3, card_4, card_5];
 const pt_cards = [card_0, card_1, card_2, card_3, card_4, card_5];
@@ -659,54 +659,99 @@ function checkCarousel(size){
 }
 
 let currentIndex = 2;
+let isCarouselAnimating = false;
 
 function moveCarousel(direction) {
-  let newNumber = 0;
-  let auxiliarNumber = 0;
+  if (isCarouselAnimating) return;
+
+  isCarouselAnimating = true;
+
   const carousel = document.getElementById('interative-carousel');
+  const allCards = carousel.querySelectorAll('.service-item');
 
-  if(direction > 0){
-
-    if(currentIndex+direction > 5){
-      currentIndex = 0;
-    }else{
-      currentIndex = currentIndex+direction;
-    }
-
-    if(currentIndex<3){
-      newNumber = currentIndex+3;
-    }else{
-      newNumber = currentIndex-3;
-    }
-
-    usingCards.shift();
-    usingCards.push(cards[currentIndex]);
-
-    carousel.innerHTML = btn_left + usingCards.join('') + btn_right;
-  }else{
-    newNumber = currentIndex;
-
-    if(currentIndex-1 < 0){
-      currentIndex = 5;
-    }else{
-      currentIndex = currentIndex-1;
-    }
-
-    if(currentIndex<3 || newNumber == 0){
-      if(newNumber == 3){
-        auxiliarNumber = 0;
-      }else{
-        auxiliarNumber = newNumber+3;
-      }
-    }else{
-      auxiliarNumber = newNumber-3;
-    }
-
-    usingCards.pop();
-    usingCards.unshift(cards[auxiliarNumber])
-
-    carousel.innerHTML = btn_left + usingCards.join('') + btn_right;
+  // Classes de animação de saída
+  if (direction > 0) {
+    allCards[0].classList.add('exit-left', 'animating');
+    allCards[0].style.opacity = '0';
+    allCards[1].classList.add('exit-left', 'animating');
+    allCards[2].classList.add('exit-left', 'animating');
+  } else {
+    allCards[2].classList.add('exit-right', 'animating');
+    allCards[2].style.opacity = '0';
+    allCards[1].classList.add('exit-right', 'animating'); 
+    allCards[0].classList.add('exit-right', 'animating'); 
   }
+
+  // Aguarda o término da animação de saída
+  setTimeout(() => {
+    let newNumber = 0;
+    let auxiliarNumber = 0;
+
+    if (direction > 0) {
+      // Lógica existente para avançar
+      if (currentIndex + direction > 5) {
+        currentIndex = 0;
+      } else {
+        currentIndex = currentIndex + direction;
+      }
+
+      if (currentIndex < 3) {
+        newNumber = currentIndex + 3;
+      } else {
+        newNumber = currentIndex - 3;
+      }
+
+      usingCards.shift(); // Remove o primeiro card
+      usingCards.push(cards[currentIndex]); // Adiciona o próximo card ao final
+    } else {
+      // Lógica existente para voltar
+      newNumber = currentIndex;
+
+      if (currentIndex - 1 < 0) {
+        currentIndex = 5;
+      } else {
+        currentIndex = currentIndex - 1;
+      }
+
+      if (currentIndex < 3 || newNumber == 0) {
+        if (newNumber == 3) {
+          auxiliarNumber = 0;
+        } else {
+          auxiliarNumber = newNumber + 3;
+        }
+      } else {
+        auxiliarNumber = newNumber - 3;
+      }
+
+      usingCards.pop(); // Remove o último card
+      usingCards.unshift(cards[auxiliarNumber]); // Adiciona o card anterior no início
+    }
+
+    carousel.innerHTML = btn_left + usingCards.join('') + btn_right;
+
+    const newCards = carousel.querySelectorAll('.service-item');
+
+    if (direction > 0) {
+        newCards[2].style.opacity = '0';
+        newCards[2].style.transform = 'translateX(100%) !important';
+        newCards[2].classList.add('enter-right');
+        newCards[2].style.opacity = '1';
+    } else {
+        newCards[0].style.opacity = '0';
+        newCards[0].style.transform = 'translateX(-100%) !important';
+        newCards[0].classList.add('enter-left');
+        newCards[0].style.opacity = '1';
+    }
+
+    // Remove classes de animação após a transição
+    const newCardsDom = carousel.querySelectorAll('.service-item');
+    setTimeout(() => {
+      newCardsDom.forEach(card => card.classList.remove('exit-left', 'exit-right', 'enter-left', 'enter-right'));
+      allCards.forEach(card => card.classList.remove('animating'));
+
+      isCarouselAnimating = false;
+    }, 500);
+  }, 500);
 }
 
 // Verificar o tamanho da tela quando a página for carregada

@@ -674,9 +674,8 @@ body.light-mode .advantages-presentation{
   align-items: center;
   padding: 40px 20px;
   border-bottom: 4px solid #0b55f9;
-  transition: transform 0.3s ease; /* Suavidade da animação */
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
-
 
 .service-btn-space{
   display: flex;
@@ -684,30 +683,24 @@ body.light-mode .advantages-presentation{
   justify-content: center;
 }
 
-/* Contêiner do carrossel */
-#interative-carousel {
-  display: flex;
-  overflow: hidden; /* Esconde os cards que saem da área visível */
-  position: relative;
-}
-
-/* Transição suave */
-.carousel-card {
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-}
-
-.carousel-card.active {
-  opacity: 1;
+/* Card visível no centro */
+.service-item.visible {
   transform: translateX(0);
 }
 
-.carousel-card.exit-left {
-  opacity: 0;
+/* Animações de saída */
+.service-item.exit-left {
   transform: translateX(-100%);
 }
+.service-item.exit-right {
+  transform: translateX(100%);
+}
 
-.carousel-card.exit-right {
-  opacity: 0;
+/* Animações de entrada */
+.service-item.enter-left {
+  transform: translateX(-100%);
+}
+.service-item.enter-right {
   transform: translateX(100%);
 }
 
@@ -719,7 +712,6 @@ body.light-mode .advantages-presentation{
   padding: 10px;
   cursor: pointer;
   font-size: 24px;
-  z-index: 10;
   border-radius: 25px;
 }
 
@@ -738,6 +730,7 @@ body.light-mode .service-item {
 }
 
 .service-item:hover {
+  transition: transform 0.2s ease;
   transform: translateY(-3px) scale(1.01);
   cursor: pointer;
 }
