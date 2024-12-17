@@ -760,8 +760,7 @@ function moveCarousel(direction) {
     // Remove classes de animação após a transição
     const newCardsDom = carousel.querySelectorAll('.service-item');
     setTimeout(() => {
-      newCardsDom.forEach(card => card.classList.remove('exit-left', 'exit-right', 'enter-left', 'enter-right'));
-      allCards.forEach(card => card.classList.remove('animating'));
+      newCardsDom.forEach(card => card.classList.remove('exit-left', 'exit-right', 'enter-left', 'enter-right', 'animating'));
 
       isCarouselAnimating = false;
     }, 500);

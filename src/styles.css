@@ -674,7 +674,7 @@ body.light-mode .advantages-presentation{
   align-items: center;
   padding: 40px 20px;
   border-bottom: 4px solid #0b55f9;
-  transition: transform 0.4s ease, opacity 0.4s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .service-btn-space{
@@ -1464,6 +1464,107 @@ input[type="radio"] {
     padding: 50px 50px 0px 50px;
   }
   
+}
+/* Contact section*/
+
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 40px;
+  background-color: #0c4ad6;
+  background-size: auto 1000px; /* Define o tamanho do gradiente */
+  background-position: center center; /* Centraliza o gradiente */
+  background-repeat: no-repeat; /* Evita que o gradiente se repita */
+  text-align: center;
+  width: auto;
+  margin: 0 auto; /* Centraliza o conteúdo */
+  font-family: 'Lexend', sans-serif !important;
+}
+
+.contact-information {
+  margin-left: 150px;
+}
+
+.contact-section-title {
+  font-size: 56px;
+  line-height: normal;
+  text-align: center;
+  width: 450px;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.contact-section-description {
+  text-align: start;
+  font-size: 20px;
+  width: 420px;
+  margin-left: 10px;
+  margin-bottom: 40px;
+}
+
+.contact-with-icon {
+  display: flex;
+  margin-left: 10px;
+  flex-flow: row;
+}
+
+.contact-with-icon img{
+  width: 25px;
+}
+
+.label-icon-contact {
+  margin: 0px 10px 25px 20px;
+  font-size: 18px;
+}
+
+.separator-div {
+  width: 0.5%;
+  height: 80vh;
+  margin: 30px 50px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.principal-form-contact {
+  width: 100%;
+}
+
+.principal-form-contact label{
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.grid {
+  display: flex;
+  margin: 10px;
+  align-content: stretch;
+}
+
+.form-group{
+  flex: 1;
+  min-width: 45%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.form-group input{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+}
+
+.form-group label{
+  font-size: 20px;
+  max-width: 320px;
+}
+
+textarea {
+  resize: vertical;
+  padding: 10px;
+  border: 1px solid #ccc;
 }
 
 /* FAQ section */

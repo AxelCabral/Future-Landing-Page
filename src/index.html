@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Future Digital</title>
+    <title>Future Digital | Agência de Marketing e Tecnologia</title>
 
     <link nonce="selfstyle" rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
@@ -47,7 +47,7 @@
             <ul>
                 <li id="responsive-menu"></li>
                 <li><a href="#services-section" onclick="toggleMenu()" id="services">Serviços</a></li>
-                <li><a href="#purpose-section" onclick="toggleMenu()" id="about-us">Quem somos</a></li>
+                <li><a href="#testimonials-section" onclick="toggleMenu()" id="about-us">Quem somos</a></li>
                 <li><a href="#advantages-section" onclick="toggleMenu()" id="advantages">Vantagens</a></li>
                 <li><a href="https://wa.me/5522981812993" aria-label="Open whatsapp chat to see our plans" onclick="toggleMenu()" target="_blank" id="plans">Planos</a></li>
             </ul>
@@ -83,7 +83,7 @@
           </div>
           <div class="rocket-image">
             <img id="rocket-image" loading="lazy" src="assets/foguete.webp" alt="Rocket">
-            <video id="rocket-video" loading="lazy" autoplay loop muted playsinline controls disablepictureinpicture>
+            <video id="rocket-video" loading="lazy" autoplay loop muted playsinline controls disablepictureinpicture tabindex="-1">
               <source src="assets/foguete.webm" type="video/webm">
             </video>
           </div>
@@ -188,7 +188,7 @@
           </button>
         </a>
   </section>
-    <section class="testimonials-carousel">
+    <section class="testimonials-carousel" id="testimonials-section">
       <div class="testimonials-title">
         <h2 id="testimonials-title">O que nossos clientes dizem sobre nós</h2>
       </div>
@@ -220,16 +220,77 @@
         </div>
       </div>
     </section>
-    <section class="contact-secion">
+    <section class="contact-section">
       <div class="contact-information">
         <h2 class="contact-section-title">FALE CONOSCO</h2>
         <p class="contact-section-description">
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+          Somos especialistas em criar soluções digitais sob medida para seu negócio!
+          <br/><br/>
+          Quer dar o próximo passo? Preencha o formulário e agende uma conversa sem compromisso com nossos especialistas. Estamos prontos para trazer resultados que realmente fazem a diferença. 🚀
         </p>
-
+        <div class="contact-with-icon">
+          <div class="icon-contact-section">
+            <a href="https://wa.me/5522981812993" aria-label="Open whatsapp chat to request a quote" target="_blank" ><img src="assets/whatsapp-footer-icon.webp" alt="WhatsApp icon"></a>
+          </div>
+          <p class="label-icon-contact">+55 (21) 9.8181-2993</p>
+        </div>
+        <div class="contact-with-icon">
+          <div class="icon-contact-section">
+            <a href="https://www.instagram.com/futuredigital.ag" target="_blank" ><img src="assets/instagram-footer-icon.webp" alt="Instragram icon"></a> 
+          </div>
+          <p class="label-icon-contact">@futuredigital.ag</p>
+        </div>
+        <div class="contact-with-icon">
+          <div class="icon-contact-section">
+            <a href="mailto:contato@futuredigi.com.br" target="_blank" ><img src="assets/gmail-footer-icon.webp" alt="E-mail icon"></a>
+          </div>
+          <p class="label-icon-contact">contato@futuredigi.com.br</p>
+        </div>
       </div>
       <div class="separator-div"></div>
-      <div class="contact-form-spree"></div>
+      <div class="principal-form-contact">
+        <form action="/submit-form" method="POST">
+          <div class="grid">
+            <div class="form-group">
+              <label for="empresa">Empresa</label>
+              <input type="text" id="empresa" name="empresa" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="site">Site (opcional)</label>
+              <input type="url" id="site" name="site" placeholder="https://">
+            </div>
+          </div>
+          <div class="grid">
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+              <label for="cargo">Cargo</label>
+              <input type="text" id="cargo" name="cargo">
+            </div>
+          </div>
+          <div class="grid">
+            <div class="form-group">
+              <label for="email">E-mail Corporativo</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+              <label for="celular">Celular</label>
+              <input type="tel" id="celular" name="celular" required placeholder="(XX) XXXXX-XXXX">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="descricao">Descreva como podemos te ajudar a alavancar seu negócio:</label>
+            <textarea id="descricao" name="descricao" rows="5" placeholder="Conte-nos sobre suas necessidades..."></textarea>
+          </div>
+
+          <button type="submit">Enviar</button>
+      </form>
+      </div>
     </section>
     <section class="faq-section">
       <h2 id="faq-title">Perguntas frequentes</h2>
@@ -325,15 +386,15 @@
               <div class="social-media-icon" title="Instragram">
                  <a href="https://www.instagram.com/futuredigital.ag" target="_blank" ><img src="assets/instagram-footer-icon.webp" alt="Instragram icon"></a> 
               </div>
-              <div class="social-media-icon" title="GMail">
-                <a href="mailto:agfutured@gmail.com" target="_blank" ><img src="assets/gmail-footer-icon.webp" alt="Instragram icon"></a> 
+              <div class="social-media-icon" title="E-mail">
+                <a href="mailto:contato@futuredigi.com.br" target="_blank" ><img src="assets/gmail-footer-icon.webp" alt="E-mail icon"></a>
              </div>
            </div>
         </div>
         <div class="footer-menu">
           <h3 id="footer-nav-1">Menu</h3>
           <p class="footer-option-menu"><a href="#services-section" id="footer-nav-1-text">Serviços</a></p>
-          <p class="footer-option-menu"><a href="#purpose-section" id="footer-nav-2-text">Quem somos</a></p>
+          <p class="footer-option-menu"><a href="#testimonials-section" id="footer-nav-2-text">Quem somos</a></p>
           <p class="footer-option-menu"><a href="#advantages-section" id="footer-nav-3-text">Vantagens</a></p>
           <p class="footer-option-menu"><a href="https://wa.me/5522981812993" aria-label="Open whatsapp chat to see our plans" target="_blank" id="footer-nav-4-text">Planos</a></p>
         </div>
