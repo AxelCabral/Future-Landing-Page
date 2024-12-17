@@ -1,0 +1,9 @@
+1 - aumentar espaço das setas dos cards
+2 - remover carrosel, deixar cards de feedback visíveis
+3 - diminuir Fale conosco
+4 - finalizar Fale conosco (design)
+5 - configurar formulário
+6 - linkar formulário com e-mail (formspree)
+7 - fazer light mode do formulário
+8 - gerar build do site
+9 - publicar site na hostgator
