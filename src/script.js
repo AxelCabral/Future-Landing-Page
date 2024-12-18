@@ -58,18 +58,25 @@ document.addEventListener('DOMContentLoaded', () => {
   const body = document.body;
   const logo1 = document.getElementById('logo-1');
   const logo2 = document.getElementById('logo-2');
+  const icon1 = document.getElementById('insta-icon');
+  const icon2 = document.getElementById('wpp-icon');
+  const icon3 = document.getElementById('email-icon');
 
   themeToggle.addEventListener('change', function() {
     if (themeToggle.checked) {
       // Ativar o modo claro
       body.classList.add('light-mode');
       logo1.src = 'assets/logo-v2.webp';
-      logo2.src = 'assets/logo-v2.webp';
+      icon1.src = 'assets/instagram-alternative-icon.webp'
+      icon2.src = 'assets/whatsapp-alternative-icon.webp'
+      icon3.src = 'assets/gmail-alternative-icon.webp'
     } else {
       // Ativar o modo escuro
       body.classList.remove('light-mode');
       logo1.src = 'assets/logo.webp';
-      logo2.src = 'assets/logo.webp';
+      icon1.src = 'assets/instagram-footer-icon.webp'
+      icon2.src = 'assets/whatsapp-footer-icon.webp'
+      icon3.src = 'assets/gmail-footer-icon.webp'
     }
   });
 
@@ -501,6 +508,21 @@ document.addEventListener('DOMContentLoaded', () => {
       phoneInput.value = '';
       formImage.src = 'assets/check-icon-2.webp';
     }
+  }),
+
+  // Formulário de contato - Validação
+  document.getElementById('principal-contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Impede o envio tradicional do formulário
+    
+    const form = event.target; // Obtém o formulário atual
+    
+    // Abre uma nova aba/guia para a página de confirmação
+    window.open('', 'formTarget');
+    form.target = 'formTarget'; // Envia o formulário para a nova aba/guia
+    form.submit();
+    
+    // Esvazia os campos do formulário
+    form.reset();
   });
 
   // Seleciona o formulário e o campo de input
