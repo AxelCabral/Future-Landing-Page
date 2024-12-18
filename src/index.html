@@ -216,8 +216,8 @@
     <section class="contact-section">
       <div class="contact-content">
         <div class="contact-information">
-          <h2 class="contact-section-title">FALE CONOSCO</h2>
-          <p class="contact-section-description">
+          <h2 class="contact-section-title" id="contact-section-title">FALE CONOSCO</h2>
+          <p class="contact-section-description" id="contact-section-description">
             Somos especialistas em criar soluções digitais sob medida para seu negócio!
             <br/><br/>
             Quer dar o próximo passo? Preencha o formulário e agende uma conversa sem compromisso com nossos especialistas. Estamos prontos para trazer resultados que realmente fazem a diferença. 🚀
@@ -246,43 +246,43 @@
           <form id="principal-contact-form" action="https://formspree.io/f/mrbgwozn" method="POST">
             <div class="grid">
               <div class="form-group">
-                <label for="empresa">Empresa</label>
+                <label for="empresa" id="company-label">Empresa</label>
                 <input type="text" id="empresa" name="empresa" placeholder="Sua Empresa" required>
               </div>
               
               <div class="form-group">
-                <label for="site">Site (opcional)</label>
+                <label for="site" id="site-label">Site (opcional)</label>
                 <input type="url" id="site" name="site" placeholder="https://">
               </div>
             </div>
             <div class="grid">
               <div class="form-group">
-                <label for="nome">Nome</label>
+                <label for="nome" id="name-label">Nome</label>
                 <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
               </div>
               <div class="form-group">
-                <label for="cargo">Cargo (opcional)</label>
+                <label for="cargo" id="position-label">Cargo (opcional)</label>
                 <input type="text" id="cargo" name="cargo" placeholder="Seu Cargo">
               </div>
             </div>
             <div class="grid">
               <div class="form-group">
-                <label for="email">E-mail Corporativo</label>
+                <label for="email" id="email-label">E-mail Corporativo</label>
                 <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
               </div>
       
               <div class="form-group">
-                <label for="celular">Celular</label>
+                <label for="celular" id="number-label">Celular</label>
                 <input type="tel" id="celular" name="celular" required placeholder="+XX (XX) XXXXX-XXXX">
               </div>
             </div>
 
             <div class="form-group">
-              <label for="descricao">Descreva como podemos te ajudar a alavancar seu negócio:</label>
+              <label for="descricao" id="necessity-label">Descreva como podemos te ajudar a alavancar seu negócio:</label>
               <textarea id="descricao" name="descricao" rows="5" placeholder="Conte-nos sobre suas necessidades..."></textarea>
             </div>
 
-            <button type="submit" class="form-btn-talk">Confirmar</button>
+            <button type="submit" id="confirmation-form-text" class="form-btn-talk">Confirmar</button>
         </form>
       </div>
     </div>

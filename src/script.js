@@ -165,6 +165,64 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('testimonial-company-1').textContent = 'CEO da TecnoMax Solutions';
         document.getElementById('testimonial-company-2').textContent = 'Diretora de Marketing da BellaVita';
         document.getElementById('testimonial-company-3').textContent = 'CMO da StartUp Pro';
+
+        document.getElementById('contact-section-title').textContent = 'FALE CONOSCO';
+        document.getElementById('contact-section-description').innerHTML = 'Somos especialistas em criar soluções digitais sob medida para seu negócio!<br/><br/>Quer dar o próximo passo? Preencha o formulário e agende uma conversa sem compromisso com nossos especialistas. Estamos prontos para trazer resultados que realmente fazem a diferença. 🚀';
+        var placeholderText = document.getElementById('contact-text');
+        placeholderText.placeholder = "Insira seu número";
+
+        document.getElementById('company-label').textContent = 'Empresa';
+        var placeholderTextCompany = document.getElementById('empresa');
+        placeholderTextCompany.placeholder = "Sua Empresa";
+
+        /*
+        document.getElementById('company-label').textContent = 'Empresa';
+        document.getElementById('company-label').textContent = 'Empresa';
+        document.getElementById('company-label').textContent = 'Empresa';
+        document.getElementById('company-label').textContent = 'Empresa';
+        document.getElementById('company-label').textContent = 'Empresa';
+        document.getElementById('company-label').textContent = 'Empresa';
+        document.getElementById('confirmation-form-text').textContent = 'Confirmar';
+
+
+        <div class="form-group">
+                <label for="empresa" id="company-label">Empresa</label>
+                <input type="text" id="empresa" name="empresa" placeholder="Sua Empresa" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="site" id="site-label">Site (opcional)</label>
+                <input type="url" id="site" name="site" placeholder="https://">
+              </div>
+            </div>
+            <div class="grid">
+              <div class="form-group">
+                <label for="nome" id="name-label">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+              </div>
+              <div class="form-group">
+                <label for="cargo" id="position-label">Cargo (opcional)</label>
+                <input type="text" id="cargo" name="cargo" placeholder="Seu Cargo">
+              </div>
+            </div>
+            <div class="grid">
+              <div class="form-group">
+                <label for="email" id="email-label">E-mail Corporativo</label>
+                <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
+              </div>
+      
+              <div class="form-group">
+                <label for="celular" id="number-label">Celular</label>
+                <input type="tel" id="celular" name="celular" required placeholder="+XX (XX) XXXXX-XXXX">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="descricao" id="necessity-label">Descreva como podemos te ajudar a alavancar seu negócio:</label>
+              <textarea id="descricao" name="descricao" rows="5" placeholder="Conte-nos sobre suas necessidades..."></textarea>
+            </div>
+        */
+
         document.getElementById('faq-title').textContent = 'Perguntas frequentes';
         document.getElementById('faq-question-1').textContent = 'Qual é o prazo de entrega do site?';
         document.getElementById('faq-question-2').textContent = 'Quais são as formas de pagamento?';
