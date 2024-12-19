@@ -1,3 +1,0 @@
-8 - ajustar funcionalidades de idioma para o formulário
-9 - gerar build do site
-10 - publicar site na hostgator
