@@ -821,16 +821,15 @@ body.light-mode .service-item-title {
 }
 
 /* Advantages Section */
-
 .advantages {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 30px;
-  padding-bottom: 70px;
+  /* padding-bottom: 70px; */
   background-color: #0c4ad6;
   text-align: center;
   width: auto;
-  margin: 0 auto; /* Centraliza o conteúdo */
+  margin: 0 auto;
 }
 
 body.light-mode .advantages {
@@ -839,7 +838,7 @@ body.light-mode .advantages {
 
 .advantage {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   flex-basis: 26%;
   /* text-align: start; */
@@ -848,23 +847,30 @@ body.light-mode .advantages {
 }
 
 .advantage img {
-  width: 100%;
-  max-width: 100%;
+  width: 36%;
   height: auto;
-  border-radius: 10px; /* Aplica bordas arredondadas */
+  border-radius: 10px;
   display: grid;
   margin-top: 40px;
+  margin-right: 50px;
 }
 
-.advantage h3 {
-  font-size: 28px;
+.advantages-title {
+  width: 100%;
+  text-align: center !important;
+}
+
+.advantages h3 {
+  font-size: 32px;
+  max-width: 610px;
   line-height: normal;
   margin-top: 5px;
   margin-bottom: 40px;
-  text-align: center;
+  margin: auto;
+  margin-bottom: 40px;
 }
 
-.advantage button {
+.advantages button {
   padding: 15px 30px;
   background-color: #1a1a1a;
   border: none;
@@ -877,6 +883,7 @@ body.light-mode .advantages {
   display: inline-flex;
   gap: 15px;
   align-items: center;
+  margin-top: 30px;
 }
 
 body.light-mode .advantage button{
@@ -889,7 +896,7 @@ body.light-mode .advantage button:hover{
 }
 
 .detail-item {
-  padding-right: 100px;
+  padding-right: 60px;
 }
 
 .advantage button:hover {
@@ -900,14 +907,12 @@ body.light-mode .advantage button:hover{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   text-align: start;
-  flex-basis: 85%;
-  padding-top: 40px;
 }
 
 .detail-item h4 {
   font-size: 24px; /* Tamanho ajustado para os títulos */
   margin: 0;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .detail-item p {
@@ -916,12 +921,21 @@ body.light-mode .advantage button:hover{
   margin-top: 5px;
 }
 
+@media (max-width: 1500px) {
+  .detail-item h4 {
+    font-size: 18px; /* Ajuste o tamanho do título */
+  }
+
+  .detail-item p {
+    font-size: 14px; /* Ajuste o tamanho do texto */
+  }
+}
+
 /* Responsividade para telas menores (Tablets e smartphones) */
 @media (max-width: 1180px) {
   .advantages {
     flex-direction: column; /* Organiza em coluna para melhor visualização */
     align-items: center;
-    padding: 40px;
     background-size: auto;
   }
 
@@ -957,13 +971,6 @@ body.light-mode .advantage button:hover{
     margin-right: 60px;
   }
 
-  .detail-item h4 {
-    font-size: 22px; /* Ajuste o tamanho do título */
-  }
-
-  .detail-item p {
-    font-size: 16px; /* Ajuste o tamanho do texto */
-  }
 }
 
 /* Responsividade para telas muito pequenas (Smartphones) */
